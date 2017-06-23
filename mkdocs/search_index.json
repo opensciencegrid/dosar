@@ -2,13 +2,18 @@
     "docs": [
         {
             "location": "/", 
-            "text": "DOSAR Outreach Projects", 
+            "text": "DOSAR Outreach Projects\n\n\nThe Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' grid organization that focuses on community and campus based grids and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.\n\n\nEvents\n\n\n\n\nThe CODATA-RDA Research Data Science Summer School - July 9-21, 2017 - Trieste, Italy\n\n\nCODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil\n\n\nThe African School of Physics (ASP) - June 24-July 14, 2018 - Namibia", 
             "title": "Home"
         }, 
         {
             "location": "/#dosar-outreach-projects", 
-            "text": "", 
+            "text": "The Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' grid organization that focuses on community and campus based grids and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.", 
             "title": "DOSAR Outreach Projects"
+        }, 
+        {
+            "location": "/#events", 
+            "text": "The CODATA-RDA Research Data Science Summer School - July 9-21, 2017 - Trieste, Italy  CODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil  The African School of Physics (ASP) - June 24-July 14, 2018 - Namibia", 
+            "title": "Events"
         }
     ]
 }
