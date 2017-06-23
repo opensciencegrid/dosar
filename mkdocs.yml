@@ -9,7 +9,7 @@ extra_css:
 pages:
 - Home: 'index.md'
 - Materials:
- - 'DataTrieste2017': 'Materials/DT2017.md'
+  - 'DataTrieste2017': 'Materials/DT2017.md'
 
 markdown_extensions:
   - admonition
