@@ -1,6 +1,6 @@
 # DOSAR Outreach Projects
 
-The Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' grid organization that focuses on community and campus based grids and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.
+The Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' cyberinfrastructure organization that focuses on community and campus based cyberinfrastructure and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.
 
 ## Events
    * The CODATA-RDA Research Data Science Summer School - July 9-21, 2017 - Trieste, Italy
