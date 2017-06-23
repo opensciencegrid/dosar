@@ -14,6 +14,11 @@
             "location": "/#events", 
             "text": "The CODATA-RDA Research Data Science Summer School - July 9-21, 2017 - Trieste, Italy  CODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil  The African School of Physics (ASP) - June 24-July 14, 2018 - Namibia", 
             "title": "Events"
+        }, 
+        {
+            "location": "/Materials/DT2017/", 
+            "text": "Placeholder", 
+            "title": "DataTrieste2017"
         }
     ]
 }
