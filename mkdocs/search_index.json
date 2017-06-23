@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/Materials/DT2017/", 
-            "text": "Data Trieste 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nThursday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nThursday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nIntroduction to cloud environemts\n\n\nClose out and resources for further collaboration\n\n\n\n\nDetailed Schedule\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nWelcome and the Landscape of Research Computing", 
+            "text": "Data Trieste 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nThursday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nThursday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nIntroduction to cloud environemts\n\n\nClose out and resources for further collaboration\n\n\n\n\nDetailed Schedule\n\n\nThursday 20-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nWelcome and the Landscape of Research Computing\n\n\nRob Quick\n\n\n\n\n\n\n09:30\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nRob Quick\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nProfiling your application and finding a home for your workflow\n\n\nRob Quick\n\n\n\n\n\n\n11:45\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nRob Quick\n\n\n\n\n\n\n13:00\n\n\nLunch\n\n\n\n\n\n\n\n\n14:00\n\n\nWorflows and distributed environments\n\n\nRob Quick\n\n\n\n\n\n\n14:30\n\n\nExercise - Accessing Distributed Resources on the Open Science Grid\n\n\nRob Quick\n\n\n\n\n\n\n15:15\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:45\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nRob Quick\n\n\n\n\n\n\n16:15\n\n\nExercise - DAGMAN\n\n\nRob Quick\n\n\n\n\n\n\n\n\nFriday 21-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nIntroduction to cloud environments\n\n\nGergely Sipos\n\n\n\n\n\n\n09:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nCloud Compting Resources\n\n\nGergely Sipos\n\n\n\n\n\n\n11:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos", 
             "title": "DataTrieste2017"
         }, 
         {
@@ -47,8 +47,18 @@
         }, 
         {
             "location": "/Materials/DT2017/#detailed-schedule", 
-            "text": "Time  Discription  Instructor      09:00  Welcome and the Landscape of Research Computing", 
+            "text": "", 
             "title": "Detailed Schedule"
+        }, 
+        {
+            "location": "/Materials/DT2017/#thursday-20-july-2017", 
+            "text": "Time  Discription  Instructor      09:00  Welcome and the Landscape of Research Computing  Rob Quick    09:30  Exercise - UNIX Refresher, Running Locally, Batch Services  Rob Quick    10:30  Coffee Break     11:00  Profiling your application and finding a home for your workflow  Rob Quick    11:45  Exercise - Single and batch submittion with HTCondor  Rob Quick    13:00  Lunch     14:00  Worflows and distributed environments  Rob Quick    14:30  Exercise - Accessing Distributed Resources on the Open Science Grid  Rob Quick    15:15  Coffee Break     15:45  Workflows with Directed Acyclic Graphs (DAGs)  Rob Quick    16:15  Exercise - DAGMAN  Rob Quick", 
+            "title": "Thursday 20-July 2017"
+        }, 
+        {
+            "location": "/Materials/DT2017/#friday-21-july-2017", 
+            "text": "Time  Discription  Instructor      09:00  Introduction to cloud environments  Gergely Sipos    09:45  Exercise - Using the EGI Fed Cloud  Gergely Sipos    10:30  Coffee Break     11:00  Cloud Compting Resources  Gergely Sipos    11:45  Exercise - Using the EGI Fed Cloud  Gergely Sipos", 
+            "title": "Friday 21-July 2017"
         }
     ]
 }
