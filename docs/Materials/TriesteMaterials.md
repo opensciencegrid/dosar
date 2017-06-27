@@ -4,7 +4,7 @@
 
    * Welcome and Introduction - The Landscape of Academic Research Computing
    * Lecture #1 (Attach Slides Here)
-   * Introduction 
+   * [Introduction](Introduction.md) 
    * Our Job Manager (HTCondor)
    * Your First Managed Job
    * A few tips and tricks
