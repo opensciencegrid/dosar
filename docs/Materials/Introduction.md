@@ -26,7 +26,7 @@ You may get a message asking you to establish the authenticity of this connectio
 
 We recommend that you work in your home directory. 
 
-You can always return to your home director by running the command <pre><code>cd ~</code></pre>
+You can always return to your home director by running the command <pre><code>$ cd ~</code></pre>
 
 ## The Exercises
 
