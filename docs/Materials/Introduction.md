@@ -16,8 +16,8 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 Today you will log into osgtrain.osgconnect.net for all of your exercises:
 
-   * Login on submission node <pre class="screen"><code>
-> ssh -XY YOUR_USER_ID@osgtrain.osgconnect.net
+   * Login on submission node <pre><code>
+$ ssh -XY YOUR_USER_ID@osgtrain.osgconnect.net
 </code></pre>
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
