@@ -16,7 +16,9 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 Today you will log into osgtrain.osgconnect.net for all of your exercises:
 
-   * Login on submission node <pre><code>
+Login on submission node using:
+
+<pre><code>
 $ ssh -XY YOUR_USER_ID@osgtrain.osgconnect.net
 </code></pre>
 
