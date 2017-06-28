@@ -4,8 +4,8 @@
 
 You will receive login credentials at the beginning of this session. 
 
-You might want to refer to the [online Condor 8.2.10 manual](http://research.cs.wisc.edu/htcondor/manual/v8.2/).<br>
-You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
+   * You might want to refer to the [online Condor 8.2.10 manual](http://research.cs.wisc.edu/htcondor/manual/v8.2/).<br>
+   * You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
 
 ## Which Condor?
 We will be using Condor 8.2.10, which is a recent production version of Condor.
