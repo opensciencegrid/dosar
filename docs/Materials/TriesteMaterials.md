@@ -6,7 +6,7 @@
    * Lecture 1 (Attach Slides Here)
    * [Introduction](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/01-Introduction.md) 
    * [Our Job Manager (HTCondor)](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/02-OurJobManager.md)
-   * Your First Managed Job
+   * [Your First Managed Job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md)
    * A few tips and tricks
    
 ## Thursday Morning - Computational Infrastrcutures - Session 2
