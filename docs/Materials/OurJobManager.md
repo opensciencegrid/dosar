@@ -21,8 +21,7 @@ There are two things you should note:
 
    1. This reports the "CondorPlatform", which is the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.
 
-<div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
-*Extra Tip: The OS version*
+### Extra Tip: The OS version
 
 Do you know how to find the OS version? You can usually look in /etc/issue to find out:
 
@@ -41,9 +40,6 @@ Description:	Scientific Linux release 6.8 (Carbon)
 Release:	6.8
 Codename:	Carbon
 </code></pre>
-
-
-</div>
 
 Where is Condor installed? 
 
