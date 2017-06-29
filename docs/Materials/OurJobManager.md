@@ -32,6 +32,7 @@ Kernel \r on an \m
 </code></pre>
 
 Or you can run:
+
 <pre><code>
 $ lsb_release -a
 LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
@@ -47,7 +48,6 @@ Where is Condor installed?
 $ which condor_q
 /usr/bin/condor_q
 
-%RED%# It was installed using the Condor RPM %ENDCOLOR%
 $ rpm -q condor
 condor-8.2.10-1.1.osg32.el6.x86_64
 
