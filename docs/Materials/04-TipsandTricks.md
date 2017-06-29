@@ -25,7 +25,7 @@ $ condor_q -run
   28.49  kagross         8/18 14:51   0+00:00:14 slot2@frontal.cci.ucad.sn
 </code></pre>
 
-<code>condor_q</code> can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the !ClassAd for a single job:
+<code>condor_q</code> can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
 
 <pre><code>
 $ condor_q -l 23.0
@@ -76,7 +76,7 @@ Requirements =( TARGET.Arch == "X86_64" ) # %RED% Run on a 64-bit computer %ENDC
     && ( TARGET.HasFileTransfer )# %RED% Only run on a computer that can accept your files. %ENDCOLOR%
 </code></pre>
 
-What else can you find that's interesting in the !ClassAd?
+What else can you find that's interesting in the ClassAd?
 
 ## Removing jobs
 
