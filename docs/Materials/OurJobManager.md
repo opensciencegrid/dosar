@@ -153,7 +153,6 @@ The output that you see will be different depending on what jobs are running. No
    * *SIZE*: We can see the memory consumption of the job.
    * *CMD*: We can see the program that is being executed. 
 
-<div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
 ### Extra Tip
 
 What else can you find out with condor_q? Try any one of:
@@ -165,7 +164,6 @@ What else can you find out with condor_q? Try any one of:
 ### Double bonus points
 
 How do you use the -constraint or -format options to condor_q? When would you want them? When would you use the -l option? This might be an easier exercise to try once you submit some jobs.
-</div>
 
 ## condor_status
 
@@ -206,7 +204,6 @@ Let's look at exactly what you can see:
    * *Mem*: The computers memory in megabytes.
    * *ActvtyTime*: How long the computer has been doing what it's been doing. 
 
-<div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
 ### Extra credit
 
 What else can you find out with condor_status? Try any one of:
@@ -216,4 +213,4 @@ What else can you find out with condor_status? Try any one of:
    * [[http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html][condor_status from the online manual]]
 
 Note in particular the options like -master and -schedd. When would these be useful? When would the -l option be useful? 
-</div>
+
