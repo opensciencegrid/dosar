@@ -84,7 +84,7 @@ Error      = simple.error
 should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
-<code></pre>
+</code></pre>
 
 Let's examine each of these lines:
 
