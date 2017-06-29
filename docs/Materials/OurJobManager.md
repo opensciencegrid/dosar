@@ -155,7 +155,7 @@ What else can you find out with condor_q? Try any one of:
 
    * man condor_q
    * condor_q -help
-   * [[http://www.cs.wisc.edu/condor/manual/v8.0/condor_q.html][condor_q from the online manual]]
+   * [condor_q from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_q.html)
 
 ### Double bonus points
 
