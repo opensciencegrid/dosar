@@ -154,7 +154,7 @@ The output that you see will be different depending on what jobs are running. No
    * *CMD*: We can see the program that is being executed. 
 
 <div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
-*Extra Tip*
+### Extra Tip
 
 What else can you find out with condor_q? Try any one of:
 
@@ -162,7 +162,7 @@ What else can you find out with condor_q? Try any one of:
    * condor_q -help
    * [[http://www.cs.wisc.edu/condor/manual/v8.0/condor_q.html][condor_q from the online manual]]
 
-*Double bonus points*
+### Double bonus points
 
 How do you use the -constraint or -format options to condor_q? When would you want them? When would you use the -l option? This might be an easier exercise to try once you submit some jobs.
 </div>
@@ -207,7 +207,7 @@ Let's look at exactly what you can see:
    * *ActvtyTime*: How long the computer has been doing what it's been doing. 
 
 <div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
-*Extra credit*
+### Extra credit
 
 What else can you find out with condor_status? Try any one of:
 
