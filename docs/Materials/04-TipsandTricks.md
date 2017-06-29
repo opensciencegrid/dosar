@@ -67,22 +67,22 @@ UserLog = "/home/kagross/condor-test/simple.47.log"
 
 What the job's requirements? Condor automatically fills some in for you, to make sure your job runs on a reasonable computer in our cluster, but you can override any of these. I've broken the output into multiple lines to explain it to you.
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_q -l 23.0 | grep Requirements
 Requirements =( TARGET.Arch == "X86_64" ) # %RED% Run on a 64-bit computer %ENDCOLOR%
     && ( TARGET.OpSys == "LINUX" )  # %RED% Make sure you run on Linux %ENDCOLOR%
     && ( TARGET.Disk >= RequestDisk ) # %RED% Make sure the default disk Condor is on has enough disk space. %ENDCOLOR%
     && ( TARGET.Memory >= RequestMemory ) # %RED% Make sure the computer has enough memory %ENDCOLOR%
     && ( TARGET.HasFileTransfer )# %RED% Only run on a computer that can accept your files. %ENDCOLOR%
-</pre>
+</code></pre>
 
 What else can you find that's interesting in the !ClassAd?
 
----++ Removing jobs
+## Removing jobs
 
 If you submit a job that you realize has a problem, you can remove it with =condor_rm=. For example: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_q
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
@@ -100,23 +100,24 @@ $ condor_q
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
 0 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
-</pre>
+</code></pre>
 
 A few tips:
 
    * You can remove all of your jobs with the -all option.
    * You can't remove other users jobs.
-   * There are [[http://www.cs.wisc.edu/condor/manual/v8.0/condor_rm.html][fancy options to condor_rm]].  
+   * There are [fancy options to condor_rm](http://www.cs.wisc.edu/condor/manual/v8.0/condor_rm.html).  
 
----++ Historical information
-You can see information about jobs that completed and are no longer in the queue with the =condor_history_ command. It's rare that you want to see *all* the jobs, so try looking at jobs for just you:
+## Historical information
 
-<pre style="margin-left:4em" class="screen">
+You can see information about jobs that completed and are no longer in the queue with the <code>condor_history</code> command. It's rare that you want to see *all* the jobs, so try looking at jobs for just you:
+
+<pre><code>
 condor_history %UCL_USER%
-</pre>
+</code></pre>
 
 For example:
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_history kagross
    9.9   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 9 9
    9.8   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 8 9
@@ -131,6 +132,4 @@ $ condor_history kagross
    9.4   kagross         7/31 12:44   0+00:00:01 C   7/31 12:44 /home/kagross/simple 4 9
    8.0   kagross         7/31 12:42   0+00:00:07 C   7/31 12:42 /home/kagross/simple 4 10
 ...
-</pre>
-
--- Main.RobQ - 02 Aug 2016
+</code></pre>
