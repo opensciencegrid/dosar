@@ -3,7 +3,7 @@
 ## Thursday Morning - Computational Infrastructures - Session 1
 
    * Welcome and Introduction - The Landscape of Academic Research Computing
-   * Lecture #1 (Attach Slides Here)
+   * Lecture 1 (Attach Slides Here)
    * [Introduction](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Introduction.md) 
    * [Our Job Manager (HTCondor)](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/OurJobManager.md)
    * Your First Managed Job
@@ -11,14 +11,14 @@
    
 ## Thursday Morning - Computational Infrastrcutures - Session 2
 
-   * Lecture #2 (Attach Slides Here)
+   * Lecture 2 (Attach Slides Here)
    * A script job
    * An R job
    * Working with file I/O
    
 ## Thursday Afternoon - Computational Infrastructures - Session 3
 
-   * Lecture #3 (Attach Slides Here)
+   * Lecture 3 (Attach Slides Here)
    * A brief detour through the Mandlebrot set
    * Coordinating sets of jobs: A simple DAG
    * A more complex DAG
@@ -30,7 +30,7 @@
    
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
 
-   * Lecture #4 (Attach Slides Here)
+   * Lecture 4 (Attach Slides Here)
    * Disclipline specific tutorials
    * Containers with Singularity
    
