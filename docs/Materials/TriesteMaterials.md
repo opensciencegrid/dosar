@@ -7,7 +7,7 @@
    * [Introduction](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/01-Introduction.md) 
    * [Our Job Manager (HTCondor)](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/02-OurJobManager.md)
    * [Your First Managed Job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md)
-   * A few tips and tricks
+   * [A few tips and tricks](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/04-TipsandTricks.md)
    
 ## Thursday Morning - Computational Infrastrcutures - Session 2
 
