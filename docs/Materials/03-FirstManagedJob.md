@@ -47,7 +47,7 @@ int main(int argc, char **argv)
     }
     return failure;
 }
-<code></pre>
+</code></pre>
 
 Now compile that program.: 
 
