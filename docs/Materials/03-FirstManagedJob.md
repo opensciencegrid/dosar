@@ -13,11 +13,12 @@ First, create a file called simple.c using your favorite editor. Put it anywhere
 
 <pre><code>
 $ mkdir -p ~/condor-test 
-$ cd ~/condor-test</pre>
+$ cd ~/condor-test
+</pre>
 
 Use your preferred text editor to create this C program. (Shown below with nano.)
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ nano simple.c
 </code></pre>
 
@@ -69,10 +70,10 @@ Great! You have a job run locally on the machine you are logged into =training.o
 
 Think back to the lecture. I said that our first step was to have a job to run. Now we'll work on running it in Condor, and eventually running lots of copies of it.
 
----++ Submitting your job
+## Submitting your job
 Now that you have a job, you just have to tell Condor to run it. Put the following text into a file called =submit=: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 Universe   = vanilla
 Executable = simple
 Arguments  = 4 10
@@ -83,7 +84,7 @@ Error      = simple.error
 should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
-</pre>
+<code></pre>
 
 Let's examine each of these lines:
 
@@ -98,15 +99,15 @@ Let's examine each of these lines:
 
 Next, tell Condor to run your job: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_submit submit
 Submitting job(s).
 1 job(s) submitted to cluster 16.
-</pre>
+</code></pre>
 
 Now, watch your job run: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_q %UCL_USER%
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
@@ -129,13 +130,13 @@ $ condor_q %UCL_USER%
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
-</pre>
+</code></pre>
 
 *Tip*: if you see lots of jobs running that aren't yours (because your classmates are busy), jump ahead to [[https://twiki.grid.iu.edu/bin/view/Operations/HTCReviewCondorTips]["A few tips and tricks"]] to learn how to look at just your jobs and no others.
 
- When my job was done, it was no longer listed. Because I told Condor to log information about my job, I can see what happened: 
+When my job was done, it was no longer listed. Because I told Condor to log information about my job, I can see what happened: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ cat simple.log
 000 (032.000.000) 08/18 15:18:13 Job submitted from host: <10.0.0.252:9645>
 ...
@@ -158,23 +159,23 @@ $ cat simple.log
 	Partitionable Resources :    Usage  Request Allocated
 	   Cpus                 :                 1         1
 	   Disk (KB)            :       15        7  17605109
-	   Memory (MB)          :        0        1      1909
-</pre>
+	   Memory (MB)          :        0        1      1900
+</code></pre>
 
 That looks good: the job started up quickly, though you will often see slightly slower startups. Condor doesn't optimize for fast job startup, but for high throughput, The job ran for four seconds. 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ cat simple.out
 Thinking really hard for 4 seconds...
 We calculated: 20
-</pre>
+</code></pre>
 
 Excellent! We ran our sophisticated scientific job on a Condor pool! We've only run one job though. Can we run more?
 
----++ Doing a parameter sweep
+## Doing a parameter sweep
 If you only ever had to run a single job, you probably wouldn't need Condor. But we would like to have our program calculate a whole set of values for different inputs. How can we do that? Let's change our submit file to look like this: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 Universe   = vanilla
 Executable = simple
 +ProjectName = "DataTrieste"
@@ -191,11 +192,11 @@ Queue
 
 Arguments = 4 12
 Queue
-</pre>
+</code></pre>
 
 There are two important differences to notice here. First, the Log, Output and Error lines have the $(Process) macro in them. This means that the output and error files will be named according to the process number of the job. You'll see what this looks like in a moment. Second, we told Condor to run the same job an extra two times by adding extra Arguments and Queue statements. We are doing a parameter sweep on the values 10, 11, and 12. Let's see what happens: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_submit submit
 Submitting job(s)...
 3 job(s) submitted to cluster 18.
@@ -240,45 +241,43 @@ We calculated: 22
 $ cat simple.2.out
 Thinking really hard for 4 seconds...
 We calculated: 24
-</pre>
+</code></pre>
 
 Notice that we had three jobs with the same cluster number, but different process numbers. They have the same cluster number because they were all submitted from the same submit file. When the jobs ran, they created three different output files, each with the desired output.
 
-You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at [[http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html][the documentation for condor_submit]].
+You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at [the documentation for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html).
 
----++ On your own
+## On your own
 
 Now that you've gotten your feet wet, try a few things on your own.
 
----+++ Just one log file
+### Just one log file
 
 There's no reason to have a separate log file for each job. Change your submit file so that it uses a single log file. Does it all still work?
 
----+++ New outputs for each run
+### New outputs for each run
 
 You might have noticed that the output files were over-written when you re-ran the jobs. (That is, =simple.1.out= was just re-written.) That was okay for a simple exercise, but it might be very bad if you had wanted to keep around the results. Maybe you changed a parameter or rebuilt your program, and you want to compare the outputs.
 
 Just like you used =$(Process)=, you can also use =$(Cluster)=. This will be a number from your job ID. For example, it would be 60282 from the above example. Change your submit file to use =$(Cluster)= and =$(Process)=. If you do two job submissions, will you have separate output files?
 
----+++ Lots of jobs
+### Lots of jobs
 
 Instead of specifying the Arguments multiple times with multiple =queue= statements, try this:
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 Arguments = $(Process) $(Cluster)
 queue 10
-</pre>
+</code></pre>
 
 What does it mean? What happens? Does it work as you expect?
 
 (An aside: you might wish to be able to do math, something like =$(Process)+1=. Unfortunately, you can't do that.)
 
----++ Challenges
+## Challenges
 
-If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the [[http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html][manual page for condor_submit]]) to find answers. Feel free to ask Rob--he'd love to give you hints!
+If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the [manual page for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html)) to find answers. Feel free to ask Rob--he'd love to give you hints!
 
-   * Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option [[http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html][described in the manual]]. This will let you specify a directory for the input to the program. You can run specify the initialdir with $(Process). You can specify extra files to copy with =transfer_input_files=. Now you're really learning the basics of running something like a real scientific job!
+   * Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option [described in the manual](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html). This will let you specify a directory for the input to the program. You can run specify the initialdir with $(Process). You can specify extra files to copy with =transfer_input_files=. Now you're really learning the basics of running something like a real scientific job!
    * Condor can send you email when a job finishes. How can you control this? 
    * You know that your job should never run for more than four hours. If it does, then the job should be killed because there is a problem. How can you tell Condor to do this for you? 
-
--- Main.RobQ - 02 Aug 2016
