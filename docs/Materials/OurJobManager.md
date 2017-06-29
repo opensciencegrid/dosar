@@ -24,31 +24,30 @@ There are two things you should note:
 <div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
 *Extra Tip: The OS version*
 
-%TWISTY{%TWISTY_OPTS_M
 Do you know how to find the OS version? You can usually look in /etc/issue to find out:
 
-<pre style="margin-left:2em" class="screen">
+<pre><code>
 $ cat /etc/issue
 Scientific Linux release 6.8 (Carbon)
 Kernel \r on an \m
-</pre>
+</code></pre>
 
 Or you can run:
-<pre style="margin-left:2em" class="screen">
+<pre><code>
 $ lsb_release -a
 LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
 Distributor ID:	Scientific
 Description:	Scientific Linux release 6.8 (Carbon)
 Release:	6.8
 Codename:	Carbon
-</pre>
-%ENDTWISTY%
+</code></pre>
+
 
 </div>
 
 Where is Condor installed? 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ which condor_q
 /usr/bin/condor_q
 
@@ -67,19 +66,19 @@ $ rpm -ql condor | head -10
 /etc/rc.d/init.d/condor
 /etc/sysconfig/condor
 /usr/bin/condor_check_userlogs
-</pre>
+</code></pre>
 
-Condor has some configuration files that it needs to find. They are in the standard location, =/etc/condor=
+Condor has some configuration files that it needs to find. They are in the standard location, <code>/etc/condor</code>
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ ls /etc/condor
 99-gratia.conf	condor_config.local			config.d      ganglia.d			 passwdfile
 condor_config	condor_ssh_to_job_sshd_config_template	config.d.tgz  other_condor_config_files  passwdfile.daemon
-</pre>
+</code></pre>
 
 Condor has some directories that it keeps records of jobs in. Remember that each submission computer keeps track of all jobs submitted to it. That's in the local directory: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_config_val -v LOCAL_DIR
 LOCAL_DIR = /var
  # at: /etc/condor/condor_config, line 26
@@ -87,12 +86,12 @@ LOCAL_DIR = /var
 
 $ ls -CF /var/lib/condor
 execute/  spool/
-</pre>
+</code></pre>
 
 The spool directory is where Condor keeps the jobs you submit, while the execute directory is where Condor keeps running jobs. Since this is a submission-only computer, it should be empty.
 
 Check if Condor is running: 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $  ps auwx --forest | grep condor_ | grep -v grep
 jtqv84    5997 50.0  0.0 238996 17012 ?        Ss   15:05   0:11          \_ /usr/bin/python /home/jtqv84/bundle_probe/condor_slot2site
 jtqv84    6092 35.5  0.8 494484 405256 ?       R    15:05   0:08              \_ condor_status -pool osg-flock.grid.iu.edu -l
@@ -104,7 +103,7 @@ root     11176  1.4  0.1  77964 58312 ?        S    Jun08 755:03  \_ condor_proc
 condor   11186  0.0  0.0 106884  6844 ?        Ss   Jun08  43:26  \_ condor_collector -f
 condor   11223  8.4  1.4 1345192 701328 ?      Ss   Jun08 4263:55  \_ condor_schedd -f
 ...
-</pre>
+</code></pre>
 
 For the version of Condor there are four processes running: the condor_master, the condor_schedd, the condor_procd, and condor_shared_negotiator. In general, you might see many different Condor processes. Here's a list of the processes:
 
@@ -113,10 +112,10 @@ For the version of Condor there are four processes running: the condor_master, t
    * *condor_procd:* This process helps Condor track process (from jobs) that it creates
    * *condor_collector:* This program is part of the Condor central manager. It collects information about all computers in the pool as well as which users want to run jobs. It is what normally responds to the condor_status command. At the school, it is running on a different computer, and you can figure out which one: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_config_val COLLECTOR_HOST
 192.170.227.195
-</pre>
+</code></pre>
 
    * *condor_negotiator:* This program is part of the Condor central manager. It decides what jobs should be run where. It is run on the same computer as the collector.
    * *condor_startd:* If this program is running, it allows jobs to be started up on this computer--that is, your computer is an "execute machine". This advertises your computer to the central manager so that it knows about this computer. It will start up the jobs that run.
@@ -124,11 +123,11 @@ $ condor_config_val COLLECTOR_HOST
    * *condor_shared_port:* Used to assist Condor with networking by allowing multiple Condor processes to share a single network port. 
 
 
----++ condor_q
+## condor_q
 
 You can find out what jobs have been submitted on your computer with the condor_q command: 
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_q
 -- Submitter: login01.osgconnect.net : <192.170.227.195:49053> : login01.osgconnect.net
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -141,7 +140,7 @@ $ condor_q
 ...   
 
 2555 jobs; 34 completed, 4 removed, 1276 idle, 525 running, 716 held, 0 suspended
-</pre>
+</code></pre>
 
 The output that you see will be different depending on what jobs are running. Notice what we can see from this:
 
@@ -157,7 +156,6 @@ The output that you see will be different depending on what jobs are running. No
 <div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
 *Extra Tip*
 
-%TWISTY{%TWISTY_OPTS_MORE%}%
 What else can you find out with condor_q? Try any one of:
 
    * man condor_q
@@ -167,20 +165,19 @@ What else can you find out with condor_q? Try any one of:
 *Double bonus points*
 
 How do you use the -constraint or -format options to condor_q? When would you want them? When would you use the -l option? This might be an easier exercise to try once you submit some jobs.
-%ENDTWISTY%
 </div>
 
----++ condor_status
+## condor_status
 
 You can find out what computers are in your Condor pool. (A pool is similar to a cluster, but it doesn't have the connotation that all computers are dedicated full-time to computation: some may be desktop computers owned by users.) To look, use condor_status:
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 $ condor_status 
-</pre>
+</code></pre>
 
 This will be blank on the training.osgconnect.net as it "flocks" jobs to another node for matching to the appropriate pool of resources. If there were a HTCondor pool directly attached you would see something like this:
 
-<pre style="margin-left:4em" class="screen">
+<pre><code>
 Name               OpSys      Arch   State     Activity LoadAv Mem   ActvtyTime
 
 slot1@frontal.cci. LINUX      X86_64 Claimed   Busy      0.000 1909  0+00:00:04
@@ -196,7 +193,7 @@ slot4@node2.cci.uc LINUX      X86_64 Claimed   Busy      0.000  469  0+00:00:07
         X86_64/LINUX        8     0       8         0       0          0
 
                Total        8     0       8         0       0          0
-</pre>
+</code></pre>
 
 Let's look at exactly what you can see:
 
@@ -212,7 +209,6 @@ Let's look at exactly what you can see:
 <div style="margin-left: 1em; margin-right: 1em; background-color: #ffff66; border: 1px solid black; padding: 0.5em;">
 *Extra credit*
 
-%TWISTY{%TWISTY_OPTS_MORE%}%
 What else can you find out with condor_status? Try any one of:
 
    * man condor_status
@@ -220,7 +216,4 @@ What else can you find out with condor_status? Try any one of:
    * [[http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html][condor_status from the online manual]]
 
 Note in particular the options like -master and -schedd. When would these be useful? When would the -l option be useful? 
-%ENDTWISTY%
 </div>
-
--- Main.RobQ - 01 Aug 2016
