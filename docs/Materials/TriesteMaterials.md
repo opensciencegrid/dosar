@@ -12,8 +12,8 @@
 ## Thursday Morning - Computational Infrastrcutures - Session 2
 
    * Lecture 2 (Attach Slides Here)
-   * A script job
-   * An R job
+   * [A scripting job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/05-ScriptingJob.md)
+   * [An R Job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/06-RJob.md)
    * Working with file I/O
    
 ## Thursday Afternoon - Computational Infrastructures - Session 3
