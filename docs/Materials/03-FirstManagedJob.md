@@ -14,7 +14,7 @@ First, create a file called simple.c using your favorite editor. Put it anywhere
 <pre><code>
 $ mkdir -p ~/condor-test 
 $ cd ~/condor-test
-</pre>
+</code></pre>
 
 Use your preferred text editor to create this C program. (Shown below with nano.)
 
