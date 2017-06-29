@@ -5,7 +5,7 @@
    * Welcome and Introduction - The Landscape of Academic Research Computing
    * Lecture #1 (Attach Slides Here)
    * [Introduction](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Introduction.md) 
-   * Our Job Manager (HTCondor)
+   * [Our Job Manager (HTCondor)](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/OurJobManager.md)
    * Your First Managed Job
    * A few tips and tricks
    
