@@ -259,7 +259,7 @@ There's no reason to have a separate log file for each job. Change your submit f
 
 You might have noticed that the output files were over-written when you re-ran the jobs. (That is, =simple.1.out= was just re-written.) That was okay for a simple exercise, but it might be very bad if you had wanted to keep around the results. Maybe you changed a parameter or rebuilt your program, and you want to compare the outputs.
 
-Just like you used =$(Process)=, you can also use =$(Cluster)=. This will be a number from your job ID. For example, it would be 60282 from the above example. Change your submit file to use =$(Cluster)= and =$(Process)=. If you do two job submissions, will you have separate output files?
+Just like you used <code>$(Process)</code>, you can also use <code>$(Cluster)</code>. This will be a number from your job ID. For example, it would be 60282 from the above example. Change your submit file to use <code>$(Cluster)</code> and <code>$(Process)</code>. If you do two job submissions, will you have separate output files?
 
 ### Lots of jobs
 
