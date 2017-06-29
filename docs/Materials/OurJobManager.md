@@ -206,7 +206,7 @@ What else can you find out with condor_status? Try any one of:
 
    * man condor_status
    * condor_status -help
-   * [[http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html][condor_status from the online manual]]
+   * [condor_status from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html)
 
 Note in particular the options like -master and -schedd. When would these be useful? When would the -l option be useful? 
 
