@@ -31,7 +31,7 @@
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
 
    * Lecture 4 (Attach Slides Here)
-   * Disclipline specific tutorials
+   * [Disclipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-DisciplineTutorials.md)
    * Containers with Singularity
    
 ## Friday Morning - Computational Infrastructures - Session 5
