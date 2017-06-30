@@ -135,16 +135,21 @@ Watch with condor_q:
 
 ```
 $ watch -n 10 condor_q %UCL_USER%
+```
 
 Here we see DAGMan running:
+
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:10 R  0   0.3  condor_dagman
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
-
+```
 
 DAGMan has submitted the goatbrot jobs, but they haven't started running yet:
+
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID	 OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
   68.0   kagross         8/19 11:38   0+00:00:10 R  0   0.3  condor_dagman
@@ -154,8 +159,11 @@ DAGMan has submitted the goatbrot jobs, but they haven't started running yet:
   72.0   kagross         8/19 11:38   0+00:00:00 I  0   0.0  goatbrot -i 100000
 
 6 jobs; 0 completed, 0 removed, 4 idle, 2 running, 0 held, 0 suspended
+```
 
 They're running!
+
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:15 R  0   0.3  condor_dagman
@@ -165,8 +173,11 @@ They're running!
   72.0   kagross         8/19 11:38   0+00:00:05 R  0   0.0  goatbrot -i 100000
 
 5 jobs; 0 completed, 0 removed, 0 idle, 5 running, 0 held, 0 suspended
+```
 
 Two of the jobs have finished, while the others are still running:
+
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:20 R  0   0.3  condor_dagman
@@ -174,22 +185,30 @@ Two of the jobs have finished, while the others are still running:
   72.0   kagross         8/19 11:38   0+00:00:10 R  0   0.0  goatbrot -i 100000
 
 3 jobs; 0 completed, 0 removed, 0 idle, 3 running, 0 held, 0 suspended
+```
 
 They finished, but DAGMan hasn't noticed yet. It only checks periodically:
+
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:30 R  0   0.3  condor_dagman
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
+```
 
 DAGMan submitted and ran the montage job. It ran so fast I didn't capture it running. DAGMan will finish up soon
+
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:01:01 R  0   0.3  condor_dagman
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
+```
 
 Now it's all done:
+```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
