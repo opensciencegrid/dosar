@@ -25,7 +25,7 @@
    
 ### Challenge Exercises on DAGs
 
-   * Handling jobs that fail
+   * [Handling jobs that fail](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/11-HandlingFailure.md)
    * Variable Substitution
    
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
