@@ -10,8 +10,14 @@ We have a simple program that can draw the Mandlebrot set. It's called =goatbrot
 
 You can generate the Mandlebrot set with two simple commands. 
 
-   1. Generate a PPM image of the Mandlebrot set `$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000`
-   1. Add the Fast Fourier Transform package `$ module load fftw`
+   1. Generate a PPM image of the Mandlebrot set 
+```
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
+```
+   1. Add the Fast Fourier Transform package 
+```
+$ module load fftw
+```
    1. Convert it to a JPEG image and write into your home directory `$ /stash/user/rquick/public/goatbrot-master/convert tile_000000_000000.ppm ~/mandle.gif`
    1. Open a new terminal window and move the file to local machine for viewing `$ scp %UCL_USER%@training.osgconnect.net:/share/training/%UCL_USER%/mandle.gif ./`
    1. Point Browser at the file URL `file:////afs/ictp.it/home/THE_FIRST_LETTER_OF_YOUR_ICTP_UID/YOUR_ICTP_UID/mandle.gif`
