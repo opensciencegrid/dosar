@@ -110,7 +110,7 @@ DONE g3
 DONE g4
 ```
 
-From the comment near the top, we know that the montage node failed. Let's fix it by getting rid of the offending =-h= argument. Change montage.sub to look like:
+From the comment near the top, we know that the montage node failed. Let's fix it by getting rid of the offending `-h` argument. Change montage.sub to look like:
 
 ```
 universe                = vanilla
