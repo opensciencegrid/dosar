@@ -10,7 +10,7 @@ Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's
 ```
 universe                = vanilla
 executable              = montage_wrapper.sh
-arguments               = %RED%-h%ENDCOLOR% tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
+arguments               = -h tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
@@ -71,7 +71,7 @@ In a separate window, use `tail --lines=500 -f goatbrot.dag.dagman.out` to watch
 06/22/12 18:08:42 Number of idle job procs: 0
 06/22/12 18:08:42 Event: ULOG_IMAGE_SIZE for Condor Node montage (82.0.0)
 06/22/12 18:08:42 Event: ULOG_JOB_TERMINATED for Condor Node montage (82.0.0)
-%RED%06/22/12 18:08:42 Node montage job proc (82.0.0) failed with status 1.%ENDCOLOR%
+06/22/12 18:08:42 Node montage job proc (82.0.0) failed with status 1.
 06/22/12 18:08:42 Number of idle job procs: 0
 06/22/12 18:08:42 Of 5 nodes total:
 06/22/12 18:08:42  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
