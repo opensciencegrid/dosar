@@ -170,7 +170,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:51:29 MultiLogFiles: truncating log file /home/roy/condor/simple.log
 06/21/12 22:51:29 Submitting Condor Node Simple job(s)...
 
-<p style="color:red;">Here's where the job is submitted</p>
+#Here's where the job is submitted
 06/21/12 22:51:29 submitting: condor_submit 
                               -a dag_node_name' '=' 'Simple 
                               -a +DAGManJobId' '=' '61 
@@ -193,7 +193,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:51:30 0 job proc(s) currently held
 06/21/12 22:55:05 Currently monitoring 1 Condor log file(s)
 
-%RED%Here's where DAGMan noticed that the job is running%ENDCOLOR%
+#Here's where DAGMan noticed that the job is running
 06/21/12 22:55:05 Event: ULOG_EXECUTE for Condor Node Simple (62.0.0)
 06/21/12 22:55:05 Number of idle job procs: 0
 06/21/12 22:55:10 Currently monitoring 1 Condor log file(s)
@@ -201,7 +201,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05 Currently monitoring 1 Condor log file(s)
 06/21/12 22:56:05 Event: ULOG_IMAGE_SIZE for Condor Node Simple (62.0.0)
 
-%RED%Here's where DAGMan noticed that the job  finished.%ENDCOLOR%
+#Here's where DAGMan noticed that the job  finished.
 06/21/12 22:56:05 Event: ULOG_JOB_TERMINATED for Condor Node Simple (62.0.0)
 06/21/12 22:56:05 Node Simple job proc (62.0.0) completed successfully.
 06/21/12 22:56:05 Node Simple job completed
@@ -212,7 +212,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05     1       0        0       0       0          0        0
 06/21/12 22:56:05 0 job proc(s) currently held
 
-%RED%Here's where DAGMan noticed that all the work is done.%ENDCOLOR%
+#Here's where DAGMan noticed that all the work is done.
 06/21/12 22:56:05 All jobs Completed!
 06/21/12 22:56:05 Note: 0 total job deferrals because of -MaxJobs limit (0)
 06/21/12 22:56:05 Note: 0 total job deferrals because of -MaxIdle limit (0)
