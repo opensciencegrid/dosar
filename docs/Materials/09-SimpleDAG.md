@@ -170,7 +170,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:51:29 MultiLogFiles: truncating log file /home/roy/condor/simple.log
 06/21/12 22:51:29 Submitting Condor Node Simple job(s)...
 
-%RED%Here's where the job is submitted%ENDCOLOR%
+<p style="color:red;">Here's where the job is submitted</p>
 06/21/12 22:51:29 submitting: condor_submit 
                               -a dag_node_name' '=' 'Simple 
                               -a +DAGManJobId' '=' '61 
