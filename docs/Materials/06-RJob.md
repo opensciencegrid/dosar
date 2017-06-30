@@ -74,7 +74,7 @@ comb <- factorial(52)
 print(comb, digits = 21)
 ```
 
-This program prints the first 100 [[http://en.wikipedia.org/wiki/Fibonacci_number][Fibonacci numbers]]. These are the numbers that show up in the weirdest places, like pineapples and sunflowers. It's a sequence of numbers beginning with 0, 1, 1, 2, 3, 5, 8... where each successive number is the sum of the previous two numbers. It also prints 52 factorial, which is the number of possible combinations of a standard 52-card deck (not including the jokers, of course). 
+This program prints the first 100 [Fibonacci numbers](http://en.wikipedia.org/wiki/Fibonacci_number). These are the numbers that show up in the weirdest places, like pineapples and sunflowers. It's a sequence of numbers beginning with 0, 1, 1, 2, 3, 5, 8... where each successive number is the sum of the previous two numbers. It also prints 52 factorial, which is the number of possible combinations of a standard 52-card deck (not including the jokers, of course). 
 
 R is a bit fussy about where it's been installed on disk, so I had to write a wrapper program so it will happily run wherever it lands in our cluster. I could make you work it out, but that seems unfair. Save this program in run-r.sh. If you're curious about exactly why it's needed, ask Rob. There are two important parts to it, and you should know what they are, at least conceptually because this is the magic you would need to do for any run-time environment you want to bring along.
 
