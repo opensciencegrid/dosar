@@ -5,7 +5,7 @@ The objective of this exercise is to help you learn how DAGMan deals with job fa
 
 DAGMan can handle a situation where some of the nodes in a DAG fails. DAGMan will run as many nodes as possible, then create a rescue DAG making it easy to continue when the problem is fixed.
 
-Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a =-h= to the arguments. It will look like this (the change is highlighted in red):
+Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is highlighted in red):
 
 ```
 universe                = vanilla
