@@ -21,7 +21,7 @@
    * Lecture 3 (Attach Slides Here)
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md)
    * [Coordinating sets of jobs: A simple DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/09-SimpleDAG.md)
-   * A more complex DAG
+   * [A more complex DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/10-ComplexDAG.md)
    
 ### Challenge Exercises on DAGs
 
