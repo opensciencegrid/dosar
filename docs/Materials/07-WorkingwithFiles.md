@@ -8,7 +8,7 @@ So far, we've done really simple examples where the entire input to the program 
 
 First, let's make a program, call it =analyze.sh= that analyzes a text file that it is provided on the command-line.
 
-````
+```
 #!/bin/sh
 
 if [ $# -ne 1 ]; then
