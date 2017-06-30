@@ -57,7 +57,7 @@ $ module load R
 
 You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called =demo.r=:
 
-<pre style="margin-left:4em" class="screen">
+```
 len <- 100
 fibvals <- numeric(len)
 fibvals[1] <- 1
@@ -72,8 +72,7 @@ for (i in 1:len) {
 print("Number of possible combinations of cards in a 52 card deck:")
 comb <- factorial(52)
 print(comb, digits = 21)
-
-</pre>
+```
 
 This program prints the first 100 [[http://en.wikipedia.org/wiki/Fibonacci_number][Fibonacci numbers]]. These are the numbers that show up in the weirdest places, like pineapples and sunflowers. It's a sequence of numbers beginning with 0, 1, 1, 2, 3, 5, 8... where each successive number is the sum of the previous two numbers. It also prints 52 factorial, which is the number of possible combinations of a standard 52-card deck (not including the jokers, of course). 
 
@@ -82,7 +81,7 @@ R is a bit fussy about where it's been installed on disk, so I had to write a wr
    1. Load the R environment using =module=. In general you might have to do more work. 
    1. Invoke R, using whatever magic is needed. In our case, I set up some environment variables and invoke the right executable.
 
-<pre style="margin-left:4em" class="screen">
+```
 #!/bin/sh -x
 
 if [ $# -ne 1 ]; then
@@ -96,21 +95,21 @@ module load R
 
 # Step 2, Invoke R with the proper environment
 R --slave --vanilla < $1
-</pre>
+```
 
 You could easily execute this on OSG Connect locally by making the shell script executable and executing it.
 
-<pre style="margin-left:4em" class="screen">
+```
 $ chmod 755 run-r.sh
 $ ./run-r.sh demo.r
-</pre>
+```
 
----++ On your own
+## On your own
 Write a Condor submit file that will use R to run the demo.r program. You will need to include the following line in your submit file (before the "queue" statement) to make sure that Condor looks for a resource that uses OASIS:
 
-<pre>
+```
 requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
-</pre>
+```
 
 Make sure you get back the output. Make sure you transfer the program. 
 
