@@ -19,7 +19,7 @@
 ## Thursday Afternoon - Computational Infrastructures - Session 3
 
    * Lecture 3 (Attach Slides Here)
-   * A brief detour through the Mandlebrot set
+   * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md)
    * Coordinating sets of jobs: A simple DAG
    * A more complex DAG
    
