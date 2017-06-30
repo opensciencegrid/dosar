@@ -5,16 +5,16 @@ The objective of this exercise is to run a real set of jobs with DAGMan.
 
 ## Make your job submission files
 
-We'll run our `goatbrot` example. If you didn't read about it yet, [[HTCReviewMandlebrot][please do so now]]. We are going to make a DAG with four simultaneous jobs (`goatbrot`) and one final node to stitch them together (`montage`). This means we have five jobs. We're going to run `goatbrot` with more iterations (100,000) so it will take longer to run. 
+We'll run our `goatbrot` example. If you didn't read about it yet, [please do so now](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md). We are going to make a DAG with four simultaneous jobs (`goatbrot`) and one final node to stitch them together (`montage`). This means we have five jobs. We're going to run `goatbrot` with more iterations (100,000) so it will take longer to run. 
 
 You can create your five jobs. The goatbrot jobs very similar to each other, but they have slightly different parameters and output files. 
 
 I have placed the goatbrot executable in my public directory: /stash/user/rquick/public/goatbrot-master/goatbrot
 
 
----+++ goatbrot1.sub
+### goatbrot1.sub
 
-<pre style="margin-left:4em" class="screen">
+```
 executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c -0.75,0.75 -w 1.5 -s 500,500 -o tile_0_0.ppm
 log                     = goatbrot.log
@@ -23,11 +23,11 @@ error                   = goatbrot.err.0.0
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
-</pre>
+```
 
----+++ goatbrot2.sub
+### goatbrot2.sub
 
-<pre style="margin-left:4em" class="screen">
+```
 executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c 0.75,0.75 -w 1.5 -s 500,500 -o tile_0_1.ppm
 log                     = goatbrot.log
@@ -36,11 +36,11 @@ error                   = goatbrot.err.0.1
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
-</pre>
+```
 
----+++ goatbrot3.sub
+### goatbrot3.sub
 
-<pre style="margin-left:4em" class="screen">
+```
 executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c -0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_0.ppm
 log                     = goatbrot.log
@@ -49,11 +49,11 @@ error                   = goatbrot.err.1.0
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
-</pre>
+```
 
----+++ goatbrot4.sub
+### goatbrot4.sub
 
-<pre style="margin-left:4em" class="screen">
+```
 executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
 arguments               = -i 100000 -c 0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_1.ppm
 log                     = goatbrot.log
@@ -62,16 +62,16 @@ error                   = goatbrot.err.1.1
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
-</pre>
+```
 
----+++ montage.sub
+### montage.sub
 
 You should notice a few things about the montage submission file:
 
-   1. The =transfer_input_files= statement refers to the files created by the other jobs. 
+   1. The `transfer_input_files` statement refers to the files created by the other jobs. 
    1. We do *not* transfer the montage program because it is on OASIS.
 
-<pre style="margin-left:4em" class="screen">
+```
 universe                = vanilla
 executable              = wrapper_montage.sh
 arguments               = tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
@@ -83,37 +83,38 @@ output                  = montage.out
 error                   = montage.err
 log                     = montage.log
 queue
-</pre>
+```
 
----+++ wrapper_montage.sh
+### wrapper_montage.sh
 
 Because we are using OASIS, we will need to create a wrapper script to load the ImageMagick module so that we can use it to create the montage.
 
-<pre style="margin-left:4em" class="screen">
+```
 source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
 module load imagemagick
 montage tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
-</pre>
----++ Make your DAG
+```
+
+## Make your DAG
 
 In a file called =goatbrot.dag=, you have your DAG specification:
 
-<pre style="margin-left:4em" class="screen">
+```
 JOB g1 goatbrot1.sub
 JOB g2 goatbrot2.sub
 JOB g3 goatbrot3.sub
 JOB g4 goatbrot4.sub
 JOB montage montage.sub
 PARENT g1 g2 g3 g4 CHILD montage
-</pre>
+```
 
 Ask yourself: do you know how we ensure that all the =goatbrot= commands can run simultaneously and all of them will complete before we run the montage job?
 
----++ Running the DAG
+## Running the DAG
 
 Submit your DAG:
 
-<pre style="margin-left:4em" class="screen">
+```
 $ condor_submit_dag goatbrot.dag
 -----------------------------------------------------------------------
 File for submitting this DAG to Condor           : goatbrot.dag.condor.sub
@@ -126,16 +127,16 @@ Submitting job(s).
 1 job(s) submitted to cluster 71.
 
 -----------------------------------------------------------------------
-</pre>
+```
 
----++ Watch your DAG
+## Watch your DAG
 
 Watch with condor_q:
 
-<pre style="margin-left:4em" class="screen">
+```
 $ watch -n 10 condor_q %UCL_USER%
 
-%RED%Here we see DAGMan running:%ENDCOLOR%
+Here we see DAGMan running:
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:10 R  0   0.3  condor_dagman
@@ -143,7 +144,7 @@ $ watch -n 10 condor_q %UCL_USER%
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 
 
-%RED%DAGMan has submitted the goatbrot jobs, but they haven't started running yet:%ENDCOLOR%
+DAGMan has submitted the goatbrot jobs, but they haven't started running yet:
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID	 OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
   68.0   kagross         8/19 11:38   0+00:00:10 R  0   0.3  condor_dagman
@@ -154,7 +155,7 @@ $ watch -n 10 condor_q %UCL_USER%
 
 6 jobs; 0 completed, 0 removed, 4 idle, 2 running, 0 held, 0 suspended
 
-%RED%They're running!%ENDCOLOR%
+They're running!
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:15 R  0   0.3  condor_dagman
@@ -165,7 +166,7 @@ $ watch -n 10 condor_q %UCL_USER%
 
 5 jobs; 0 completed, 0 removed, 0 idle, 5 running, 0 held, 0 suspended
 
-%RED%Two of the jobs have finished, while the others are still running:%ENDCOLOR%
+Two of the jobs have finished, while the others are still running:
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:20 R  0   0.3  condor_dagman
@@ -174,30 +175,30 @@ $ watch -n 10 condor_q %UCL_USER%
 
 3 jobs; 0 completed, 0 removed, 0 idle, 3 running, 0 held, 0 suspended
 
-%RED%They finished, but DAGMan hasn't noticed yet. It only checks periodically:%ENDCOLOR%
+They finished, but DAGMan hasn't noticed yet. It only checks periodically:
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:00:30 R  0   0.3  condor_dagman
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 
-%RED%DAGMan submitted and ran the montage job. It ran so fast I didn't capture it running. DAGMan will finish up soon %ENDCOLOR%
+DAGMan submitted and ran the montage job. It ran so fast I didn't capture it running. DAGMan will finish up soon
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
   68.0   kagross         8/19 11:38   0+00:01:01 R  0   0.3  condor_dagman
 
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 
-%RED%Now it's all done:%ENDCOLOR%
+Now it's all done:
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
-</pre>
+```
 
 Examine your results. For some reason, goatbrot prints everything to stderr, not stdout. 
 
-<pre style="margin-left:4em" class="screen">
+```
 $ cat goatbrot.err.0.0
 Complex image:
             Center: -0.75 + 0.75i
@@ -220,29 +221,27 @@ Goatbrot:
     Multithreading: not supported in this build
 
 Completed: 100.0%  
-</pre>
+```
 
-Examine your log files (=goatbrot.log= and =montage.log=) and DAGMan output file (=goatbrot.dag.dagman.out=). Do they look as you expect? Can you see the progress of the DAG in the DAGMan output file?
+Examine your log files (`goatbrot.log` and `montage.log`) and DAGMan output file (`goatbrot.dag.dagman.out`). Do they look as you expect? Can you see the progress of the DAG in the DAGMan output file?
 
-Does your final Mandlebrot image (=mandle.gif=) look correct? To view it we can use Stash.
+Does your final Mandlebrot image (`mandle.gif`) look correct? To view it we can use Stash.
 
-<pre style="margin-left:4em" class="screen">
+```
 $ cp mandle.gif ~/stash/public/
-</pre>
+```
 
 And now you can go to http://stash.osgconnect.net/~%UCL_USER% . You will see mandle.gif listed.  You can click on it to view it.
 
 Clean up your results. Be careful about deleting the goatbrot.dag.* files, you do not want to delete the goatbrot.dag file, just goatbrot.dag.* . 
 
-<pre style="margin-left:4em" class="screen">
+```
 $ rm goatbrot.dag.*
 $ rm goatbrot.out.*
 $ rm goatbrot.err.*
-</pre>
+```
 
----++ On your own.
+## On your own.
 
-   * Re-run your DAG. When jobs are running, try =condor_q -dag=. What does it do differently?
+   * Re-run your DAG. When jobs are running, try `condor_q -dag`. What does it do differently?
    * Challenge, if you have time: Make a bigger DAG by making more tiles in the same area. 
-
--- Main.RobQ - 05 Aug 2016
