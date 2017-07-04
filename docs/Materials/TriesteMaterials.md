@@ -9,7 +9,7 @@
    * [Your First Managed Job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md)
    * [A few tips and tricks](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/04-TipsandTricks.md)
    
-## Thursday Morning - Computational Infrastrcutures - Session 2
+## Thursday Morning - Computational Infrastructures - Session 2
 
    * Lecture 2 (Attach Slides Here)
    * [A scripting job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/05-ScriptingJob.md)
@@ -31,7 +31,7 @@
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
 
    * Lecture 4 (Attach Slides Here)
-   * [Disclipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-DisciplineTutorials.md)
+   * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-DisciplineTutorials.md)
    * Containers with Singularity
    
 ## Friday Morning - Computational Infrastructures - Session 5
