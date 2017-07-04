@@ -24,12 +24,12 @@ $ ssh -XY YOUR_USER_ID@osgtrain.osgconnect.net
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
 
-We recommend that you work in your home directory. 
+When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
 
-You can always return to your home director by running the command <pre><code>$ cd ~</code></pre>
+You can always return to your home directory by running the command <pre><code>$ cd ~</code></pre>
 
 ## The Exercises
 
 Throughout the Condor exercises, you will be given a fair amount of guidance. In several spots, there are suggestions for extra exercises to do "on your own" or as "challenges". Since you aren't being graded, there is no extra credit for doing them, but we encourage you to try them out. If you prefer, you can come back to the extra credit after you've completed the basic exercises. If you simply cruise through the exercises, you'll probably have free time--we encourage you to delve in more deeply.
 
-For all of the exercises, we'll assume that you are logged into osgtrain.osgconnect.net. You should have received your name and password for training.osgconnect.net at the beginning of the Computation Infrastructures lecture.
+For all of the exercises, we'll assume that you are logged into osgtrain.osgconnect.net. You should have received your name and password for osgtrain.osgconnect.net at the beginning of the Computation Infrastructures lecture.
