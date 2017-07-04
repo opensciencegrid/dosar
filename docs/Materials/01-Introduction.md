@@ -19,7 +19,7 @@ Today you will log into training.osgconnect.net for all of your exercises:
 Login on submission node using:
 
 <pre><code>
-$ ssh -XY YOUR_USER_ID@training.osgconnect.net
+$ <b>ssh -XY YOUR_USER_ID@training.osgconnect.net</b>
 </code></pre>
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
