@@ -14,12 +14,12 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 ## Where you will work
 
-Today you will log into osgtrain.osgconnect.net for all of your exercises:
+Today you will log into training.osgconnect.net for all of your exercises:
 
 Login on submission node using:
 
 <pre><code>
-$ ssh -XY YOUR_USER_ID@osgtrain.osgconnect.net
+$ ssh -XY YOUR_USER_ID@training.osgconnect.net
 </code></pre>
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
@@ -32,4 +32,4 @@ You can always return to your home directory by running the command <pre><code>$
 
 Throughout the Condor exercises, you will be given a fair amount of guidance. In several spots, there are suggestions for extra exercises to do "on your own" or as "challenges". Since you aren't being graded, there is no extra credit for doing them, but we encourage you to try them out. If you prefer, you can come back to the extra credit after you've completed the basic exercises. If you simply cruise through the exercises, you'll probably have free time--we encourage you to delve in more deeply.
 
-For all of the exercises, we'll assume that you are logged into osgtrain.osgconnect.net. You should have received your name and password for osgtrain.osgconnect.net at the beginning of the Computation Infrastructures lecture.
+For all of the exercises, we'll assume that you are logged into training.osgconnect.net. You should have received your name and password for training.osgconnect.net at the beginning of the Computation Infrastructures lecture.
