@@ -1,7 +1,7 @@
 # Running a job with R
 
 ### Objective
-The objective of this exercise is to learn how to run a program that depends on a larger run-time environment that isn't already available on your cluster.
+The objective of this exercise is to learn how to run a program that depends on a larger run-time environment that isn't already available on your cluster.  The run-time environment refers to all the hardware and software resources available on the machine where your job is running.  We will focus on the available software in this exercise.
 
 ## The Problem
 
