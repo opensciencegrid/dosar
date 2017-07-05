@@ -1,33 +1,32 @@
 # Running a job with R
 
-### Objective of this exercise
+### Objective
 The objective of this exercise is to learn how to run a program that depends on a larger run-time environment that isn't already available on your cluster.
 
 ## The Problem
 
-Sometimes you want to run a program that depends on a larger run-time environment. For example, perhaps you wrote your program in Perl, but there is no Perl installed on the cluster. (That's an unlikely example, intended just to give you feel for what I mean by "run-time environment".) This is a common problem distributed computing users encounter. For example, many people like to use [[http://www.mathworks.com/][Matlab]] (or it's open-source cousin, [[http://www.gnu.org/software/octave/][Octave]]) or [[http://www.r-project.org/][R]] for doing calculations. These require a fair amount of run-time environment to run the programs you write. What do you do if they aren't installed?
+Sometimes you want to run a program that depends on a larger run-time environment. For example, perhaps you wrote your program in Perl, but there is no Perl installed on the cluster. (That's an unlikely example, intended just to give you feel for what I mean by "run-time environment".) This is a common problem distributed computing users encounter. For example, many people like to use [Matlab](http://www.mathworks.com/) (or its open-source cousin, [Octave](http://www.gnu.org/software/octave/)) or [R](http://www.r-project.org/) for doing calculations. These require a fair amount of run-time environment to run the programs you write. What do you do if they aren't installed?
 
 There are at least two possibilities:
 
-   1. Ask your kindly system administrator to install it for you on all of the computers you might run on. 
+   1. Ask your kindly system administrator to install it for you on all of the computers you might run on.
    1. Bring the environment (Such as Octave or R) along with your job. 
 
-Before you read any further, please step for a moment, and think about the tradeoffs between these two methodologies. They both have benefits and drawbacks. Why would you choose each of them? Why not? 
+Before you read any further, please stop for a moment, and think about the tradeoffs between these two methodologies. They both have benefits and drawbacks. Why would you choose each of them? Why not? 
 
-Here are some of my answers... 
+Here are some of my answers...
 
 ### Pros and cons of having your system administrator do it for you
 
-   * It's a lot easier for you.
-   * You have to transfer less data with each job.
-   * You have to wait for the system administrator to install them.
-   * If you want upgrades (or downgrades), you have to ask again and wait for them.
+   * PRO - It's a lot easier for you.
+   * PRO - You have to transfer less data with each job.
+   * CON - You have to wait for the system administrator to install them.
+   * CON - If you want upgrades (or downgrades), you have to ask again and wait for them.
 
 ### Pros and cons of bringing it along
-   * It's more complex for you.
-   * You have to transfer the application and data with each job (or have a job that pre-stages it for you.)
-   * You are in complete control: when you need a tweak, an upgrade, or a downgrade, you can make it happen.
-
+   * CON - It's more complex for you.
+   * CON - You have to transfer the application and data with each job (or have a job that pre-stages it for you.)
+   * PRO - You are in complete control: when you need a tweak, an upgrade, or a downgrade, you can make it happen.
 
 
 Clearly, there is a choice here. I'd like to enable you to be able to bring along your run-time environment with you. In my experience, if you are capable of bringing it with you, you can take advantage of more computers: you don't have to wait for someone to build and install the environment for you. 
@@ -55,7 +54,7 @@ $ module load R
 ```
 
 
-You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called =demo.r=:
+You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called `demo.r`:
 
 ```
 len <- 100
@@ -78,7 +77,7 @@ This program prints the first 100 [Fibonacci numbers](http://en.wikipedia.org/wi
 
 R is a bit fussy about where it's been installed on disk, so I had to write a wrapper program so it will happily run wherever it lands in our cluster. I could make you work it out, but that seems unfair. Save this program in run-r.sh. If you're curious about exactly why it's needed, ask Rob. There are two important parts to it, and you should know what they are, at least conceptually because this is the magic you would need to do for any run-time environment you want to bring along.
 
-   1. Load the R environment using =module=. In general you might have to do more work. 
+   1. Load the R environment using `module`. In general you might have to do more work. 
    1. Invoke R, using whatever magic is needed. In our case, I set up some environment variables and invoke the right executable.
 
 ```
@@ -99,13 +98,13 @@ R --slave --vanilla < $1
 
 You could easily execute this on OSG Connect locally by making the shell script executable and executing it.
 
-```
-$ chmod 755 run-r.sh
-$ ./run-r.sh demo.r
-```
+<pre>
+$ <b>chmod 755 run-r.sh</b>
+$ <b>./run-r.sh demo.r</b>
+</pre>
 
 ## On your own
-Write a Condor submit file that will use R to run the demo.r program. You will need to include the following line in your submit file (before the "queue" statement) to make sure that Condor looks for a resource that uses OASIS:
+Write a Condor submit file that will use R to run the `demo.r` program. You will need to include the following line in your submit file (before the "queue" statement) to make sure that Condor looks for a resource that uses OASIS:
 
 ```
 requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
