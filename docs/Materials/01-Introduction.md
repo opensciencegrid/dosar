@@ -26,7 +26,11 @@ You may get a message asking you to establish the authenticity of this connectio
 
 When you login to the machine you will be in your "home directory".  We recommend that you work in this directory as nobody else can modify the files here.
 
-You can always return to your home directory by running the command <pre><code>$ cd ~</code></pre>
+You can always return to your home directory by running the command
+
+<pre><code>
+$ <b>cd ~</b>
+</code></pre>
 
 ## The Exercises
 
