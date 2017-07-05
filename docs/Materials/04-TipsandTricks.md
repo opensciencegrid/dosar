@@ -7,7 +7,7 @@ This exercise will teach you a few nifty commands to help you use Condor more ea
 
 Curious where your jobs are running? Use the `-run` option to see where jobs are running. (Idle jobs are not shown.) 
 <pre><code>
-$ condor_q -run
+$ <b>condor_q -run</b>
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER           SUBMITTED     RUN_TIME HOST(S)
