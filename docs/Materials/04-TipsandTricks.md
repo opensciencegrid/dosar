@@ -5,18 +5,12 @@ This exercise will teach you a few nifty commands to help you use Condor more ea
 
 ## Tips for condor_q
 
-You're been using <code>condor_q</code>, but it shows the jobs of everyone who submitted from the computer you are running the command on. If you want to see just your jobs, try this: 
-
-<pre><code>
-$ condor_q %UCL_USER%
-</code></pre>
-
-Curious where your jobs are running? Use the =-run= option to see where jobs are running. (Idle jobs are not shown.) 
+Curious where your jobs are running? Use the `-run` option to see where jobs are running. (Idle jobs are not shown.) 
 <pre><code>
 $ condor_q -run
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
- ID      OWNER          . SUBMITTED     RUN_TIME HOST(S)
+ ID      OWNER           SUBMITTED     RUN_TIME HOST(S)
   28.44  kagross         8/18 14:51   0+00:00:42 slot1@node2.cci.ucad.sn
   28.45  kagross         8/18 14:51   0+00:00:37 slot2@node2.cci.ucad.sn
   28.46  kagross         8/18 14:51   0+00:00:32 slot3@node2.cci.ucad.sn
@@ -28,7 +22,7 @@ $ condor_q -run
 <code>condor_q</code> can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
 
 <pre><code>
-$ condor_q -l 23.0
+$ <b>condor_q -l 23.0</b>
 
 MaxHosts = 1
 User = "kagross@frontal.cci.ucad.sn"
@@ -54,36 +48,36 @@ There are some interesting parts you can check out.
 How many times has this job run? (It might be more than one if there were recoverable errors.)
 
 <pre><code>
-$ condor_q -l 24.0 | grep JobRunCount
+$ <b>condor_q -l 24.0 | grep JobRunCount</b>
 JobRunCount = 1
 </code></pre>
 
 Where is the user log for this job? This is helpful when you assist someone else in debugging and they're not sure.
 
 <pre><code>
-$ condor_q -l 24.0 | grep UserLog
+$ <b>condor_q -l 24.0 | grep UserLog</b>
 UserLog = "/home/kagross/condor-test/simple.47.log"
 </code></pre>
 
-What the job's requirements? Condor automatically fills some in for you, to make sure your job runs on a reasonable computer in our cluster, but you can override any of these. I've broken the output into multiple lines to explain it to you.
+What are the job's requirements? Condor automatically fills some in for you to make sure your job runs on a reasonable computer in our cluster, but you can override any of these. I've broken the output into multiple lines to explain it to you.
 
 <pre><code>
-$ condor_q -l 23.0 | grep Requirements
-Requirements =( TARGET.Arch == "X86_64" ) # %RED% Run on a 64-bit computer %ENDCOLOR%
-    && ( TARGET.OpSys == "LINUX" )  # %RED% Make sure you run on Linux %ENDCOLOR%
-    && ( TARGET.Disk >= RequestDisk ) # %RED% Make sure the default disk Condor is on has enough disk space. %ENDCOLOR%
-    && ( TARGET.Memory >= RequestMemory ) # %RED% Make sure the computer has enough memory %ENDCOLOR%
-    && ( TARGET.HasFileTransfer )# %RED% Only run on a computer that can accept your files. %ENDCOLOR%
+$ <b>condor_q -l 23.0 | grep Requirements</b>
+Requirements =( TARGET.Arch == "X86_64" ) <em># Run on a 64-bit computer</em>
+    && ( TARGET.OpSys == "LINUX" )  <em># Make sure you run on Linux</em>
+    && ( TARGET.Disk >= RequestDisk ) <em># Make sure the default disk Condor is on has enough disk space.</em>
+    && ( TARGET.Memory >= RequestMemory )  <em># Make sure the computer has enough memory</em>
+    && ( TARGET.HasFileTransfer )  <em># Only run on a computer that can accept your files.</em>
 </code></pre>
 
 What else can you find that's interesting in the ClassAd?
 
 ## Removing jobs
 
-If you submit a job that you realize has a problem, you can remove it with =condor_rm=. For example: 
+If you submit a job that you realize has a problem, you can remove it with `condor_rm`. For example: 
 
 <pre><code>
-$ condor_q
+$ <b>condor_q</b>
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -91,10 +85,10 @@ $ condor_q
 
 1 jobs; 0 completed, 0 removed, 2 idle, 0 running, 0 held, 0 suspended
 
-$ condor_rm 29.0
+$ <b>condor_rm 29.0</b>
 Job 29.0 marked for removal
 
-$ condor_q
+$ <b>condor_q</b>
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -104,21 +98,21 @@ $ condor_q
 
 A few tips:
 
-   * You can remove all of your jobs with the -all option.
+   * You can remove all of your jobs with the `-all` option.
    * You can't remove other users jobs.
-   * There are [fancy options to condor_rm](http://www.cs.wisc.edu/condor/manual/v8.0/condor_rm.html).  
+   * There are [fancy options to condor_rm](http://www.cs.wisc.edu/condor/manual/v8.4/condor_rm.html).  
 
 ## Historical information
 
 You can see information about jobs that completed and are no longer in the queue with the <code>condor_history</code> command. It's rare that you want to see *all* the jobs, so try looking at jobs for just you:
 
 <pre><code>
-condor_history %UCL_USER%
+$ <b>condor_history USER</b>
 </code></pre>
 
 For example:
 <pre><code>
-$ condor_history kagross
+$ <b>condor_history kagross</b>
    9.9   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 9 9
    9.8   kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 8 9
    9.11  kagross         7/31 12:44   0+00:00:03 C   7/31 12:44 /home/kagross/simple 11 9
