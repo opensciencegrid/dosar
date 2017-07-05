@@ -1,7 +1,7 @@
 # Submitting your first Condor job
 
-### Objective of this exercise
-The object of this exercise to have you run and understand your first Condor job, as well as run small sets of jobs in a parameter sweep. This is an important exercise because it is the basis for everything that follows. If there is _anything_ you don't understand in this exercise, _please ask_ before you continue on.
+### Objective
+The objective of this exercise to have you run and understand your first Condor job, as well as run small sets of jobs in a parameter sweep. This is an important exercise because it is the basis for everything that follows. If there is _anything_ you don't understand in this exercise, _please ask_ before you continue on.
 
 Because this is an important foundation, please seriously consider doing the &ldquo;On Your Own&rdquo; section.
 

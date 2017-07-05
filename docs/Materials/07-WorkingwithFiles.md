@@ -1,12 +1,12 @@
 # Working with data in files
 
-### Objective of this exercise
+### Objective
 The objective of this exercise is to teach you how to provide files as input to your job, and get output as files back from your job.
 
 ## Data Movement
 So far, we've done really simple examples where the entire input to the program is just on the command-line. What do you do if you have data files to deal with? Let's walk through a short example.
 
-First, let's make a program, call it =analyze.sh= that analyzes a text file that it is provided on the command-line.
+First, let's make a program, call it `analyze.sh` that analyzes a text file that it is provided on the command-line.
 
 ```
 #!/bin/sh
@@ -26,7 +26,7 @@ cat $1 | tr "[:upper:]" "[:lower:]" | tr -cs "[:alpha:]" "\n" | sort | uniq -c |
 sleep 5
 ```
 
-You also need a file to analyze. Put the following text into a file called =gettysburg=.
+You also need a file to analyze. Put the following text into a file called `gettysburg`.
 
 ```
 Four score and seven years ago our fathers brought forth on this
@@ -56,35 +56,36 @@ government of the people, by the people, for the people, shall not
 perish from the earth.
 ```
 
-Our submit file looks nearly identical to what we had before, except for the one highlighted line that specifies the data file to transfer.  Put the following text into a file called =submit.speech=.
+Our submit file looks nearly identical to what we had before, except for the one bolded line that specifies the data file to transfer.  Put the following text into a file called `submit.speech`.
 
-```
+<pre>
 Universe        = vanilla
 Executable      = analyze.sh
 Output          = analyze.out
 Error           = analyze.error
 Log             = analyze.log
 Arguments       = gettysburg
++ProjectName = "DataTrieste"
 ShouldTransferFiles = Yes
 WhenToTransferOutput = ON_EXIT
-<span style="background-color:yellow">transfer_input_files = gettysburg</span>
+<b>transfer_input_files = gettysburg</b>
 queue 
-```
+</pre>
 
 Notice that you just had to specify the input files and not the output files. Condor will automatically transfer back any new files, so you don't have to worry about it. Nifty, huh?
 
 Now run the job.
 
-```
-$ condor_submit submit.speech
+<pre>
+$ <b>condor_submit submit.speech</b>
 Submitting job(s).
 1 job(s) submitted to cluster 37.
 
-$ ls -lh gettys*
+$ <b>ls -lh gettys*</b>
 -rw-rw-r--. 1 kagross kagross 1.5K Aug 18 15:41 gettysburg
 -rw-r--r--. 1 kagross kagross  120 Aug 18 15:42 gettysburg.10
 -rw-r--r--. 1 kagross kagross 1.5K Aug 18 15:42 gettysburg.upper
-```
+</pre>
 
 You got your files! Check them out--do they look okay?
 

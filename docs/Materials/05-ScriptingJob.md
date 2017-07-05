@@ -1,7 +1,7 @@
 # Using scripting languages
 
 
-## Objective of this exercise
+## Objective
 The objective of this exercise is to demonstrate that you can submit jobs to Condor in any language, including scripting languages.
 
 At this point, you might be asking yourself, "This is all well and good, but I don't write programs in C. Can I use other languages?" Absolutely.

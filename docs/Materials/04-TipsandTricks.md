@@ -1,6 +1,6 @@
 # A few tips and tricks
 
-### Objective of this exercise
+### Objective
 This exercise will teach you a few nifty commands to help you use Condor more easily.
 
 ## Tips for condor_q

@@ -1,6 +1,6 @@
 # Our Condor Installation
 
-## Objective of this exercise
+## Objective
 
 This exercise should help you understand the basics of how Condor is installed, what Condor processes (a.k.a. daemons) are running, and what they do.
 
