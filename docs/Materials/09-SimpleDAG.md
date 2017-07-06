@@ -1,13 +1,13 @@
 # Coordinating set of jobs: A simple DAG
 
-### Objective of this exercise
+### Objective
 The objective of this exercise is to learn the very basics of running a set of jobs, where our set is just one job. 
 
 ## What is DAGMan?
 
-Your tutorial leader will introduce you to DAGMan and DAGs. In short, DAGMan, lets you submit complex sequences of jobs as long as they can be expressed as a directed acylic graph. For example, you may wish to run a large parameter sweep but before the sweep run you need to prepare your data. After the sweep runs, you need to collate the results. 
+Your tutorial leader will introduce you to DAGMan and DAGs. In short, DAGMan lets you submit complex sequences of jobs as long as they can be expressed as a directed acylic graph. For example, you may wish to run a large parameter sweep but before the sweep run you need to prepare your data. After the sweep runs, you need to collate the results. 
 
-DAGMan has many abilities, such as throttling jobs, recovery from failures, and more. More information about DAGMan can be found at  [in the Condor manual](http://www.cs.wisc.edu/condor/manual/v7.6/2_10DAGMan_Applications.html).
+DAGMan has many abilities such as throttling jobs, recovery from failures, and more. More information about DAGMan can be found at  [in the Condor manual](http://www.cs.wisc.edu/condor/manual/v7.6/2_10DAGMan_Applications.html).
 
 ## Submitting a simple DAG
 
@@ -17,6 +17,7 @@ We're going to go back to the "simple" example that we did first. (The one with 
 Universe                = vanilla
 Executable              = simple
 Arguments               = 4 10
++ProjectName = "DataTrieste"
 Log                     = simple.log
 Output                  = simple.out
 Error                   = simple.error
@@ -25,11 +26,11 @@ when_to_transfer_output = ON_EXIT
 Queue
 ```
 
-Make sure you've built the =simple= program. If you need to, go back to [the instructions for your first job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md) to do it again.
+Make sure you've built the `simple` program. If you need to, go back to [the instructions for your first job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md) to do it again.
 
-We are going to get a bit more sophisticated in submitting our jobs now. Let's have three windows open. In one window, you'll submit the job. In another you will watch the queue, and in the third you will watch what DAGMan does.
+We are going to get a bit more sophisticated in submitting our jobs now. Let's have three windows open. In one window you'll submit the job. In the second you will watch the queue.  And in the third you will watch what DAGMan does.
 
-First we will create the most minimal DAG that can be created: a DAG with just one node. Put the text below into a file named =simple.dag=.
+First we will create the most minimal DAG that can be created: a DAG with just one node. Put the text below into a file named `simple.dag`.
 
 ```
 job simple submit
@@ -37,8 +38,8 @@ job simple submit
 
 In your first window, submit the DAG: 
 
-```
-$ condor_submit_dag simple.dag
+<pre>
+$ <b>condor_submit_dag simple.dag</b>
 -----------------------------------------------------------------------
 File for submitting this DAG to Condor           : simple.dag.condor.sub
 Log of DAGMan debugging messages                 : simple.dag.dagman.out
@@ -49,12 +50,12 @@ Log of the life of condor_dagman itself          : simple.dag.dagman.log
 Submitting job(s).
 1 job(s) submitted to cluster 61.
 -----------------------------------------------------------------------
-```
+</pre>
 
 In the second window, watch the queue:
 
-```
-$ watch -n 10 condor_q %UCL_USER%
+<pre>
+$ <b>watch -n 10 condor_q USER</b>
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -81,12 +82,12 @@ $ watch -n 10 condor_q %UCL_USER%
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 <i>Ctrl-C</i>
-```
+</pre>
 
 In the third window, watch what DAGMan does: 
 
-```
-$  tail -f --lines=500 simple.dag.dagman.out
+<pre>
+$ <b>tail -f --lines=500 simple.dag.dagman.out</b>
 6/21/12 22:51:13 Setting maximum accepts per cycle 8.
 06/21/12 22:51:13 ******************************************************
 06/21/12 22:51:13 ** condor_scheduniv_exec.61.0 (CONDOR_DAGMAN) STARTING UP
@@ -170,7 +171,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:51:29 MultiLogFiles: truncating log file /home/roy/condor/simple.log
 06/21/12 22:51:29 Submitting Condor Node Simple job(s)...
 
-#Here's where the job is submitted
+# <em>Here's where the job is submitted</em>
 06/21/12 22:51:29 submitting: condor_submit 
                               -a dag_node_name' '=' 'Simple 
                               -a +DAGManJobId' '=' '61 
@@ -193,7 +194,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:51:30 0 job proc(s) currently held
 06/21/12 22:55:05 Currently monitoring 1 Condor log file(s)
 
-#Here's where DAGMan noticed that the job is running
+# <em>Here's where DAGMan noticed that the job is running</em>
 06/21/12 22:55:05 Event: ULOG_EXECUTE for Condor Node Simple (62.0.0)
 06/21/12 22:55:05 Number of idle job procs: 0
 06/21/12 22:55:10 Currently monitoring 1 Condor log file(s)
@@ -201,7 +202,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05 Currently monitoring 1 Condor log file(s)
 06/21/12 22:56:05 Event: ULOG_IMAGE_SIZE for Condor Node Simple (62.0.0)
 
-#Here's where DAGMan noticed that the job  finished.
+# <em>Here's where DAGMan noticed that the job  finished.</em>
 06/21/12 22:56:05 Event: ULOG_JOB_TERMINATED for Condor Node Simple (62.0.0)
 06/21/12 22:56:05 Node Simple job proc (62.0.0) completed successfully.
 06/21/12 22:56:05 Node Simple job completed
@@ -212,7 +213,7 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05     1       0        0       0       0          0        0
 06/21/12 22:56:05 0 job proc(s) currently held
 
-#Here's where DAGMan noticed that all the work is done.
+# <em>Here's where DAGMan noticed that all the work is done.</em>
 06/21/12 22:56:05 All jobs Completed!
 06/21/12 22:56:05 Note: 0 total job deferrals because of -MaxJobs limit (0)
 06/21/12 22:56:05 Note: 0 total job deferrals because of -MaxIdle limit (0)
@@ -220,12 +221,12 @@ $  tail -f --lines=500 simple.dag.dagman.out
 06/21/12 22:56:05 Note: 0 total PRE script deferrals because of -MaxPre limit (0)
 06/21/12 22:56:05 Note: 0 total POST script deferrals because of -MaxPost limit (0)
 06/21/12 22:56:05 **** condor_scheduniv_exec.61.0 (condor_DAGMAN) pid 5812 EXITING WITH STATUS 0
-```
+</pre>
 
 Now verify your results: 
 
-```
-$ cat simple.log
+<pre>
+$ <b>cat simple.log</b>
 000 (062.000.000) 06/21 22:51:30 Job submitted from host: <128.104.100.55:9618?sock=28867_10e4_2>
     DAG Node: Simple
 ...
@@ -255,18 +256,18 @@ $ cat simple.log
 	   Memory (MB)          :        3        3          
 ...
 
-$ cat simple.out
+$ <b>cat simple.out</b>
 Thinking really hard for 4 seconds...
 We calculated: 20
-```
+</pre>
 
 Looking at DAGMan's various files, we see that DAGMan itself ran as a Condor job (specifically, a scheduler universe job). 
 
-```
-$ ls simple.dag.*
+<pre>
+$ <b>ls simple.dag.*</b>
 simple.dag.condor.sub  simple.dag.dagman.log  simple.dag.dagman.out  simple.dag.lib.err  simple.dag.lib.out 
 
-$ cat simple.dag.condor.sub
+$ <b>cat simple.dag.condor.sub</b>
 # Filename: simple.dag.condor.sub
 # Generated by condor_submit_dag simple.dag 
 universe	= scheduler
@@ -288,13 +289,13 @@ arguments	= "-f -l . -Lockfile simple.dag.lock -AutoRescue 1 -DoRescueFrom 0 -Da
                               -CsdVersion $CondorVersion:' '7.7.6' 'Apr' '16' '2012' 'BuildID:' '34175' 'PRE-RELEASE-UWCS' '$ -Force -Dagman /usr/bin/condor_dagman"
 environment	= _CONDOR_DAGMAN_LOG=simple.dag.dagman.out;_CONDOR_MAX_DAGMAN_LOG=0
 queue
-```
+</pre>
 
 Clean up some of these files: 
 
-```
-$ rm simple.dag.*
-```
+<pre>
+$ <b>rm simple.dag.*</b>
+</pre>
 
 ## On your own
 
