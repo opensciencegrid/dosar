@@ -42,8 +42,8 @@ Or you can run:
 $ lsb_release -a
 LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
 Distributor ID:	Scientific
-Description:	Scientific Linux release 6.8 (Carbon)
-Release:	6.8
+Description:	Scientific Linux release 6.9 (Carbon)
+Release:	6.9
 Codename:	Carbon
 ```
 
@@ -56,7 +56,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.2.10-1.1.osg32.el6.x86_64
+condor-8.4.11-1.1.osg33.el6.x86_64
 
 # Show all the files installed by that RPM
 $ rpm -ql condor | head -10
@@ -75,7 +75,7 @@ $ rpm -ql condor | head -10
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
 
 ```
-$ ls /etc/condor<
+$ ls /etc/condor
 99-gratia.conf	condor_config.local			config.d      ganglia.d			 passwdfile
 condor_config	condor_ssh_to_job_sshd_config_template	config.d.tgz  other_condor_config_files  passwdfile.daemon
 ```
