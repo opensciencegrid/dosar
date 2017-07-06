@@ -32,7 +32,7 @@ Do you know how to find the OS version? You can usually look in /etc/issue to fi
 
 ```
 $ cat /etc/issue
-Scientific Linux release 6.8 (Carbon)
+Scientific Linux release 6.9 (Carbon)
 Kernel \r on an \m
 ```
 
