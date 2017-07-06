@@ -17,7 +17,7 @@ We're going to go back to the "simple" example that we did first. (The one with 
 Universe                = vanilla
 Executable              = simple
 Arguments               = 4 10
-+ProjectName = "DataTrieste"
++ProjectName            = "DataTrieste"
 Log                     = simple.log
 Output                  = simple.out
 Error                   = simple.error
@@ -52,7 +52,7 @@ Submitting job(s).
 -----------------------------------------------------------------------
 </pre>
 
-In the second window, watch the queue:
+In the second window, watch the queue (press Ctrl+C when finished watching to kill this process):
 
 <pre>
 $ <b>watch -n 10 condor_q USER</b>
@@ -81,6 +81,7 @@ $ <b>watch -n 10 condor_q USER</b>
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+
 <i>Ctrl-C</i>
 </pre>
 
@@ -202,7 +203,7 @@ $ <b>tail -f --lines=500 simple.dag.dagman.out</b>
 06/21/12 22:56:05 Currently monitoring 1 Condor log file(s)
 06/21/12 22:56:05 Event: ULOG_IMAGE_SIZE for Condor Node Simple (62.0.0)
 
-# <em>Here's where DAGMan noticed that the job  finished.</em>
+# <em>Here's where DAGMan noticed that the job finished.</em>
 06/21/12 22:56:05 Event: ULOG_JOB_TERMINATED for Condor Node Simple (62.0.0)
 06/21/12 22:56:05 Node Simple job proc (62.0.0) completed successfully.
 06/21/12 22:56:05 Node Simple job completed
