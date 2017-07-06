@@ -19,7 +19,7 @@ You should have been given your name and password when you arrived this afternoo
 How do you know what version of Condor you are using? Try <code>condor_version</code>: 
 
 ```
-$ <b>condor_version</b>
+$ condor_version
 $CondorVersion: 8.4.11 Feb 24 2017 $
 $CondorPlatform: X86_64-CentOS_6.8 $
 ```
@@ -31,7 +31,7 @@ Note that the "CondorPlatform" reports the type of computer we built it on, _not
 Do you know how to find the OS version? You can usually look in /etc/issue to find out:
 
 ```
-$ <b>cat /etc/issue</b>
+$ cat /etc/issue
 Scientific Linux release 6.8 (Carbon)
 Kernel \r on an \m
 ```
@@ -39,7 +39,7 @@ Kernel \r on an \m
 Or you can run:
 
 ```
-$ <b>lsb_release -a</b>
+$ lsb_release -a
 LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
 Distributor ID:	Scientific
 Description:	Scientific Linux release 6.8 (Carbon)
@@ -50,11 +50,11 @@ Codename:	Carbon
 Where is Condor installed? 
 
 ```
-<em># Show the location of the condor_q binary</em>
+# Show the location of the condor_q binary
 $ which condor_q
 /usr/bin/condor_q
 
-<em># Show which RPM installed Condor</em>
+# Show which RPM installed Condor
 $ rpm -q condor
 condor-8.2.10-1.1.osg32.el6.x86_64
 
@@ -97,7 +97,7 @@ The spool directory is where Condor keeps the jobs you submit, while the execute
 Check if Condor is running.  Your output will differ slightly, but you should see `condor_master` with the other Condor daemons listed under it:
 
 ```
-$ <b>ps auwx --forest | grep condor_ | grep -v grep</b>
+$ ps auwx --forest | grep condor_ | grep -v grep
 jtqv84    5997 50.0  0.0 238996 17012 ?        Ss   15:05   0:11          \_ /usr/bin/python /home/jtqv84/bundle_probe/condor_slot2site
 jtqv84    6092 35.5  0.8 494484 405256 ?       R    15:05   0:08              \_ condor_status -pool osg-flock.grid.iu.edu -l
 root     18394  0.0  0.0   9292  2104 ?        Ss   15:00   0:00  |   \_ /bin/sh -c /usr/share/gratia/common/cron_check  /etc/gratia/condor/ProbeConfig && /usr/share/gratia/condor/condor_meter -s 9
