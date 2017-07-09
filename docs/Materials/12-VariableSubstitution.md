@@ -1,6 +1,6 @@
 # Simpler DAGs with variable substitutions
 
-### Objective of this exercise
+### Objective
 The objective of this exercise is to help you write simpler DAGs by using variable substitutions in your submit files.
 
 If you look at the DAG we made, you might find it a bit tedious because each goatbrot job has a separate Condor submit file. They're nearly identical except for a couple of parameters. Can we make it simpler?
@@ -9,7 +9,7 @@ Yes, we can!
 
 ## Declare your variables
 
-First you need to declare your variables in your submit file. Make one submit file for all of your goatbrot jobs. Here's what it looks like. Call it goatbrot.sub:
+First you need to declare your variables in your submit file. Make one submit file for all of your goatbrot jobs. Here's what it looks like. Call it `goatbrot.sub`:
 
 ```
 executable              = /tmp/goatbrot-master/goatbrot
