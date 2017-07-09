@@ -30,7 +30,7 @@ $ tutorial R
 
 Matlab
 ```
-tutorial matlab-HelloWorld
+$ tutorial matlab-HelloWorld
 ```
 
 ## Molecular Dynamics Tutorials
