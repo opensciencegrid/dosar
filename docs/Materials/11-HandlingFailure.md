@@ -1,16 +1,16 @@
 # Handling a DAG that fails
 
-### Objective of this exercise
+### Objective
 The objective of this exercise is to help you learn how DAGMan deals with job failures. DAGMan is built to help you recover from such failures.
 
-DAGMan can handle a situation where some of the nodes in a DAG fails. DAGMan will run as many nodes as possible, then create a rescue DAG making it easy to continue when the problem is fixed.
+DAGMan can handle a situation where some of the nodes in a DAG fails. DAGMan will run as many nodes as possible, then create a "rescue DAG".  A rescue DAG allows you to fix the problem and then resume your job where it left off.
 
-Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is highlighted in red):
+Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is bolded):
 
-```
+<pre>
 universe                = vanilla
 executable              = montage_wrapper.sh
-arguments               = -h tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
+arguments               = <b>-h</b> tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
@@ -19,7 +19,7 @@ output                  = montage.out
 error                   = montage.err
 log                     = goat.log
 queue
-```
+</pre>
 
 Submit the DAG again: 
 
@@ -38,7 +38,7 @@ Submitting job(s).
 ```
 
 
-Use watch to watch the jobs until they finish.
+Use `watch` to watch the jobs until they finish.
 
 In a separate window, use `tail --lines=500 -f goatbrot.dag.dagman.out` to watch what DAGMan does. 
 
@@ -92,8 +92,8 @@ DAGMan notices that one of the jobs failed because it's exit code was non-zero. 
 
 Look at the rescue DAG. It's called a partial DAG: it indicates what part of the DAG has already been completed. When you re-submit the original DAG, DAGMan will notice the rescue DAG and use it in combination with the original DAG. (The rescue DAG used to be the full DAG with nodes marked as done and you would ask DAGMan to run the new rescue DAG. For your simplicity DAGMan lets you resubmit the original DAG and it reads both files.)
 
-```
-$ cat goatbrot.dag.rescue001
+<pre>
+$ <b>cat goatbrot.dag.rescue001</b>
 # Rescue DAG file, created after running
 #   the goatbrot.dag DAG file
 # Created 6/22/2012 23:08:42 UTC
@@ -108,9 +108,9 @@ DONE g1
 DONE g2
 DONE g3
 DONE g4
-```
+</pre>
 
-From the comment near the top, we know that the montage node failed. Let's fix it by getting rid of the offending `-h` argument. Change montage.sub to look like:
+From the comment near the top, we know that the montage node failed. Let's fix it by getting rid of the offending `-h` argument. Change `montage.sub` to look like:
 
 ```
 universe                = vanilla
@@ -128,8 +128,8 @@ queue
 
 Now we can re-submit our original DAG and DAGMan will pick up where it left off. It will automatically notice the rescue DAG If you didn't fix the problem, DAGMan would generate another rescue DAG.
 
-```
-$ condor_submit_dag goatbrot.dag
+<pre>
+$ <b>condor_submit_dag goatbrot.dag</b>
 Running rescue DAG 1
 -----------------------------------------------------------------------
 File for submitting this DAG to Condor           : goatbrot.dag.condor.sub
@@ -142,7 +142,7 @@ Submitting job(s).
 1 job(s) submitted to cluster 83.
 -----------------------------------------------------------------------
 
-$ tail -f goatbrot.dag.dagman.out
+$ <b>tail -f goatbrot.dag.dagman.out</b>
 06/23/12 11:30:53 ******************************************************
 06/23/12 11:30:53 ** condor_scheduniv_exec.83.0 (CONDOR_DAGMAN) STARTING UP
 06/23/12 11:30:53 ** /usr/bin/condor_dagman
@@ -155,19 +155,20 @@ $ tail -f goatbrot.dag.dagman.out
 06/23/12 11:30:53 ******************************************************
 06/23/12 11:30:53 Using config source: /etc/condor/condor_config
 ...
-```
-Here is where DAGMAN notices that there is a rescue DAG
+</pre>
 
-```
+Here is where DAGMAN notices that there is a rescue DAG:
+
+<pre>
 06/23/12 11:30:53 Parsing 1 dagfiles
 06/23/12 11:30:53 Parsing goatbrot.dag ...
-%RED%06/23/12 11:30:53 Found rescue DAG number 1; running goatbrot.dag.rescue001 in combination with normal DAG file%ENDCOLOR%
+<b>06/23/12 11:30:53 Found rescue DAG number 1; running goatbrot.dag.rescue001 in combination with normal DAG file</b>
 06/23/12 11:30:53 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 06/23/12 11:30:53 USING RESCUE DAG goatbrot.dag.rescue001
 06/23/12 11:30:53 Dag contains 5 total jobs
-```
+</pre>
 
-hortly thereafter it sees that four jobs have already finished.
+Shortly thereafter it sees that four jobs have already finished:
 
 ```
 06/23/12 11:31:05 Bootstrapping...
@@ -177,7 +178,7 @@ hortly thereafter it sees that four jobs have already finished.
 06/23/12 11:31:07 MultiLogFiles: truncating log file /home/roy/condor/goatbrot/montage.log
 ```
 
-Here is where DAGMan resubmits the montage job and waits for it to complete.
+Here is where DAGMan resubmits the montage job and waits for it to complete:
 
 ```
 06/23/12 11:31:07 Submitting Condor Node montage job(s)...
@@ -209,7 +210,7 @@ Here is where DAGMan resubmits the montage job and waits for it to complete.
 06/23/12 11:40:22 Event: ULOG_JOB_TERMINATED for Condor Node montage (84.0.0)
 ```
 
-This is where the montage finished.
+This is where the montage finished:
 
 ```
 06/23/12 11:40:22 Node montage job proc (84.0.0) completed successfully.
@@ -222,7 +223,7 @@ This is where the montage finished.
 06/23/12 11:40:22 0 job proc(s) currently held
 ```
 
-And here DAGMan decides that the work is all done.
+And here DAGMan decides that the work is all done:
 
 ```
 06/23/12 11:40:22 All jobs Completed!
@@ -238,6 +239,6 @@ Success! Now go ahead and clean up.
 
 ## Challenge
 
-If you have time, add an extra node to the DAG. Copy our original "simple" program, but make it exit with a 1 instead of a 0. DAGMan would consider this a failure, but you'll tell DAGMan that it's really a success. This is reasonable--many real world programs use a variety of return codes, and you might need to help DAGMan distinguish success from failure.
+If you have time, add an extra node to the DAG. Copy our original `simple` program, but make it exit with a 1 instead of a 0. DAGMan would consider this a failure, but you'll tell DAGMan that it's really a success. This is reasonable--many real world programs use a variety of return codes, and you might need to help DAGMan distinguish success from failure.
 
 Write a POST script that checks the return value. Check [the Condor manual](http://www.cs.wisc.edu/condor/manual/v7.8/2_10DAGMan_Applications.html#dagman:SCRIPT) to see how to describe your post script. 
