@@ -1,15 +1,15 @@
 # A More Complex DAG
 
-### Objective of this exercise
+### Objective
 The objective of this exercise is to run a real set of jobs with DAGMan.
 
 ## Make your job submission files
 
 We'll run our `goatbrot` example. If you didn't read about it yet, [please do so now](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md). We are going to make a DAG with four simultaneous jobs (`goatbrot`) and one final node to stitch them together (`montage`). This means we have five jobs. We're going to run `goatbrot` with more iterations (100,000) so it will take longer to run. 
 
-You can create your five jobs. The goatbrot jobs very similar to each other, but they have slightly different parameters and output files. 
+You can create your five jobs. The goatbrot jobs very similar to each other, but they have slightly different parameters (arguments) and output files. 
 
-I have placed the goatbrot executable in my public directory: /stash/user/rquick/public/goatbrot-master/goatbrot
+I have placed the goatbrot executable in my public directory: `/stash/user/rquick/public/goatbrot-master/goatbrot`
 
 
 ### goatbrot1.sub
@@ -87,7 +87,7 @@ queue
 
 ### wrapper_montage.sh
 
-Because we are using OASIS, we will need to create a wrapper script to load the ImageMagick module so that we can use it to create the montage.
+Because we are using OASIS, we will need to create a wrapper script to load the ImageMagick module so that we can use it to create the montage.  Put the following lines into `wrapper_montage.sh`:
 
 ```
 source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
@@ -97,7 +97,7 @@ montage tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -t
 
 ## Make your DAG
 
-In a file called =goatbrot.dag=, you have your DAG specification:
+In a file called `goatbrot.dag`, you have your DAG specification:
 
 ```
 JOB g1 goatbrot1.sub
@@ -108,14 +108,14 @@ JOB montage montage.sub
 PARENT g1 g2 g3 g4 CHILD montage
 ```
 
-Ask yourself: do you know how we ensure that all the =goatbrot= commands can run simultaneously and all of them will complete before we run the montage job?
+Ask yourself: do you know how we ensure that all the `goatbrot` commands can run simultaneously and all of them will complete before we run the montage job?
 
 ## Running the DAG
 
 Submit your DAG:
 
-```
-$ condor_submit_dag goatbrot.dag
+<pre>
+$ <b>condor_submit_dag goatbrot.dag</b>
 -----------------------------------------------------------------------
 File for submitting this DAG to Condor           : goatbrot.dag.condor.sub
 Log of DAGMan debugging messages                 : goatbrot.dag.dagman.out
@@ -127,15 +127,15 @@ Submitting job(s).
 1 job(s) submitted to cluster 71.
 
 -----------------------------------------------------------------------
-```
+</pre>
 
 ## Watch your DAG
 
 Watch with condor_q:
 
-```
-$ watch -n 10 condor_q %UCL_USER%
-```
+<pre>
+$ <b>watch -n 10 condor_q USER</b>
+</pre>
 
 Here we see DAGMan running:
 
@@ -147,7 +147,7 @@ Here we see DAGMan running:
 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 ```
 
-DAGMan has submitted the goatbrot jobs, but they haven't started running yet:
+DAGMan has submitted the goatbrot jobs, but they haven't started running yet (note that the `I` status stands for Idle):
 
 ```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
@@ -161,7 +161,7 @@ DAGMan has submitted the goatbrot jobs, but they haven't started running yet:
 6 jobs; 0 completed, 0 removed, 4 idle, 2 running, 0 held, 0 suspended
 ```
 
-They're running!
+They're running!  (All four jobs are in state `R` - running)
 
 ```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
@@ -175,7 +175,7 @@ They're running!
 5 jobs; 0 completed, 0 removed, 0 idle, 5 running, 0 held, 0 suspended
 ```
 
-Two of the jobs have finished, while the others are still running:
+Two of the jobs have finished, while the others are still running (remember that completed jobs disappear from `condor_q` output):
 
 ```
 -- Submitter: kagross@frontal.cci.ucad.sn : <172.16.200.1:9645> : frontal.cci.ucad.sn
@@ -217,8 +217,8 @@ Now it's all done:
 
 Examine your results. For some reason, goatbrot prints everything to stderr, not stdout. 
 
-```
-$ cat goatbrot.err.0.0
+<pre>
+$ <b>cat goatbrot.err.0.0</b>
 Complex image:
             Center: -0.75 + 0.75i
              Width: 1.5
@@ -240,17 +240,17 @@ Goatbrot:
     Multithreading: not supported in this build
 
 Completed: 100.0%  
-```
+</pre>
 
 Examine your log files (`goatbrot.log` and `montage.log`) and DAGMan output file (`goatbrot.dag.dagman.out`). Do they look as you expect? Can you see the progress of the DAG in the DAGMan output file?
 
 Does your final Mandlebrot image (`mandle.gif`) look correct? To view it we can use Stash.
 
-```
-$ cp mandle.gif ~/stash/public/
-```
+<pre>
+$ <b>cp mandle.gif ~/stash/public/</b>
+</pre>
 
-And now you can go to http://stash.osgconnect.net/~%UCL_USER% . You will see mandle.gif listed.  You can click on it to view it.
+And now you can go to http://stash.osgconnect.net/~USER . You will see mandle.gif listed.  You can click on it to view it.
 
 Clean up your results. Be careful about deleting the goatbrot.dag.* files, you do not want to delete the goatbrot.dag file, just goatbrot.dag.* . 
 
