@@ -1,12 +1,12 @@
 # Containers in OSG
 
-### Introduction
+### Objective
+
 Singularity is a container system to allow users full control over their enviroment. You
 can create your own container image which your job will execute within, or choose from
 a set of pre-defined images. For more information about Singularity, please see:
 
  * [Singularity Home Page](http://singularity.lbl.gov/)
-
 
 The following talk describes Singularity for scientific computing:
 
