@@ -32,7 +32,7 @@
 
    * Lecture 4 (Attach Slides Here)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-DisciplineTutorials.md)
-   * Containers with Singularity
+   * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-Containers.md)
    
 ## Friday Morning - Computational Infrastructures - Session 5
    * An introduction to clouds
