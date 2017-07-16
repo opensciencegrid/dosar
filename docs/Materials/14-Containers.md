@@ -1,4 +1,4 @@
-# Containers in OSG
+# Singularity Containers in OSG
 
 ### Objective
 
@@ -155,3 +155,5 @@ and we can help you.
 
 Once your image has been registered, new versions pushed to Docker Hub will
 automatically be detected and CVMFS will be updated accordingly.
+
+Paged sourced from https://support.opensciencegrid.org/support/solutions/articles/12000024676-singularity-containers. 
