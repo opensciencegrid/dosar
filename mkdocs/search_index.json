@@ -67,7 +67,7 @@
         }, 
         {
             "location": "/Materials/TriesteMaterials/", 
-            "text": "ASP Grid School Materials\n\n\nThursday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 (Attach Slides Here)\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nThursday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 (Attach Slides Here)\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 5\n\n\n\n\nAn introduction to clouds\n\n\nCloud computing exercises\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 6\n\n\n\n\nUsing research clouds\n\n\nCloud computing exercises", 
+            "text": "ASP Grid School Materials\n\n\nThursday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nThursday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 (Attach Slides Here)\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 5\n\n\n\n\nAn introduction to clouds\n\n\nCloud computing exercises\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 6\n\n\n\n\nUsing research clouds\n\n\nCloud computing exercises", 
             "title": "DataTrieste2017 Materials"
         }, 
         {
@@ -87,7 +87,7 @@
         }, 
         {
             "location": "/Materials/TriesteMaterials/#thursday-afternoon-computational-infrastructures-session-3", 
-            "text": "Lecture 3 (Attach Slides Here)  A brief detour through the Mandlebrot set  Coordinating sets of jobs: A simple DAG  A more complex DAG", 
+            "text": "Lecture 3 -  Slides  A brief detour through the Mandlebrot set  Coordinating sets of jobs: A simple DAG  A more complex DAG", 
             "title": "Thursday Afternoon - Computational Infrastructures - Session 3"
         }, 
         {
