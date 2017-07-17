@@ -30,7 +30,7 @@
    
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
 
-   * Lecture 4 (Attach Slides Here)
+   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/RDA-Lecture4-2017.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/14-Containers.md)
    
