@@ -11,7 +11,7 @@
    
 ## Thursday Morning - Computational Infrastructures - Session 2
 
-   * Lecture 2 (Attach Slides Here)
+   * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/RDA-Lecture2-2017.pdf)
    * [A scripting job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/05-ScriptingJob.md)
    * [An R Job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/06-RJob.md)
    * [Working with file I/O](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/07-WorkingwithFiles.md)
