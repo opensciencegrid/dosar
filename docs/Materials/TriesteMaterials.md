@@ -3,7 +3,7 @@
 ## Thursday Morning - Computational Infrastructures - Session 1
 
    * Welcome and Introduction - The Landscape of Academic Research Computing
-   * Lecture 1 (Attach Slides Here)
+   * Lecture 1 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/RDA-Lecture1-2017.pdf)
    * [Introduction](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/01-Introduction.md) 
    * [Our Job Manager (HTCondor)](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/02-OurJobManager.md)
    * [Your First Managed Job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md)
