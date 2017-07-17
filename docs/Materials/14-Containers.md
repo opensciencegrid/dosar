@@ -10,7 +10,7 @@ a set of pre-defined images. For more information about Singularity, please see:
 
 The following talk describes Singularity for scientific computing:
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/DA87Ba2dpNM" frameborder="0" allowfullscreen></iframe>
+[Singularity Talk](www.youtube.com/embed/DA87Ba2dpNM)
 
 Derek Weitzel wrote a blog post about Singularity on OSG, which provides a good
 introduction on how to create images and run them, but does not cover all the
