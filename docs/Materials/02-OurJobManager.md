@@ -89,7 +89,10 @@ LOCAL_DIR = /var
  # raw: LOCAL_DIR = /var
 
 $ ls -CF /var/lib/condor
-execute/  spool/
+dead.letter  spool.bxie/      spool.main@     spool.q3/
+execute/     spool.fsurf/     spool.nepomuk/  spool.q4/
+spool/	     spool.golmoham/  spool.q1/       spool.q5/
+spool.1/     spool.intoy/     spool.q2/       spool.snirgaz/
 ```
 
 The spool directory is where Condor keeps the jobs you submit, while the execute directory is where Condor keeps running jobs. Since this is a submission-only computer, it should be empty.
