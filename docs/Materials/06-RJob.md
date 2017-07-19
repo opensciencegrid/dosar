@@ -91,6 +91,7 @@ fi
 # Step 1: Set up our environment, the R module.
 source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
 module load R
+module load libgfortran
 
 # Step 2, Invoke R with the proper environment
 R --slave --vanilla < $1
