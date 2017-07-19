@@ -98,10 +98,10 @@ R --slave --vanilla < $1
 
 You could easily execute this on OSG Connect locally by making the shell script executable and executing it.
 
-<pre>
-$ <b>chmod 755 run-r.sh</b>
-$ <b>./run-r.sh demo.r</b>
-</pre>
+```
+$ chmod 755 run-r.sh
+$ ./run-r.sh demo.r
+```
 
 ## On your own
 Write a Condor submit file that will use R to run the `demo.r` program. You will need to include the following line in your submit file (before the "queue" statement) to make sure that Condor looks for a resource that uses OASIS:
