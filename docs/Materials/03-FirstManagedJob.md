@@ -25,7 +25,7 @@ $ nano simple.c
 Paste in the following C code. 
 
 ```
-#include &lt;stdio.h&gt;
+#include <stdio.h>
 
 int main(int argc, char **argv)
 {
