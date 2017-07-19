@@ -20,8 +20,8 @@ How do you know what version of Condor you are using? Try <code>condor_version</
 
 ```
 $ condor_version
-$CondorVersion: 8.4.11 Feb 24 2017 $
-$CondorPlatform: X86_64-CentOS_6.8 $
+$CondorVersion: 8.7.2 Jun 21 2017 BuildID: 408717 $
+$CondorPlatform: x86_64_RedHat6 $
 ```
 
 Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.
@@ -32,7 +32,7 @@ Do you know how to find the OS version? You can usually look in /etc/issue to fi
 
 ```
 $ cat /etc/issue
-Scientific Linux release 6.9 (Carbon)
+Scientific Linux release 6.8 (Carbon)
 Kernel \r on an \m
 ```
 
@@ -40,10 +40,10 @@ Or you can run:
 
 ```
 $ lsb_release -a
-LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch:graphics-4.0-amd64:graphics-4.0-noarch:printing-4.0-amd64:printing-4.0-noarch
+LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch
 Distributor ID:	Scientific
-Description:	Scientific Linux release 6.9 (Carbon)
-Release:	6.9
+Description:	Scientific Linux release 6.8 (Carbon)
+Release:	6.8
 Codename:	Carbon
 ```
 
@@ -56,7 +56,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.4.11-1.1.osg33.el6.x86_64
+condor-8.7.2-1.el6.x86_64
 
 # Show all the files installed by that RPM
 $ rpm -ql condor | head -10
@@ -76,8 +76,8 @@ Condor has some configuration files that it needs to find. They are in the stand
 
 ```
 $ ls /etc/condor
-99-gratia.conf	condor_config.local			config.d      ganglia.d			 passwdfile
-condor_config	condor_ssh_to_job_sshd_config_template	config.d.tgz  other_condor_config_files  passwdfile.daemon
+condor_config	     condor_password.annex  condor_ssh_to_job_sshd_config_template  ganglia.d
+condor_config.local  condor_pool_password   config.d
 ```
 
 Condor has some directories that it keeps records of jobs in. Remember that each submission computer keeps track of all jobs submitted to it. That's in the local directory: 
@@ -89,10 +89,7 @@ LOCAL_DIR = /var
  # raw: LOCAL_DIR = /var
 
 $ ls -CF /var/lib/condor
-dead.letter  spool.bxie/      spool.main@     spool.q3/
-execute/     spool.fsurf/     spool.nepomuk/  spool.q4/
-spool/	     spool.golmoham/  spool.q1/       spool.q5/
-spool.1/     spool.intoy/     spool.q2/       spool.snirgaz/
+dead.letter  execute/  spool/
 ```
 
 The spool directory is where Condor keeps the jobs you submit, while the execute directory is where Condor keeps running jobs. Since this is a submission-only computer, it should be empty.
@@ -101,16 +98,12 @@ Check if Condor is running.  Your output will differ slightly, but you should se
 
 ```
 $ ps auwx --forest | grep condor_ | grep -v grep
-jtqv84    5997 50.0  0.0 238996 17012 ?        Ss   15:05   0:11          \_ /usr/bin/python /home/jtqv84/bundle_probe/condor_slot2site
-jtqv84    6092 35.5  0.8 494484 405256 ?       R    15:05   0:08              \_ condor_status -pool osg-flock.grid.iu.edu -l
-root     18394  0.0  0.0   9292  2104 ?        Ss   15:00   0:00  |   \_ /bin/sh -c /usr/share/gratia/common/cron_check  /etc/gratia/condor/ProbeConfig && /usr/share/gratia/condor/condor_meter -s 9
-00
-root     18557  0.0  0.0 104800 14284 ?        S    15:00   0:00  |       \_ /usr/bin/python /usr/share/gratia/condor/condor_meter -s 900
-condor   11170  0.0  0.0  98676  4888 ?        Ss   Jun08   0:19 condor_master -pidfile /var/run/condor/condor_master.pid
-root     11176  1.4  0.1  77964 58312 ?        S    Jun08 755:03  \_ condor_procd -A /var/run/condor/procd_pipe -L /var/log/condor/ProcLog -R 1000000 -S 60 -C 497
-condor   11186  0.0  0.0 106884  6844 ?        Ss   Jun08  43:26  \_ condor_collector -f
-condor   11223  8.4  1.4 1345192 701328 ?      Ss   Jun08 4263:55  \_ condor_schedd -f
-...
+condor   2299245  0.0  0.1  50972  7348 ?        Ss   Jul10   0:08 condor_master -pidfile /var/run/condor/condor_master.pid
+root     2299287  0.0  0.1  25924  5072 ?        S    Jul10   1:54  \_ condor_procd -A /var/run/condor/procd_pipe -L /var/log/condor/ProcLog -R 1000000 -S 60 -C 499
+condor   2299288  0.0  0.1  50596  7796 ?        Ss   Jul10   0:16  \_ condor_shared_port -f
+condor   2299289  0.0  0.2  70020  9100 ?        Ss   Jul10   0:13  \_ condor_collector -f
+condor   2299290  0.0  0.5 116132 23872 ?        Ss   Jul10   6:19  \_ condor_schedd -f
+condor   2299291  0.0  0.1  51056  7956 ?        Ss   Jul10   0:59  \_ condor_negotiator -f
 ```
 
 For this version of Condor there are four processes running: the condor_master, the condor_schedd, the condor_procd, and condor_schedd. In general, you might see many different Condor processes. Here's a list of the processes:
@@ -122,7 +115,7 @@ For this version of Condor there are four processes running: the condor_master, 
 
 ```
 $ condor_config_val COLLECTOR_HOST
-192.170.227.195
+condor.grid.uchicago.edu
 ```
 
 Other daemons include:
@@ -139,17 +132,12 @@ You can find out what jobs have been submitted on your computer with the condor_
 
 ```
 $ condor_q
--- Submitter: login01.osgconnect.net : <192.170.227.195:49053> : login01.osgconnect.net
- ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
-9021661.0   jtqv84          4/27 16:33   0+00:00:00 H  0   0.0  mytest.sh         
-13459507.0   nlharr         11/13 14:34   0+00:00:00 I  0   0.0  subscript.sh      
-19220600.0   yadunand        4/12 21:26   0+00:00:29 C  0   48.8 perl cscript497391
-19336665.0   fsurf           5/7  07:45  66+17:20:16 R  0   0.0  pegasus-dagman -f 
-19336666.0   fsurf           5/7  07:46  66+17:14:45 R  0   0.0  pegasus-dagman -f 
+-- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 02:34:59
+OWNER BATCH_NAME      SUBMITTED   DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS
 
-...   
-
-2555 jobs; 34 completed, 4 removed, 1276 idle, 525 running, 716 held, 0 suspended
+Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
+Total for osguser99: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
+Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 ```
 
 The output that you see will be different depending on what jobs are running. Notice what we can see from this:
@@ -181,26 +169,19 @@ You can find out what computers are in your Condor pool. (A pool is similar to a
 
 ```
 $ condor_status
-```
+Name                             OpSys      Arch   State     Activity LoadAv Mem    ActvtyTime
 
-This will be blank on the training.osgconnect.net as it "flocks" jobs to another node for matching to the appropriate pool of resources. If there were a HTCondor pool directly attached you would see something like this:
-
-```
-Name               OpSys      Arch   State     Activity LoadAv Mem   ActvtyTime
-
-slot1@frontal.cci. LINUX      X86_64 Claimed   Busy      0.000 1909  0+00:00:04
-slot2@frontal.cci. LINUX      X86_64 Claimed   Busy      0.000 1909  0+00:00:05
-slot3@frontal.cci. LINUX      X86_64 Claimed   Busy      0.000 1909  0+00:00:06
-slot4@frontal.cci. LINUX      X86_64 Claimed   Busy      0.180 1909  0+00:00:07
-slot1@node2.cci.uc LINUX      X86_64 Claimed   Busy      0.000  469  0+00:00:04
-slot2@node2.cci.uc LINUX      X86_64 Claimed   Busy      0.000  469  0+00:00:05
-slot3@node2.cci.uc LINUX      X86_64 Claimed   Busy      0.000  469  0+00:00:06
-slot4@node2.cci.uc LINUX      X86_64 Claimed   Busy      0.000  469  0+00:00:07
-                     Machines Owner Claimed Unclaimed Matched Preempting
-
-        X86_64/LINUX        8     0       8         0       0          0
-
-               Total        8     0       8         0       0          0
+slot1@amundsen.grid.uchicago.edu LINUX      X86_64 Owner     Idle      0.000 32768  1+02:46:31
+slot2@amundsen.grid.uchicago.edu LINUX      X86_64 Owner     Idle      0.000 32768  5+01:05:58
+slot1@c2                         LINUX      X86_64 Unclaimed Idle      0.000 48289  3+10:04:49
+slot1@dhcp-10-1-202-3            LINUX      X86_64 Unclaimed Idle      0.000  3251  0+08:10:13
+slot1_1@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  6144  0+01:09:46
+slot1_2@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  6144  0+00:46:46
+slot1_3@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  2048  0+00:53:08
+slot1_4@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  1024  0+05:48:14
+slot1_5@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.000  6144  0+00:16:48
+slot1_6@dhcp-10-1-202-3          LINUX      X86_64 Claimed   Busy      0.990  2816  0+13:16:34
+...
 ```
 
 Let's look at exactly what you can see:
