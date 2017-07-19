@@ -35,9 +35,7 @@
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/14-Containers.md)
    
 ## Friday Morning - Computational Infrastructures - Session 5
-   * An introduction to clouds
-   * Cloud computing exercises
+   * [An introduction to clouds](https://documents.egi.eu/public/RetrieveFile?docid=3168&version=5&filename=EGI-cloud-tutorial-20170721_v6.pptx)
    
 ## Friday Morning - Computational Infrastructures - Session 6
-   * Using research clouds
-   * Cloud computing exercises
+   * Continuation of Cloud Exercises
