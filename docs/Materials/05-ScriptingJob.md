@@ -6,7 +6,7 @@ The objective of this exercise is to demonstrate that you can submit jobs to Con
 
 At this point, you might be asking yourself, "This is all well and good, but I don't write programs in C. Can I use other languages?" Absolutely.
 
-Let's assume you like to write program in Bourne shell. Make sure your program begins with `#!/bin/sh`, and you're good to go. Save this example code into a file called `simple.sh`
+Let's assume you like to write program in Bourne shell. Make sure your program begins with `#!/bin/sh`, and you're good to go. Save this example code into a file called `simple.sh` using nano or your favorite editor. 
 
 ```
 #!/bin/sh
