@@ -92,10 +92,10 @@ You got your files! Check them out--do they look okay?
 ## On your own
 Create several text files, then submit jobs (preferably from a single submit file) to analyze each of them. If you're at a loss to create some text files, here are a few for you.
 
-   * [Obama - State of the Union Addresses](http://www.gutenberg.org/cache/epub/50950/pg50950.txt)
-   * [Churchill - Liberalism and the Social Problem](http://www.gutenberg.org/cache/epub/18419/pg18419.txt)
-   * [Twain - Speeches](http://www.gutenberg.org/cache/epub/3188/pg3188.txt)
-   * [Vonnegut - 2 B R 0 2 B](http://www.gutenberg.org/cache/epub/21279/pg21279.txt)
+   * [Walkthrough of the Original Text Game "Adventure"](http://textfiles.com/100/adventur.txt)
+   * [The Story of Captain Midnight](http://textfiles.com/100/captmidn.txt)
+   * [The Universal Geek Code](http://textfiles.com/100/codegeek.txt)
+   * [Tao of Programming](http://textfiles.com/100/taoprogram.pro)
 
 
 Instead of downloading these files and transferring them directly, can you change your `transfer-input-files` to use a URL and have Condor download them for you? Give this a try.
