@@ -11,16 +11,16 @@ Before you can submit a job to Condor, you need a job. We will quickly write a s
 
 First, create a file called simple.c using your favorite editor. Put it anywhere you like in your home directory. In that file, put the following text. Copy and paste is a good choice: 
 
-<pre><code>
-$ <b>mkdir -p ~/condor-test</b>
-$ <b>cd ~/condor-test</b>
-</code></pre>
+```
+$ mkdir -p ~/condor-test
+$ cd ~/condor-test
+```
 
 Use your preferred text editor to create this C program. (Shown below with nano.)
 
-<pre><code>
-$ <b>nano simple.c</b>
-</code></pre>
+```
+$ nano simple.c
+```
 
 Paste in the following C code. 
 
@@ -51,20 +51,19 @@ int main(int argc, char **argv)
 
 Now compile that program:
 
-<pre><code>
-$ <b>gcc -o simple simple.c</b>
-
-$ <b>ls -lh simple</b>
+```
+$ gcc -o simple simple.c
+$ ls -lh simple
 -rwxrwxr-x 1 roy roy 595K Jun 20 11:12 simple
-</code></pre>
+```
 
 Finally, run the program and tell it to sleep for four seconds and calculate 10 * 2: 
 
-<pre><code>
-$ <b>./simple 4 10</b>
+```
+$ ./simple 4 10
 Thinking really hard for 4 seconds...
 We calculated: 20
-</code></pre>
+```
 
 Great! You just had a job run locally on the machine you are logged into (training.osgconnect.net). The next step is to run this job on a remote computer - and this is a job you can tell Condor to run! Although it clearly isn't an interesting job, it models some of the aspects of a real scientific program: it takes a while to run and it does a calculation. 
 
@@ -99,17 +98,17 @@ Let's examine each of these lines:
 
 Next, tell Condor to run your job: 
 
-<pre><code>
-$ <b>condor_submit submit</b>
+```
+$ condor_submit submit
 Submitting job(s).
 1 job(s) submitted to cluster 16.
-</code></pre>
+```
 
 Now, watch your job run (insert your username in the command below instead of `USER`.  If you forgot your username use the `whoami` command.  Note that most of your output will be different than the example, the important column to watch is the `ST` column - the job state):
 
-<pre><code>
-<em># Note the job state of 'I' means the job is idle - not yet running</em>
-$ <b>condor_q USER</b>
+```
+# Note the job state of 'I' means the job is idle - not yet running
+$ condor_q USER
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
@@ -117,8 +116,8 @@ $ <b>condor_q USER</b>
 
 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
-<em># After some time your job will enter the 'R' state which means it is currently running</em>
-$ <b>condor_q USER</b>
+# After some time your job will enter the 'R' state which means it is currently running
+$ condor_q USER
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -126,21 +125,21 @@ $ <b>condor_q USER</b>
 
 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
-<em># When your job disappears from the queue that means it completed.</em>
-$ <b>condor_q USER</b>
+# When your job disappears from the queue that means it completed.
+$ condor_q USER
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
-</code></pre>
+```
 
 *Tip*: While you are waiting for your job to run and complete you can check out ["A few tips and tricks"](https://twiki.grid.iu.edu/bin/view/Operations/HTCReviewCondorTips) to learn how to user `condor_q` more effectively.
 
 When my job was done, it was no longer listed. Because I told Condor to log information about my job, I can see what happened: 
 
-<pre><code>
-$ <b>cat simple.log</b>
+```
+$ cat simple.log
 000 (032.000.000) 08/18 15:18:13 Job submitted from host: <10.0.0.252:9645>
 ...
 001 (032.000.000) 08/18 15:18:32 Job executing on host: <172.16.200.1:9250>
@@ -163,17 +162,17 @@ $ <b>cat simple.log</b>
 	   Cpus                 :                 1         1
 	   Disk (KB)            :       15        7  17605109
 	   Memory (MB)          :        0        1      1900
-</code></pre>
+```
 
 That looks good: the job started up quickly, though you will often see slightly slower startups. Condor doesn't optimize for fast job startup, but for high throughput, The job ran for four seconds.
 
 Now take a look at the job's output:
 
-<pre><code>
-$ <b>cat simple.out</b>
+```
+$ cat simple.out
 Thinking really hard for 4 seconds...
 We calculated: 20
-</code></pre>
+```
 
 Excellent! We ran our sophisticated scientific job on a Condor pool! We've only run one job though. Can we run more?
 
@@ -201,12 +200,12 @@ Queue
 
 There are two important differences to notice here. First, the Log, Output and Error lines have the `$(Process)` macro in them. This means that the output and error files will be named according to the process number of the job. You'll see what this looks like in a moment. Second, we told Condor to run the same job an extra two times by adding extra `Arguments` and `Queue` statements. We are doing a parameter sweep on the values 10, 11, and 12. Let's see what happens: 
 
-<pre><code>
-$ <b>condor_submit submit</b>
+```
+$ condor_submit submit
 Submitting job(s)...
 3 job(s) submitted to cluster 18.
 
-$ <b>condor_q USER</b>
+$ condor_q USER
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
             
@@ -232,21 +231,21 @@ $ condor_q USER
 
 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 
-$ <b>ls simple*out</b>
+$ ls simple*out
 simple.0.out  simple.1.out  simple.2.out  simple.out
 
-$ <b>cat simple.0.out</b>
+$ cat simple.0.out
 Thinking really hard for 4 seconds...
 We calculated: 20
 
-$ <b>cat simple.1.out</b>
+$ cat simple.1.out
 Thinking really hard for 4 seconds...
 We calculated: 22
 
-$ <b>cat simple.2.out</b>
+$ cat simple.2.out
 Thinking really hard for 4 seconds...
 We calculated: 24
-</code></pre>
+```
 
 Notice that we had three jobs with the same cluster number, but different process numbers. They have the same cluster number because they were all submitted from the same submit file. When the jobs ran, they created three different output files, each with the desired output.
 
