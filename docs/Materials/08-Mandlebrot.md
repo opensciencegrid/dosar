@@ -12,27 +12,27 @@ You can generate the Mandlebrot set with two simple commands.
 
 1. Generate a PPM image of the Mandlebrot set:
 
-<pre>
-$ <b>/stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000</b>
-</pre>
+```
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
+```
 
 2. Add the Fast Fourier Transform package:
 
-<pre>
-$ <b>module load fftw</b>
-</pre>
+```
+$ module load fftw
+```
 
 3. Convert it to a JPEG image and write into your home directory:
 
-<pre>
-$ <b>/stash/user/rquick/public/goatbrot-master/convert tile_000000_000000.ppm ~/mandle.gif</b>
-</pre>
+```
+$ /stash/user/rquick/public/goatbrot-master/convert tile_000000_000000.ppm ~/mandle.gif
+```
 
 4. Open a new terminal window and move the file to local machine for viewing (substitute your username in place of `USER`):
 
-<pre>
-$ <b>scp USER@training.osgconnect.net:/share/training/USER/mandle.gif ./</b>
-</pre>
+```
+$ scp USER@training.osgconnect.net:/share/training/USER/mandle.gif ./
+```
 
 5. Point Browser at the file URL:
 
@@ -54,18 +54,18 @@ The Mandlebrot set can take a while to create, particularly if you make the iter
 
    1. *Run goatbroat 4 times*: 
 
-<pre>
-$ <b>/stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c -0.75,0.75 -w 1.5 -s 500,500</b>
-$ <b>/stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000001.ppm -c 0.75,0.75 -w 1.5 -s 500,500</b>
-$ <b>/stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000000.ppm -c -0.75,-0.75 -w 1.5 -s 500,500</b>
-$ <b>/stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000001.ppm -c 0.75,-0.75 -w 1.5 -s 500,500</b>
-</pre>
+```
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c -0.75,0.75 -w 1.5 -s 500,500
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000001.ppm -c 0.75,0.75 -w 1.5 -s 500,500
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000000.ppm -c -0.75,-0.75 -w 1.5 -s 500,500
+$ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_000001.ppm -c 0.75,-0.75 -w 1.5 -s 500,500
+```
 
    2. *Stitch them together*: 
 
-<pre>
-$ <b>/stash/user/rquick/public/goatbrot-master/montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif</b>
-</pre>
+```
+$ /stash/user/rquick/public/goatbrot-master/montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
+```
 
 This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran `goatbrot` on each section of the grid. The `montage` program simply stitches the files together. 
 
