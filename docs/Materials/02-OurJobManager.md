@@ -19,7 +19,7 @@ You should have been given your name and password when you arrived this afternoo
 How do you know what version of Condor you are using? Try <code>condor_version</code>: 
 
 ```
-$ condor_version
+$ <b>condor_version</b>
 $CondorVersion: 8.7.2 Jun 21 2017 BuildID: 408717 $
 $CondorPlatform: x86_64_RedHat6 $
 ```
@@ -57,19 +57,6 @@ $ which condor_q
 # Show which RPM installed Condor
 $ rpm -q condor
 condor-8.7.2-1.el6.x86_64
-
-# Show all the files installed by that RPM
-$ rpm -ql condor | head -10
-/etc/condor
-/etc/condor/condor_config
-/etc/condor/condor_ssh_to_job_sshd_config_template
-/etc/condor/config.d
-/etc/condor/config.d/00-restart_peaceful.config
-/etc/condor/config.d/10-batch_gahp_blahp.config
-/etc/condor/ganglia.d/00_default_metrics
-/etc/rc.d/init.d/condor
-/etc/sysconfig/condor
-/usr/bin/condor_check_userlogs
 ```
 
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
