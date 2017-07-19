@@ -58,7 +58,7 @@ perish from the earth.
 
 Our submit file looks nearly identical to what we had before, except for the one bolded line that specifies the data file to transfer.  Put the following text into a file called `submit.speech`.
 
-<pre>
+```
 Universe        = vanilla
 Executable      = analyze.sh
 Output          = analyze.out
@@ -68,24 +68,24 @@ Arguments       = gettysburg
 +ProjectName = "DataTrieste"
 ShouldTransferFiles = Yes
 WhenToTransferOutput = ON_EXIT
-<b>transfer_input_files = gettysburg</b>
+transfer_input_files = gettysburg
 queue 
-</pre>
+```
 
 Notice that you just had to specify the input files and not the output files. Condor will automatically transfer back any new files, so you don't have to worry about it. Nifty, huh?
 
 Now run the job.
 
-<pre>
-$ <b>condor_submit submit.speech</b>
+```
+$ condor_submit submit.speech
 Submitting job(s).
 1 job(s) submitted to cluster 37.
 
-$ <b>ls -lh gettys*</b>
+$ ls -lh gettys*
 -rw-rw-r--. 1 kagross kagross 1.5K Aug 18 15:41 gettysburg
 -rw-r--r--. 1 kagross kagross  120 Aug 18 15:42 gettysburg.10
 -rw-r--r--. 1 kagross kagross 1.5K Aug 18 15:42 gettysburg.upper
-</pre>
+```
 
 You got your files! Check them out--do they look okay?
 
