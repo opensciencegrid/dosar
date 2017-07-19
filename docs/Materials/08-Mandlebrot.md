@@ -20,12 +20,13 @@ $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_0000
 
 ```
 $ module load fftw
+$ module load imagemagick
 ```
 
 3. Convert it to a JPEG image and write into your home directory:
 
 ```
-$ /stash/user/rquick/public/goatbrot-master/convert tile_000000_000000.ppm ~/mandle.gif
+$ convert tile_000000_000000.ppm ~/mandle.gif
 ```
 
 4. Open a new terminal window and move the file to local machine for viewing (substitute your username in place of `USER`):
