@@ -7,10 +7,10 @@ DAGMan can handle a situation where some of the nodes in a DAG fails. DAGMan wil
 
 Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is bolded):
 
-<pre>
+```
 universe                = vanilla
 executable              = montage_wrapper.sh
-arguments               = <b>-h</b> tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
+arguments               = -h tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
@@ -19,7 +19,7 @@ output                  = montage.out
 error                   = montage.err
 log                     = goat.log
 queue
-</pre>
+```
 
 Submit the DAG again: 
 
@@ -92,8 +92,8 @@ DAGMan notices that one of the jobs failed because it's exit code was non-zero. 
 
 Look at the rescue DAG. It's called a partial DAG: it indicates what part of the DAG has already been completed. When you re-submit the original DAG, DAGMan will notice the rescue DAG and use it in combination with the original DAG. (The rescue DAG used to be the full DAG with nodes marked as done and you would ask DAGMan to run the new rescue DAG. For your simplicity DAGMan lets you resubmit the original DAG and it reads both files.)
 
-<pre>
-$ <b>cat goatbrot.dag.rescue001</b>
+```
+$ cat goatbrot.dag.rescue001
 # Rescue DAG file, created after running
 #   the goatbrot.dag DAG file
 # Created 6/22/2012 23:08:42 UTC
@@ -108,7 +108,7 @@ DONE g1
 DONE g2
 DONE g3
 DONE g4
-</pre>
+```
 
 From the comment near the top, we know that the montage node failed. Let's fix it by getting rid of the offending `-h` argument. Change `montage.sub` to look like:
 
@@ -128,8 +128,8 @@ queue
 
 Now we can re-submit our original DAG and DAGMan will pick up where it left off. It will automatically notice the rescue DAG If you didn't fix the problem, DAGMan would generate another rescue DAG.
 
-<pre>
-$ <b>condor_submit_dag goatbrot.dag</b>
+```
+$ condor_submit_dag goatbrot.dag
 Running rescue DAG 1
 -----------------------------------------------------------------------
 File for submitting this DAG to Condor           : goatbrot.dag.condor.sub
@@ -142,7 +142,7 @@ Submitting job(s).
 1 job(s) submitted to cluster 83.
 -----------------------------------------------------------------------
 
-$ <b>tail -f goatbrot.dag.dagman.out</b>
+$ tail -f goatbrot.dag.dagman.out
 06/23/12 11:30:53 ******************************************************
 06/23/12 11:30:53 ** condor_scheduniv_exec.83.0 (CONDOR_DAGMAN) STARTING UP
 06/23/12 11:30:53 ** /usr/bin/condor_dagman
@@ -155,18 +155,18 @@ $ <b>tail -f goatbrot.dag.dagman.out</b>
 06/23/12 11:30:53 ******************************************************
 06/23/12 11:30:53 Using config source: /etc/condor/condor_config
 ...
-</pre>
+```
 
 Here is where DAGMAN notices that there is a rescue DAG:
 
-<pre>
+```
 06/23/12 11:30:53 Parsing 1 dagfiles
 06/23/12 11:30:53 Parsing goatbrot.dag ...
-<b>06/23/12 11:30:53 Found rescue DAG number 1; running goatbrot.dag.rescue001 in combination with normal DAG file</b>
+06/23/12 11:30:53 Found rescue DAG number 1; running goatbrot.dag.rescue001 in combination with normal DAG file
 06/23/12 11:30:53 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 06/23/12 11:30:53 USING RESCUE DAG goatbrot.dag.rescue001
 06/23/12 11:30:53 Dag contains 5 total jobs
-</pre>
+```
 
 Shortly thereafter it sees that four jobs have already finished:
 
