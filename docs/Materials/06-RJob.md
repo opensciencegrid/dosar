@@ -54,7 +54,7 @@ $ module load R
 ```
 
 
-You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called `demo.r`:
+You'll need an R program. After hours of <strike>combing the internet</strike> coding, I present to you my first R program. Save it in a file called `demo.r` using nano or your favorite editor:
 
 ```
 len <- 100
