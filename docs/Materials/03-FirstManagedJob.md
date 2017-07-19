@@ -108,30 +108,37 @@ Now, watch your job run (insert your username in the command below instead of `U
 
 ```
 # Note the job state of 'I' means the job is idle - not yet running
-$ condor_q USER
+$ condor_q YOUR_USER_ID -nobatch
 
--- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
+-- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:08
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
-  33.0   kagross         8/18 15:19   0+00:00:00 <span style="color:red">I</span>  0   0.0  simple 0 33  
+2056.0   osguser99       7/19 03:40   0+00:00:00 I  0    0.0 simple 4 10
+
+Total for query: 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended 
+Total for all users: 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
 # After some time your job will enter the 'R' state which means it is currently running
-$ condor_q USER
+$ condor_q YOUR_USER_ID -nobatch
 
--- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
- ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
-  33.0   kagross         8/18 15:19   0+00:00:00 <span style="color:red">R</span>  0   0.0  simple 0 33  
+-- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:14
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
+2056.0   osguser99       7/19 03:40   0+00:00:02 R  0    0.0 simple 4 10
+
+Total for query: 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended 
+Total for all users: 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 0 suspended
 
 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 0 suspended
 
 # When your job disappears from the queue that means it completed.
-$ condor_q USER
+$ condor_q YOUR_USER_ID -nobatch
 
--- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
- ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
+-- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:21
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 
-0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
+Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 ```
 
 *Tip*: While you are waiting for your job to run and complete you can check out ["A few tips and tricks"](https://twiki.grid.iu.edu/bin/view/Operations/HTCReviewCondorTips) to learn how to user `condor_q` more effectively.
@@ -182,7 +189,7 @@ If you only ever had to run a single job, you probably wouldn't need Condor. But
 ```
 Universe   = vanilla
 Executable = simple
-+ProjectName = "DataTrieste"
++ProjectName = "ConnectTrain"
 Arguments  = 4 10
 Log        = simple.<span style="color:red">$(Process)</span>.log
 Output     = simple.<span style="color:red">$(Process)</span>.out
