@@ -19,7 +19,7 @@ You should have been given your name and password when you arrived this afternoo
 How do you know what version of Condor you are using? Try <code>condor_version</code>: 
 
 ```
-$ <b>condor_version</b>
+$ condor_version
 $CondorVersion: 8.7.2 Jun 21 2017 BuildID: 408717 $
 $CondorPlatform: x86_64_RedHat6 $
 ```
@@ -100,11 +100,6 @@ For this version of Condor there are four processes running: the condor_master, 
    * *condor_procd:* This process helps Condor track process (from jobs) that it creates
    * *condor_collector:* This program is part of the Condor central manager. It collects information about all computers in the pool as well as which users want to run jobs. It is what normally responds to the condor_status command. At the school, it is running on a different computer, and you can figure out which one: 
 
-```
-$ condor_config_val COLLECTOR_HOST
-condor.grid.uchicago.edu
-```
-
 Other daemons include:
 
    * *condor_negotiator:* This program is part of the Condor central manager. It decides what jobs should be run where. It is run on the same computer as the collector.
@@ -119,8 +114,8 @@ You can find out what jobs have been submitted on your computer with the condor_
 
 ```
 $ condor_q
--- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 02:34:59
-OWNER BATCH_NAME      SUBMITTED   DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS
+-- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:26:20
+ ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 
 Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
 Total for osguser99: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
