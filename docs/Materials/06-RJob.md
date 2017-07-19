@@ -114,7 +114,7 @@ Make sure you get back the output. Make sure you transfer the program.
 
 ## The answer
 
-This should be easy for you now, but if it's not, here's the answer, just in case it's hard.
+This should be easy for you now, but if it's not, here's the answer, just in case.
 
 ```
 universe = vanilla
