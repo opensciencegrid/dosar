@@ -191,9 +191,9 @@ Universe   = vanilla
 Executable = simple
 +ProjectName = "ConnectTrain"
 Arguments  = 4 10
-Log        = simple.<span style="color:red">$(Process)</span>.log
-Output     = simple.<span style="color:red">$(Process)</span>.out
-Error      = simple.<span style="color:red">$(Process)</span>.error
+Log        = simple.$(Process).log
+Output     = simple.$(Process).out
+Error      = simple.$(Process).error
 should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
