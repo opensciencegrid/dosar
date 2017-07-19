@@ -114,8 +114,8 @@ Ask yourself: do you know how we ensure that all the `goatbrot` commands can run
 
 Submit your DAG:
 
-<pre>
-$ <b>condor_submit_dag goatbrot.dag</b>
+```
+$ condor_submit_dag goatbrot.dag
 -----------------------------------------------------------------------
 File for submitting this DAG to Condor           : goatbrot.dag.condor.sub
 Log of DAGMan debugging messages                 : goatbrot.dag.dagman.out
@@ -127,15 +127,15 @@ Submitting job(s).
 1 job(s) submitted to cluster 71.
 
 -----------------------------------------------------------------------
-</pre>
+```
 
 ## Watch your DAG
 
 Watch with condor_q:
 
-<pre>
-$ <b>watch -n 10 condor_q USER</b>
-</pre>
+```
+$ watch -n 10 condor_q USER -nobatch
+```
 
 Here we see DAGMan running:
 
@@ -217,8 +217,8 @@ Now it's all done:
 
 Examine your results. For some reason, goatbrot prints everything to stderr, not stdout. 
 
-<pre>
-$ <b>cat goatbrot.err.0.0</b>
+```
+$ cat goatbrot.err.0.0
 Complex image:
             Center: -0.75 + 0.75i
              Width: 1.5
@@ -240,15 +240,15 @@ Goatbrot:
     Multithreading: not supported in this build
 
 Completed: 100.0%  
-</pre>
+```
 
 Examine your log files (`goatbrot.log` and `montage.log`) and DAGMan output file (`goatbrot.dag.dagman.out`). Do they look as you expect? Can you see the progress of the DAG in the DAGMan output file?
 
 Does your final Mandlebrot image (`mandle.gif`) look correct? To view it we can use Stash.
 
-<pre>
-$ <b>cp mandle.gif ~/stash/public/</b>
-</pre>
+```
+$ cp mandle.gif ~/stash/public/
+```
 
 And now you can go to http://stash.osgconnect.net/~USER . You will see mandle.gif listed.  You can click on it to view it.
 
