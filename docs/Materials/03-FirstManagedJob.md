@@ -24,7 +24,7 @@ $ <b>nano simple.c</b>
 
 Paste in the following C code. 
 
-<pre><code>
+```
 #include &lt;stdio.h&gt;
 
 int main(int argc, char **argv)
@@ -47,7 +47,7 @@ int main(int argc, char **argv)
     }
     return failure;
 }
-</code></pre>
+```
 
 Now compile that program:
 
@@ -61,7 +61,7 @@ $ <b>ls -lh simple</b>
 Finally, run the program and tell it to sleep for four seconds and calculate 10 * 2: 
 
 <pre><code>
-$ ./simple 4 10
+$ <b>./simple 4 10</b>
 Thinking really hard for 4 seconds...
 We calculated: 20
 </code></pre>
@@ -73,7 +73,7 @@ Think back to the lecture. I said that our first step was to have a job to run. 
 ## Submitting your job
 Now that you have a job, you just have to tell Condor to run it. Put the following text into a file called `submit`:
 
-<pre><code>
+```
 Universe   = vanilla
 Executable = simple
 Arguments  = 4 10
@@ -84,7 +84,7 @@ Error      = simple.error
 should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
-</code></pre>
+```
 
 Let's examine each of these lines:
 
@@ -180,7 +180,7 @@ Excellent! We ran our sophisticated scientific job on a Condor pool! We've only 
 ## Doing a parameter sweep
 If you only ever had to run a single job, you probably wouldn't need Condor. But we would like to have our program calculate a whole set of values for different inputs. How can we do that? Let's change our submit file to look like this: 
 
-<pre><code>
+```
 Universe   = vanilla
 Executable = simple
 +ProjectName = "DataTrieste"
@@ -197,7 +197,7 @@ Queue
 
 Arguments = 4 12
 Queue
-</code></pre>
+```
 
 There are two important differences to notice here. First, the Log, Output and Error lines have the `$(Process)` macro in them. This means that the output and error files will be named according to the process number of the job. You'll see what this looks like in a moment. Second, we told Condor to run the same job an extra two times by adding extra `Arguments` and `Queue` statements. We are doing a parameter sweep on the values 10, 11, and 12. Let's see what happens: 
 
@@ -270,10 +270,10 @@ Just like you used `$(Process)`, you can also use `$(Cluster)`. This will be a n
 
 Instead of specifying the Arguments multiple times with multiple `queue` statements, try this:
 
-<pre><code>
+```
 Arguments = $(Process) $(Cluster)
 queue 10
-</code></pre>
+```
 
 What does it mean? What happens? Does it work as you expect?
 
