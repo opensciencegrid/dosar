@@ -114,7 +114,7 @@ From the comment near the top, we know that the montage node failed. Let's fix i
 
 ```
 universe                = vanilla
-executable              = montage_wrapper.sh
+executable              = wrapper_montage.sh
 arguments               = tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
