@@ -38,7 +38,7 @@ $ scp USER@training.osgconnect.net:/share/training/USER/mandle.gif ./
 5. Point Browser at the file URL:
 
 ```
-file:////afs/ictp.it/home/THE_FIRST_LETTER_OF_YOUR_ICTP_UID/YOUR_ICTP_UID/mandle.gif
+firefox ./mandle.gif
 ```
 
 The `goatbroat` program takes several parameters. Let's break them down:
