@@ -1,0 +1,17 @@
+site_name: DOSAR Outreach Materials
+site_url: https://opensciencegrid.github.io/dosar
+repo_url: https://github.com/opensciencegrid/dosar
+theme: readthedocs
+
+extra_css:
+  - css/extra.css
+
+pages:
+- Home: 'index.md'
+- Materials:
+  - 'DataTrieste2017 Schedule': 'Materials/DT2017.md'
+  - 'DataTrieste2017 Materials': 'Materials/TriesteMaterials.md'
+
+markdown_extensions:
+  - admonition
+  - osg_markdown.colors
