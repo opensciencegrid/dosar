@@ -8,7 +8,7 @@ extra_css:
 
 pages:
 - Home: 'index.md'
-- Schools
+- School:
 - Materials:
   - 'DataTrieste2017 Schedule': 'Materials/DT2017.md'
   - 'DataTrieste2017 Materials': 'Materials/TriesteMaterials.md'
