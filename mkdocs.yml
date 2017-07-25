@@ -8,9 +8,12 @@ extra_css:
 
 pages:
 - Home: 'index.md'
+- Schools
 - Materials:
   - 'DataTrieste2017 Schedule': 'Materials/DT2017.md'
   - 'DataTrieste2017 Materials': 'Materials/TriesteMaterials.md'
+  - 'Polar Hackathon Schedule': 'Polar_Hackathon/docs/Materials/DT2017.md'
+  - 'Polar Hackathon Materials': 'Polar_Hackathon/docs/Materials/TriesteMaterials.md'
 
 markdown_extensions:
   - admonition
