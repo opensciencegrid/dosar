@@ -1,4 +1,4 @@
-# ASP Grid School Materials
+# Polar Hackathon School Materials
 
 ## Thursday Morning - Computational Infrastructures - Session 1
 
