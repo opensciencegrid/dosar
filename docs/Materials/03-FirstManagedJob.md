@@ -9,7 +9,13 @@ Because this is an important foundation, please seriously consider doing the &ld
 
 Before you can submit a job to Condor, you need a job. We will quickly write a small program in C. If you aren't an expert C programmer, fear not. We will hold your hand throughout this process.
 
-First, create a file called simple.c using your favorite editor. Put it anywhere you like in your home directory. In that file, put the following text. Copy and paste is a good choice: 
+First, because we're going to be compiling some C code, we'll need a compiler.  Sometimes this is already loaded onto a system, but in our case, we need to type the following:
+
+```
+$ module load gcc
+```
+
+Next, create a file called simple.c using your favorite editor. Put it anywhere you like in your home directory. In that file, put the following text. Copy and paste is a good choice: 
 
 ```
 $ mkdir -p ~/condor-test
