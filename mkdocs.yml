@@ -10,7 +10,7 @@ pages:
 - Home: 'index.md'
 - Materials:
   - 'Polar Hackathon Schedule': 'Materials/DT2017.md'
-  - 'Polar Hackathon Materials': 'Materials/TriesteMaterials.md'
+  - 'Polar Hackathon Materials': 'Materials/Materials.md'
 
 
 markdown_extensions:
