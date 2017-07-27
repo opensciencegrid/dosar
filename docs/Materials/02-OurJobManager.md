@@ -5,11 +5,11 @@
 This exercise should help you understand the basics of how Condor is installed, what Condor processes (a.k.a. daemons) are running, and what they do.
 
 ## Login to the Condor submit computer
-Before you start, make sure you are logged into `training.osgconnect.net`
+Before you start, make sure you are logged into `user-training.osgconnect.net`
 
 ```
 $ hostname
-training.osgconnect.net
+user-training.osgconnect.net
 ```
 
 You should have been given your name and password when you arrived this afternoon. If you don't know them, talk to Rob.
@@ -114,7 +114,7 @@ You can find out what jobs have been submitted on your computer with the condor_
 
 ```
 $ condor_q
--- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:26:20
+-- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:26:20
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 
 Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
