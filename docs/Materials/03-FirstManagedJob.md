@@ -65,7 +65,7 @@ Thinking really hard for 4 seconds...
 We calculated: 20
 ```
 
-Great! You just had a job run locally on the machine you are logged into (training.osgconnect.net). The next step is to run this job on a remote computer - and this is a job you can tell Condor to run! Although it clearly isn't an interesting job, it models some of the aspects of a real scientific program: it takes a while to run and it does a calculation. 
+Great! You just had a job run locally on the machine you are logged into (user-training.osgconnect.net). The next step is to run this job on a remote computer - and this is a job you can tell Condor to run! Although it clearly isn't an interesting job, it models some of the aspects of a real scientific program: it takes a while to run and it does a calculation. 
 
 Think back to the lecture. I said that our first step was to have a job to run. Now we'll work on running it in Condor, and eventually running lots of copies of it.
 
@@ -110,7 +110,7 @@ Now, watch your job run (insert your username in the command below instead of `U
 # Note the job state of 'I' means the job is idle - not yet running
 $ condor_q YOUR_USER_ID -nobatch
 
--- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:08
+-- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:08
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 2056.0   osguser99       7/19 03:40   0+00:00:00 I  0    0.0 simple 4 10
 
@@ -122,7 +122,7 @@ Total for all users: 1 jobs; 0 completed, 0 removed, 1 idle, 0 running, 0 held, 
 # After some time your job will enter the 'R' state which means it is currently running
 $ condor_q YOUR_USER_ID -nobatch
 
--- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:14
+-- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:14
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 2056.0   osguser99       7/19 03:40   0+00:00:02 R  0    0.0 simple 4 10
 
@@ -134,7 +134,7 @@ Total for all users: 1 jobs; 0 completed, 0 removed, 0 idle, 1 running, 0 held, 
 # When your job disappears from the queue that means it completed.
 $ condor_q YOUR_USER_ID -nobatch
 
--- Schedd: training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:21
+-- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:41:21
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 
 Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
