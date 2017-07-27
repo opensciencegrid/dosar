@@ -14,12 +14,12 @@ Condor has two coexisting types of releases at any given time: stable and develo
 
 ## Where you will work
 
-Today you will log into training.osgconnect.net for all of your exercises:
+Today you will log into user-training.osgconnect.net for all of your exercises:
 
 Login on submission node using:
 
 <pre><code>
-$ <b>ssh -XY YOUR_USER_ID@training.osgconnect.net</b>
+$ <b>ssh -XY YOUR_USER_ID@user-training.osgconnect.net</b>
 </code></pre>
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
