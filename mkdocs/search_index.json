@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/Materials/DT2017/", 
-            "text": "Polar Hackathon 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nThursday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nThursday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nIntroduction to cloud environemts\n\n\nClose out and resources for further collaboration\n\n\n\n\nDetailed Schedule\n\n\nThursday 20-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nWelcome and the Landscape of Research Computing\n\n\nRob Quick\n\n\n\n\n\n\n09:30\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nRob Quick\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nProfiling your application and finding a home for your workflow\n\n\nRob Quick\n\n\n\n\n\n\n11:45\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nRob Quick\n\n\n\n\n\n\n13:00\n\n\nLunch\n\n\n\n\n\n\n\n\n14:00\n\n\nWorflows and distributed environments\n\n\nRob Quick\n\n\n\n\n\n\n14:30\n\n\nExercise - Accessing Distributed Resources on the Open Science Grid\n\n\nRob Quick\n\n\n\n\n\n\n15:15\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:45\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nRob Quick\n\n\n\n\n\n\n16:15\n\n\nExercise - DAGMAN\n\n\nRob Quick\n\n\n\n\n\n\n\n\nFriday 21-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nIntroduction to cloud environments\n\n\nGergely Sipos\n\n\n\n\n\n\n09:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nCloud Compting Resources\n\n\nGergely Sipos\n\n\n\n\n\n\n11:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n13:00\n\n\nClosing Thoughts\n\n\nRob Quick\n\n\n\n\n\n\n13:30\n\n\nLunch\n\n\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
+            "text": "Polar Hackathon 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nWednesday Session 1\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nWednesday Session 2\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nIntroduction to cloud environemts\n\n\nClose out and resources for further collaboration\n\n\n\n\nDetailed Schedule\n\n\nWednesday 2-August 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nWelcome and the Landscape of Research Computing\n\n\nRob Quick\n\n\n\n\n\n\n09:30\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nRob Quick\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nProfiling your application and finding a home for your workflow\n\n\nRob Quick\n\n\n\n\n\n\n11:45\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nRob Quick\n\n\n\n\n\n\n13:00\n\n\nLunch\n\n\n\n\n\n\n\n\n14:00\n\n\nWorflows and distributed environments\n\n\nRob Quick\n\n\n\n\n\n\n14:30\n\n\nExercise - Accessing Distributed Resources on the Open Science Grid\n\n\nRob Quick\n\n\n\n\n\n\n15:15\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:45\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nRob Quick\n\n\n\n\n\n\n16:15\n\n\nExercise - DAGMAN\n\n\nRob Quick\n\n\n\n\n\n\n\n\nThursday 3-August 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nIntroduction to cloud environments\n\n\nGergely Sipos\n\n\n\n\n\n\n09:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nCloud Compting Resources\n\n\nGergely Sipos\n\n\n\n\n\n\n11:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n13:00\n\n\nClosing Thoughts\n\n\nRob Quick\n\n\n\n\n\n\n13:30\n\n\nLunch\n\n\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
             "title": "Polar Hackathon Schedule"
         }, 
         {
@@ -31,14 +31,14 @@
             "title": "High-Level Cirriculum Overview"
         }, 
         {
-            "location": "/Materials/DT2017/#thursday-am-session", 
+            "location": "/Materials/DT2017/#wednesday-session-1", 
             "text": "Welcome and Background  The Landscape of Research Computing  Profiling your application and choosing appropriate computing resources  Introduction to High Throughput Computing (HTC)", 
-            "title": "Thursday AM Session"
+            "title": "Wednesday Session 1"
         }, 
         {
-            "location": "/Materials/DT2017/#thursday-pm-session", 
+            "location": "/Materials/DT2017/#wednesday-session-2", 
             "text": "Workflows and distributed environments  Workflows with Directed Acyclic Graphs (DAGs)", 
-            "title": "Thursday PM Session"
+            "title": "Wednesday Session 2"
         }, 
         {
             "location": "/Materials/DT2017/#friday-am-session", 
@@ -51,14 +51,14 @@
             "title": "Detailed Schedule"
         }, 
         {
-            "location": "/Materials/DT2017/#thursday-20-july-2017", 
+            "location": "/Materials/DT2017/#wednesday-2-august-2017", 
             "text": "Time  Discription  Instructor      09:00  Welcome and the Landscape of Research Computing  Rob Quick    09:30  Exercise - UNIX Refresher, Running Locally, Batch Services  Rob Quick    10:30  Coffee Break     11:00  Profiling your application and finding a home for your workflow  Rob Quick    11:45  Exercise - Single and batch submittion with HTCondor  Rob Quick    13:00  Lunch     14:00  Worflows and distributed environments  Rob Quick    14:30  Exercise - Accessing Distributed Resources on the Open Science Grid  Rob Quick    15:15  Coffee Break     15:45  Workflows with Directed Acyclic Graphs (DAGs)  Rob Quick    16:15  Exercise - DAGMAN  Rob Quick", 
-            "title": "Thursday 20-July 2017"
+            "title": "Wednesday 2-August 2017"
         }, 
         {
-            "location": "/Materials/DT2017/#friday-21-july-2017", 
+            "location": "/Materials/DT2017/#thursday-3-august-2017", 
             "text": "Time  Discription  Instructor      09:00  Introduction to cloud environments  Gergely Sipos    09:45  Exercise - Using the EGI Fed Cloud  Gergely Sipos    10:30  Coffee Break     11:00  Cloud Compting Resources  Gergely Sipos    11:45  Exercise - Using the EGI Fed Cloud  Gergely Sipos    13:00  Closing Thoughts  Rob Quick    13:30  Lunch", 
-            "title": "Friday 21-July 2017"
+            "title": "Thursday 3-August 2017"
         }, 
         {
             "location": "/Materials/DT2017/#materials", 
@@ -66,47 +66,47 @@
             "title": "Materials"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/", 
-            "text": "ASP Grid School Materials\n\n\nThursday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nThursday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 - \nSlides\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 5\n\n\n\n\nAn introduction to clouds\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 6\n\n\n\n\nContinuation of Cloud Exercises", 
+            "location": "/Materials/Materials/", 
+            "text": "Polar Hackathon School Materials\n\n\nThursday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nThursday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 - \nSlides\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 5\n\n\n\n\nAn introduction to clouds\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 6\n\n\n\n\nContinuation of Cloud Exercises", 
             "title": "Polar Hackathon Materials"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#asp-grid-school-materials", 
+            "location": "/Materials/Materials/#polar-hackathon-school-materials", 
             "text": "", 
-            "title": "ASP Grid School Materials"
+            "title": "Polar Hackathon School Materials"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#thursday-morning-computational-infrastructures-session-1", 
+            "location": "/Materials/Materials/#thursday-morning-computational-infrastructures-session-1", 
             "text": "Welcome and Introduction - The Landscape of Academic Research Computing  Lecture 1 -  Slides  Introduction    Our Job Manager (HTCondor)  Your First Managed Job  A few tips and tricks", 
             "title": "Thursday Morning - Computational Infrastructures - Session 1"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#thursday-morning-computational-infrastructures-session-2", 
+            "location": "/Materials/Materials/#thursday-morning-computational-infrastructures-session-2", 
             "text": "Lecture 2 -  Slides  A scripting job  An R Job  Working with file I/O", 
             "title": "Thursday Morning - Computational Infrastructures - Session 2"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#thursday-afternoon-computational-infrastructures-session-3", 
+            "location": "/Materials/Materials/#thursday-afternoon-computational-infrastructures-session-3", 
             "text": "Lecture 3 -  Slides  A brief detour through the Mandlebrot set  Coordinating sets of jobs: A simple DAG  A more complex DAG", 
             "title": "Thursday Afternoon - Computational Infrastructures - Session 3"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#challenge-exercises-on-dags", 
+            "location": "/Materials/Materials/#challenge-exercises-on-dags", 
             "text": "Handling jobs that fail  Variable Substitution", 
             "title": "Challenge Exercises on DAGs"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#thursday-aftenoon-computational-infrastructures-session-4", 
+            "location": "/Materials/Materials/#thursday-aftenoon-computational-infrastructures-session-4", 
             "text": "Lecture 4 -  Slides  Discipline specific tutorials  Containers with Singularity", 
             "title": "Thursday Aftenoon - Computational Infrastructures - Session 4"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#friday-morning-computational-infrastructures-session-5", 
+            "location": "/Materials/Materials/#friday-morning-computational-infrastructures-session-5", 
             "text": "An introduction to clouds", 
             "title": "Friday Morning - Computational Infrastructures - Session 5"
         }, 
         {
-            "location": "/Materials/TriesteMaterials/#friday-morning-computational-infrastructures-session-6", 
+            "location": "/Materials/Materials/#friday-morning-computational-infrastructures-session-6", 
             "text": "Continuation of Cloud Exercises", 
             "title": "Friday Morning - Computational Infrastructures - Session 6"
         }
