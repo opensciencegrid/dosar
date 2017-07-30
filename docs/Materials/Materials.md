@@ -22,7 +22,7 @@
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md)
    * [A more complex DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/10-ComplexDAG.md)
    
-## Thursday Aftenoon - Computational Infrastructures - Session 4
+## Thursday - Computational Infrastructures - Session 4
 
    * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture4-2017.pdf)
 
