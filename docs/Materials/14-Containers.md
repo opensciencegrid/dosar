@@ -1,6 +1,5 @@
 # Singularity Containers in OSG
 
-*Note: Unlike the other exercise this is not a hands-on exercise. The examples below are meant to provide a sample of how to use signularity containers and may not work by simply cutting and pasting.* 
 
 ### Objective
 
