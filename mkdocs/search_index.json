@@ -17,7 +17,7 @@
         }, 
         {
             "location": "/Materials/DT2017/", 
-            "text": "Polar Hackathon 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nWednesday Session 1\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nWednesday Session 2\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nIntroduction to cloud environemts\n\n\nClose out and resources for further collaboration\n\n\n\n\nMaterials\n\n\nMaterials Page", 
+            "text": "Polar Hackathon 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nWednesday Session 1\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nWednesday Session 2\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nThursday Sessions\n\n\n\n\nContainers \n\n\nJetstream demo and discussion\n\n\n\n\nMaterials\n\n\nMaterials Page", 
             "title": "Polar Hackathon Schedule"
         }, 
         {
@@ -41,9 +41,9 @@
             "title": "Wednesday Session 2"
         }, 
         {
-            "location": "/Materials/DT2017/#friday-am-session", 
-            "text": "Introduction to cloud environemts  Close out and resources for further collaboration", 
-            "title": "Friday AM Session"
+            "location": "/Materials/DT2017/#thursday-sessions", 
+            "text": "Containers   Jetstream demo and discussion", 
+            "title": "Thursday Sessions"
         }, 
         {
             "location": "/Materials/DT2017/#materials", 
