@@ -16,7 +16,7 @@ You can generate the Mandlebrot set with two simple commands.
 $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_000000.ppm -c 0,0 -w 3 -s 1000,1000
 ```
 
-2. Add the Fast Fourier Transform package:
+2. Add the Fast Fourier Transform and ImageMagick packages:
 
 ```
 $ module load fftw
