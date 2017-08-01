@@ -20,7 +20,7 @@
 
    * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture3-2017.pdf)
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md)
-   * [A more complex workflow](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/10-ComplexDAG.md)
+   * [A slightly more complex DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/10-ComplexDAG.md)
    
 ## Thursday - Computational Infrastructures - Session 4
 
