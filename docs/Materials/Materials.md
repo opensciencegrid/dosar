@@ -1,5 +1,8 @@
 # Polar Hackathon School Materials
 
+We will be using OSG Connect for this set of sessions. Please visit [http://www.osgconnect.net](http://[www.osgconnect.net]) for more information.
+
+
 ## Wednesday - Computational Infrastructures - Session 1
 
    * Welcome and Introduction - The Landscape of Academic Research Computing
