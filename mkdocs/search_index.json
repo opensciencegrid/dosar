@@ -52,7 +52,7 @@
         }, 
         {
             "location": "/Materials/Materials/", 
-            "text": "Polar Hackathon School Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nWednesday - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nWednesday - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday - Computational Infrastructures - Session 3\n\n\n\n\n\n\nLecture 4 - \nSlides\n\n\n\n\n\n\nContainers with Singularity\n\n\n\n\n\n\nJetstream Demo\n\n\n\n\n\n\n## Possible if Time - Workflows\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nA more complex workflow\n\n\n\n\nExtras\n\n\n\n\nDiscipline specific tutorials", 
+            "text": "Polar Hackathon School Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nWednesday - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nWednesday - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday - Computational Infrastructures - Session 3\n\n\n\n\n\n\nLecture 4 - \nSlides\n\n\n\n\n\n\nContainers with Singularity\n\n\n\n\n\n\nJetstream Demo\n\n\n\n\n\n\nPossible if Time - Workflows\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nA more complex workflow\n\n\n\n\nExtras\n\n\n\n\nDiscipline specific tutorials", 
             "title": "Polar Hackathon Materials"
         }, 
         {
@@ -72,8 +72,13 @@
         }, 
         {
             "location": "/Materials/Materials/#thursday-computational-infrastructures-session-3", 
-            "text": "Lecture 4 -  Slides    Containers with Singularity    Jetstream Demo    ## Possible if Time - Workflows   Lecture 3 -  Slides  A brief detour through the Mandlebrot set  A more complex workflow", 
+            "text": "Lecture 4 -  Slides    Containers with Singularity    Jetstream Demo", 
             "title": "Thursday - Computational Infrastructures - Session 3"
+        }, 
+        {
+            "location": "/Materials/Materials/#possible-if-time-workflows", 
+            "text": "Lecture 3 -  Slides  A brief detour through the Mandlebrot set  A more complex workflow", 
+            "title": "Possible if Time - Workflows"
         }, 
         {
             "location": "/Materials/Materials/#extras", 
