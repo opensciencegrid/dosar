@@ -11,6 +11,8 @@ pages:
 - Materials:
   - 'Polar Hackathon Schedule': 'Materials/DT2017.md'
   - 'Polar Hackathon Materials': 'Materials/Materials.md'
+- PreviousSchools:
+  - 'Data Trieste 2017': 'PreviousSchools/index.md'
 
 
 markdown_extensions:
