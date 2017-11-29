@@ -3,9 +3,6 @@ site_url: https://opensciencegrid.github.io/dosar
 repo_url: https://github.com/opensciencegrid/dosar
 theme: readthedocs
 
-extra_css:
-  - css/extra.css
-
 pages:
 - Home: 'index.md'
 - Materials:
