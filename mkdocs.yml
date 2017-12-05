@@ -6,6 +6,8 @@ theme: readthedocs
 pages:
 - Home: 'index.md'
 - Materials:
+  - 'Data Sao Paulo Schedule': 'Materials/DT2017.md'
+  - 'Data Sao Paulo Materials': 'Materials/Materials.md' 
   - 'Polar Hackathon Schedule': 'Materials/DT2017.md'
   - 'Polar Hackathon Materials': 'Materials/Materials.md'
 
