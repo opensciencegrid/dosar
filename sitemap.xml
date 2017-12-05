@@ -23,6 +23,18 @@
      <changefreq>daily</changefreq>
     </url>
         
+    <url>
+     <loc>https://opensciencegrid.github.io/dosar/Materials/DT2017/</loc>
+     <lastmod>2017-12-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://opensciencegrid.github.io/dosar/Materials/Materials/</loc>
+     <lastmod>2017-12-05</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
 </urlset>
