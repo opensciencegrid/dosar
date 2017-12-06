@@ -16,7 +16,7 @@
    
 ### Friday AM Session
 
-   * Introduction to cloud environemts
+   * Introduction to cloud and container environemts
    * Close out and resources for further collaboration
    
 ## Detailed Schedule
