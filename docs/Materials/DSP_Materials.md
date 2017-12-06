@@ -21,20 +21,17 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
       
 ## Thursday - Computational Infrastructures - Session 3
 
-   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture4-2017.pdf)
-
-   * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/14-Containers.md)
-   
-   * Jetstream Demo
- 
-## Possible if Time - Workflows
-
    * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture3-2017.pdf)
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md)
    * [A more complex workflow](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/10-ComplexDAG.md)
 
-## Extras 
+   
+ 
+## Thursday - Computational Infrastructures - Session 4
+
+   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture4-2017.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/13-DisciplineTutorials.md)
+   * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/14-Containers.md)
    
 ## Contact information
 
