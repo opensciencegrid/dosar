@@ -72,7 +72,7 @@
         }, 
         {
             "location": "/Materials/DSP_Materials/", 
-            "text": "Data Sao Paulo School Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nWednesday - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nWednesday - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday - Computational Infrastructures - Session 3\n\n\n\n\n\n\nLecture 4 - \nSlides\n\n\n\n\n\n\nContainers with Singularity\n\n\n\n\n\n\nJetstream Demo\n\n\n\n\n\n\nPossible if Time - Workflows\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nA more complex workflow\n\n\n\n\nExtras\n\n\n\n\nDiscipline specific tutorials\n\n\n\n\nContact information\n\n\n\n\nRob Quick - rquick@iu.edu\n\n\nhttp://www.osgconnect.net/\n\n\nDOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon\n\n\nIf you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
+            "text": "Data Sao Paulo School Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nThursday - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday - Computational Infrastructures - Session 3\n\n\n\n\n\n\nLecture 4 - \nSlides\n\n\n\n\n\n\nContainers with Singularity\n\n\n\n\n\n\nJetstream Demo\n\n\n\n\n\n\nPossible if Time - Workflows\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nA more complex workflow\n\n\n\n\nExtras\n\n\n\n\nDiscipline specific tutorials\n\n\n\n\nContact information\n\n\n\n\nRob Quick - rquick@iu.edu\n\n\nhttp://www.osgconnect.net/\n\n\nDOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon\n\n\nIf you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
             "title": "Data Sao Paulo Materials"
         }, 
         {
@@ -81,14 +81,14 @@
             "title": "Data Sao Paulo School Materials"
         }, 
         {
-            "location": "/Materials/DSP_Materials/#wednesday-computational-infrastructures-session-1", 
+            "location": "/Materials/DSP_Materials/#thursday-computational-infrastructures-session-1", 
             "text": "Welcome and Introduction - The Landscape of Academic Research Computing  Lecture 1 -  Slides  Introduction    Our Job Manager (HTCondor)  Your First Managed Job  A few tips and tricks", 
-            "title": "Wednesday - Computational Infrastructures - Session 1"
+            "title": "Thursday - Computational Infrastructures - Session 1"
         }, 
         {
-            "location": "/Materials/DSP_Materials/#wednesday-computational-infrastructures-session-2", 
+            "location": "/Materials/DSP_Materials/#thursday-computational-infrastructures-session-2", 
             "text": "Lecture 2 -  Slides  A scripting job  An R Job  Working with file I/O", 
-            "title": "Wednesday - Computational Infrastructures - Session 2"
+            "title": "Thursday - Computational Infrastructures - Session 2"
         }, 
         {
             "location": "/Materials/DSP_Materials/#thursday-computational-infrastructures-session-3", 
