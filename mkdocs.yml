@@ -5,9 +5,10 @@ theme: readthedocs
 
 pages:
 - Home: 'index.md'
-- Materials:
+- Current or Upcoming Events:
   - 'Data Sao Paulo Schedule': 'Materials/DSP_DT2017.md'
   - 'Data Sao Paulo Materials': 'Materials/DSP_Materials.md' 
+- Past Events:
   - 'Polar Hackathon Schedule': 'Materials/PH_DT2017.md'
   - 'Polar Hackathon Materials': 'Materials/PH_Materials.md'
 
