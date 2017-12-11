@@ -20,8 +20,8 @@ How do you know what version of Condor you are using? Try <code>condor_version</
 
 ```
 $ condor_version
-$CondorVersion: 8.7.2 Jun 21 2017 BuildID: 408717 $
-$CondorPlatform: x86_64_RedHat6 $
+$CondorVersion: 8.6.4 Jun 22 2017 $
+$CondorPlatform: X86_64-CentOS_6.9 $
 ```
 
 Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.
@@ -32,7 +32,7 @@ Do you know how to find the OS version? You can usually look in /etc/issue to fi
 
 ```
 $ cat /etc/issue
-Scientific Linux release 6.8 (Carbon)
+Scientific Linux release 6.9 (Carbon)
 Kernel \r on an \m
 ```
 
@@ -42,8 +42,8 @@ Or you can run:
 $ lsb_release -a
 LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch
 Distributor ID:	Scientific
-Description:	Scientific Linux release 6.8 (Carbon)
-Release:	6.8
+Description:	Scientific Linux release 6.9 (Carbon)
+Release:	6.9
 Codename:	Carbon
 ```
 
@@ -56,15 +56,15 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.7.2-1.el6.x86_64
+condor-8.6.4-1.osg34.el6.x86_64
 ```
 
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
 
 ```
 $ ls /etc/condor
-condor_config	     condor_password.annex  condor_ssh_to_job_sshd_config_template  ganglia.d
-condor_config.local  condor_pool_password   config.d
+condor_config	     condor_ssh_to_job_sshd_config_template  ganglia.d
+condor_config.local  config.d
 ```
 
 Condor has some directories that it keeps records of jobs in. Remember that each submission computer keeps track of all jobs submitted to it. That's in the local directory: 
@@ -117,9 +117,7 @@ $ condor_q
 -- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:26:20
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 
-Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
-Total for osguser99: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
-Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
+0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
 ```
 
 The output that you see will be different depending on what jobs are running. Notice what we can see from this:
