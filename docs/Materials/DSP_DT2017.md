@@ -42,7 +42,7 @@
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:30 | Introduction to Grid UNESP Facilities                               | Raphael Cóbe     |
+| 09:30 | Introduction and Tour of Grid UNESP Facilities                      | Raphael Cóbe     |
 | 11:00 | Coffee Break                                                        |                  |
 | 11:30 | Wrap of Computational Infrastructures                               | Rob Quick        |
 | 12:00 | Closing Thoughts                                                    | Rob Quick        |
