@@ -13,11 +13,11 @@
 
    * Workflows and distributed environments
    * Workflows with Directed Acyclic Graphs (DAGs)
+   * Brief Introduction to clouds and containers
    
 ### Friday AM Session
 
    * UNESP Presentation and Tour
-   * Brief Introduction to clouds and containers
    * Close out and resources for further collaboration
    
 ## Detailed Schedule
