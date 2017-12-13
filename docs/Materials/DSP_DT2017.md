@@ -13,10 +13,11 @@
 
    * Workflows and distributed environments
    * Workflows with Directed Acyclic Graphs (DAGs)
+   * Brief Introduction to clouds and containers
    
 ### Friday AM Session
 
-   * Introduction to cloud and container environemts
+   * UNESP Presentation and Tour
    * Close out and resources for further collaboration
    
 ## Detailed Schedule
@@ -32,10 +33,10 @@
 | 12:00 | Exercise - Single and batch submittion with HTCondor                | Rob Quick        |
 | 12:30 | Lunch                                                               |                  |
 | 13:30 | Worflows and distributed environments                               | Rob Quick        |
-| 14:00 | Exercise - Accessing Distributed Resources on the Open Science Grid | Rob Quick        |
+| 14:00 | Exercise - Accessing the Open Science Grid and DAGMan               | Rob Quick        |
 | 15:00 | Coffee Break                                                        |                  |
-| 15:30 | Workflows with Directed Acyclic Graphs (DAGs)                       | Rob Quick        |
-| 16:15 | Exercise - DAGMAN                                                   | Rob Quick        |
+| 15:30 | A Brief Introduction to Clouds and Containers                       | Rob Quick        |
+| 16:00 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Rob Quick        |
 
 ### Friday 21-July 2017
 
@@ -43,10 +44,9 @@
 |-------|---------------------------------------------------------------------|------------------|
 | 09:30 | Introduction to Grid UNESP Facilities                               | Raphael Cóbe     |
 | 11:00 | Coffee Break                                                        |                  |
-| 11:30 | A Brief Introduction to Clouds and Containers                       | Rob Quick        |
-| 11:45 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Rob Quick        |
-| 13:00 | Closing Thoughts                                                    | Rob Quick        |
-| 13:30 | Lunch                                                               |                  |
+| 11:30 | Wrap of Computational Infrastructures                               | Rob Quick        |
+| 12:00 | Closing Thoughts                                                    | Rob Quick        |
+| 12:30 | Adjourn                                                             |                  |
 
 ## Materials
 
