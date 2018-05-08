@@ -50,4 +50,4 @@
 
 ## Materials
 
-[Materials Page](https://opensciencegrid.org/dosar/ASP2018/ASP2018_Materials/
+[Materials Page](https://opensciencegrid.org/dosar/ASP2018/ASP2018_Materials/)
