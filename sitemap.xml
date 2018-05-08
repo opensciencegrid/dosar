@@ -12,7 +12,13 @@
     
         
     <url>
-     <loc>https://opensciencegrid.github.io/dosar/ASP2018/</loc>
+     <loc>https://opensciencegrid.github.io/dosar/ASP2018/ASP2018_Schedule/</loc>
+     <lastmod>2018-05-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://opensciencegrid.github.io/dosar/ASP2018/ASP2018_Materials/</loc>
      <lastmod>2018-05-08</lastmod>
      <changefreq>daily</changefreq>
     </url>

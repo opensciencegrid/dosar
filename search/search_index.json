@@ -21,9 +21,104 @@
             "title": "Past Events"
         }, 
         {
-            "location": "/ASP2018/", 
-            "text": "Placeholder for ASP 2018 Lessons", 
+            "location": "/ASP2018/ASP2018_Schedule/", 
+            "text": "ASP 2018\n\n\nHigh-Level Curriculum Overview\n\n\nThursday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nThursday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nBrief Introduction to clouds and containers\n\n\n\n\nFriday AM Session\n\n\n\n\nUNESP Presentation and Tour\n\n\nClose out and resources for further collaboration\n\n\n\n\nDetailed Schedule\n\n\nThursday 20-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:30\n\n\nWelcome and the Landscape of Research Computing\n\n\nRob Quick\n\n\n\n\n\n\n10:00\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nRob Quick\n\n\n\n\n\n\n11:00\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:30\n\n\nProfiling your application and finding a home for your workflow\n\n\nRob Quick\n\n\n\n\n\n\n12:00\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nRob Quick\n\n\n\n\n\n\n12:30\n\n\nLunch\n\n\n\n\n\n\n\n\n13:30\n\n\nWorflows and distributed environments\n\n\nRob Quick\n\n\n\n\n\n\n14:00\n\n\nExercise - Accessing the Open Science Grid and DAGMan\n\n\nRob Quick\n\n\n\n\n\n\n15:00\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:30\n\n\nA Brief Introduction to Clouds and Containers\n\n\nRob Quick\n\n\n\n\n\n\n16:00\n\n\nExercise - Using Containers on OSG and Discpline Specfic Tutorials\n\n\nRob Quick\n\n\n\n\n\n\n\n\nFriday 21-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:30\n\n\nIntroduction and Tour of Grid UNESP Facilities\n\n\nRaphael C\u00f3be\n\n\n\n\n\n\n11:00\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:30\n\n\nWrap of Computational Infrastructures\n\n\nRob Quick\n\n\n\n\n\n\n12:00\n\n\nClosing Thoughts\n\n\nRob Quick\n\n\n\n\n\n\n12:30\n\n\nAdjourn\n\n\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
+            "title": "ASP 2018 Schedule"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#asp-2018", 
+            "text": "", 
             "title": "ASP 2018"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#high-level-curriculum-overview", 
+            "text": "", 
+            "title": "High-Level Curriculum Overview"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#thursday-am-session", 
+            "text": "Welcome and Background  The Landscape of Research Computing  Profiling your application and choosing appropriate computing resources  Introduction to High Throughput Computing (HTC)", 
+            "title": "Thursday AM Session"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#thursday-pm-session", 
+            "text": "Workflows and distributed environments  Workflows with Directed Acyclic Graphs (DAGs)  Brief Introduction to clouds and containers", 
+            "title": "Thursday PM Session"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#friday-am-session", 
+            "text": "UNESP Presentation and Tour  Close out and resources for further collaboration", 
+            "title": "Friday AM Session"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#detailed-schedule", 
+            "text": "", 
+            "title": "Detailed Schedule"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#thursday-20-july-2017", 
+            "text": "Time  Discription  Instructor      09:30  Welcome and the Landscape of Research Computing  Rob Quick    10:00  Exercise - UNIX Refresher, Running Locally, Batch Services  Rob Quick    11:00  Coffee Break     11:30  Profiling your application and finding a home for your workflow  Rob Quick    12:00  Exercise - Single and batch submittion with HTCondor  Rob Quick    12:30  Lunch     13:30  Worflows and distributed environments  Rob Quick    14:00  Exercise - Accessing the Open Science Grid and DAGMan  Rob Quick    15:00  Coffee Break     15:30  A Brief Introduction to Clouds and Containers  Rob Quick    16:00  Exercise - Using Containers on OSG and Discpline Specfic Tutorials  Rob Quick", 
+            "title": "Thursday 20-July 2017"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#friday-21-july-2017", 
+            "text": "Time  Discription  Instructor      09:30  Introduction and Tour of Grid UNESP Facilities  Raphael C\u00f3be    11:00  Coffee Break     11:30  Wrap of Computational Infrastructures  Rob Quick    12:00  Closing Thoughts  Rob Quick    12:30  Adjourn", 
+            "title": "Friday 21-July 2017"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#materials", 
+            "text": "Materials Page", 
+            "title": "Materials"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/", 
+            "text": "ASP 2018 Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nThursday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nThursday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 - \nSlides\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 5\n\n\n\n\nGrid UNESP Presentation\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 6\n\n\n\n\nComputational Infrastructures Wrap Up - \nSlides\n\n\n\n\nContact information\n\n\n\n\nRob Quick - rquick@iu.edu\n\n\nhttp://www.osgconnect.net/\n\n\nDOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon\n\n\nIf you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
+            "title": "ASP 2018 Material"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#asp-2018-materials", 
+            "text": "We will be using OSG Connect for this set of sessions. Please visit  http://www.osgconnect.net  for more information.", 
+            "title": "ASP 2018 Materials"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#thursday-morning-computational-infrastructures-session-1", 
+            "text": "Welcome and Introduction - The Landscape of Academic Research Computing  Lecture 1 -  Slides  Introduction    Our Job Manager (HTCondor)  Your First Managed Job  A few tips and tricks", 
+            "title": "Thursday Morning - Computational Infrastructures - Session 1"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#thursday-morning-computational-infrastructures-session-2", 
+            "text": "Lecture 2 -  Slides  A scripting job  An R Job  Working with file I/O", 
+            "title": "Thursday Morning - Computational Infrastructures - Session 2"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#thursday-afternoon-computational-infrastructures-session-3", 
+            "text": "Lecture 3 -  Slides  A brief detour through the Mandlebrot set  Coordinating sets of jobs: A simple DAG  A more complex DAG", 
+            "title": "Thursday Afternoon - Computational Infrastructures - Session 3"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#challenge-exercises-on-dags", 
+            "text": "Handling jobs that fail  Variable Substitution", 
+            "title": "Challenge Exercises on DAGs"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#thursday-aftenoon-computational-infrastructures-session-4", 
+            "text": "Lecture 4 -  Slides  Discipline specific tutorials  Containers with Singularity", 
+            "title": "Thursday Aftenoon - Computational Infrastructures - Session 4"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#friday-morning-computational-infrastructures-session-5", 
+            "text": "Grid UNESP Presentation", 
+            "title": "Friday Morning - Computational Infrastructures - Session 5"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#friday-morning-computational-infrastructures-session-6", 
+            "text": "Computational Infrastructures Wrap Up -  Slides", 
+            "title": "Friday Morning - Computational Infrastructures - Session 6"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Materials/#contact-information", 
+            "text": "Rob Quick - rquick@iu.edu  http://www.osgconnect.net/  DOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon  If you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
+            "title": "Contact information"
         }, 
         {
             "location": "/DataTrieste2018/", 
