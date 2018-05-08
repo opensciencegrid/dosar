@@ -32,7 +32,6 @@ You can always return to your home directory by running the command
 $ <b>cd ~</b>
 </code></pre>
 
-
 ## The Exercises
 
 Throughout the Condor exercises, you will be given a fair amount of guidance. In several spots, there are suggestions for extra exercises to do "on your own" or as "challenges". Since you aren't being graded, there is no extra credit for doing them, but we encourage you to try them out. If you prefer, you can come back to the extra credit after you've completed the basic exercises. If you simply cruise through the exercises, you'll probably have free time--we encourage you to delve in more deeply.
