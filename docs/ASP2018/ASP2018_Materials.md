@@ -49,6 +49,6 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * Patrick Skubic - pskubic@ou.edu
    * [http://www.osgconnect.net/](http://www.osgconnect.net/)
    * DOSAR: Distributed Organization for Scientific and Academic Research [http://www.dosar.org/](http://www.dosar.org/) You are welcome to join our bi‐weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon
-   * If you want long‐term grid access, you can go to [http://www.osgconnect.net](http://www.osgconnect.net) and sign up
+   * If you want long‐term grid access, you can go to [http://www.osgconnect.net/](http://www.osgconnect.net/) and sign up
 
 
