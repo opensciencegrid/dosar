@@ -4,7 +4,7 @@ The Distributed Organization for Scientific and Academic Research (DOSAR) is a '
 
 ## Upcoming Events
 
-   * The African School of Physics (ASP) - June 24-July 14, 2018 - Namibia
+   * The African School of Physics (ASP) - June 24-July 14, 2018 - UNAM, Windhoek, Namibia
 
 ## Past Events
    * CODATA-RDA School of Research Data Science - July 10-21, 2017 - Trieste, Italy
