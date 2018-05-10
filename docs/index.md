@@ -4,9 +4,9 @@ The Distributed Organization for Scientific and Academic Research (DOSAR) is a '
 
 ## Upcoming Events
 
-   * CODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil
    * The African School of Physics (ASP) - June 24-July 14, 2018 - Namibia
 
 ## Past Events
-   * CODATA-RDA School of Research Data Science - July 10-21 - Trieste, Italy
-   * Polar Hackathon - August 1-4 - Stony Brook, NY
+   * CODATA-RDA School of Research Data Science - July 10-21, 2017 - Trieste, Italy
+   * Polar Hackathon - August 1-4, 2017 - Stony Brook, NY
+   * CODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil
