@@ -2,27 +2,27 @@
 
 ## High-Level Curriculum Overview
 
-### Thursday AM Session
+### Tuesday AM Session
 
    * Welcome and Background
    * The Landscape of Research Computing
    * Profiling your application and choosing appropriate computing resources
    * Introduction to High Throughput Computing (HTC)
    
-### Thursday PM Session
+### Tuesday PM Session
 
    * Workflows and distributed environments
    * Workflows with Directed Acyclic Graphs (DAGs)
    * Brief Introduction to clouds and containers
    
-### Friday AM Session
+### Wednesday AM Session
 
    * UNESP Presentation and Tour
    * Close out and resources for further collaboration
    
 ## Detailed Schedule
 
-### Thursday 20-July 2017
+### Tuesday 20-July 2017
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
@@ -38,7 +38,7 @@
 | 15:30 | A Brief Introduction to Clouds and Containers                       | Rob Quick        |
 | 16:00 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Rob Quick        |
 
-### Friday 21-July 2017
+### Wednesday 21-July 2017
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
