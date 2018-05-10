@@ -22,7 +22,7 @@
    
 ## Detailed Schedule
 
-### Tuesday 20-July 2017
+### Tuesday 11-July 2017
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
@@ -38,7 +38,7 @@
 | 15:30 | A Brief Introduction to Clouds and Containers                       | Rob Quick        |
 | 16:00 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Rob Quick        |
 
-### Wednesday 21-July 2017
+### Wednesday 12-July 2017
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
