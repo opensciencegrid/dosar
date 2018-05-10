@@ -17,8 +17,8 @@
    
 ### Wednesday AM Session
 
-   * UNESP Presentation and Tour
    * Close out and resources for further collaboration
+   * ATLAS Analysis Example
    
 ## Detailed Schedule
 
@@ -42,9 +42,9 @@
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:30 | Introduction and Tour of Grid UNESP Facilities                      | Raphael Cóbe     |
+| 09:30 | Wrap of Computational Infrastructures                               | Rob Quick        |
 | 11:00 | Coffee Break                                                        |                  |
-| 11:30 | Wrap of Computational Infrastructures                               | Rob Quick        |
+| 11:30 | ATLAS Analysis Example                                              | Rob Quick        |
 | 12:00 | Closing Thoughts                                                    | Rob Quick        |
 | 12:30 | Adjourn                                                             |                  |
 
