@@ -20,7 +20,7 @@ How do you know what version of Condor you are using? Try <code>condor_version</
 
 ```
 $ condor_version
-$CondorVersion: 8.6.4 Jun 22 2017 $
+$CondorVersion: 8.6.10 Jun 22 2017 $
 $CondorPlatform: X86_64-CentOS_6.9 $
 ```
 
@@ -56,7 +56,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.6.4-1.osg34.el6.x86_64
+condor-8.6.10-1.osg34.el6.x86_64
 ```
 
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
@@ -137,7 +137,7 @@ What else can you find out with condor_q? Try any one of:
 
    * `man condor_q`
    * `condor_q -help`
-   * [condor_q from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_q.html)
+   * [condor_q from the online manual](http://www.cs.wisc.edu/condor/manual/v8.6/condor_q.html)
 
 ### Double bonus points
 
@@ -181,7 +181,7 @@ What else can you find out with condor_status? Try any one of:
 
    * `man condor_status`
    * `condor_status -help`
-   * [condor_status from the online manual](http://www.cs.wisc.edu/condor/manual/v8.0/condor_status.html)
+   * [condor_status from the online manual](http://www.cs.wisc.edu/condor/manual/v8.6/condor_status.html)
 
 Note in particular the options like `-master` and `-schedd`. When would these be useful? When would the `-l` option be useful? 
 
