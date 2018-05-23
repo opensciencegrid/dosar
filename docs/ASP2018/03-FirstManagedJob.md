@@ -100,7 +100,7 @@ Let's examine each of these lines:
    * *Output:* Where Condor should put the standard output from your job.
    * *Error:* Where Condor should put the standard error from your job. Our job isn't likely to have any, but we'll put it there to be safe.
    * *should_transfer_files:* Tell Condor that it should transfer files, instead of relying on a shared filesystem. While your home directories (on the glite-tutor computers) are mounted on NFS, you do not have user accounts on the worker nodes, so your jobs cannot access files on NFS. In addition, NFS isn't available between the local UI computers and the remote worker nodes. Therefore we will have Condor transfer files to the remote computer.
-   * *when_to_transfer_output:* A technical detail about when files should be transported back to the computer from which you submitted your job. Don't worry about the details for now. If you're really curious, you can read [all the details in the Condor manual](http://www.cs.wisc.edu/condor/manual/v7.6/2_5Submitting_Job.html#sec:file-transfer).
+   * *when_to_transfer_output:* A technical detail about when files should be transported back to the computer from which you submitted your job. Don't worry about the details for now. If you're really curious, you can read [all the details in the Condor manual](http://www.cs.wisc.edu/condor/manual/v8.6/2_5Submitting_Job.html#sec:file-transfer).
 
 Next, tell Condor to run your job: 
 
@@ -146,8 +146,6 @@ $ condor_q YOUR_USER_ID -nobatch
 Total for query: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
 Total for all users: 0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 ```
-
-*Tip*: While you are waiting for your job to run and complete you can check out ["A few tips and tricks"](https://twiki.grid.iu.edu/bin/view/Operations/HTCReviewCondorTips) to learn how to user `condor_q` more effectively.
 
 When my job was done, it was no longer listed. Because I told Condor to log information about my job, I can see what happened: 
 
@@ -262,7 +260,7 @@ We calculated: 24
 
 Notice that we had three jobs with the same cluster number, but different process numbers. They have the same cluster number because they were all submitted from the same submit file. When the jobs ran, they created three different output files, each with the desired output.
 
-You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at [the documentation for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html).
+You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at [the documentation for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.6/condor_submit.html).
 
 ## On your own
 
@@ -293,8 +291,8 @@ What does it mean? What happens? Does it work as you expect?
 
 ## Challenges
 
-If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the [manual page for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html)) to find answers. Feel free to ask Rob--he'd love to give you hints!
+If you have time and feel comfortable with the technical background, try these extra challenges. You'll need to peruse the Condor manual (particularly the [manual page for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.6/condor_submit.html)) to find answers. Feel free to ask Rob--he'd love to give you hints!
 
-   * Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option [described in the manual](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html). This will let you specify a directory for the input to the program. You can run specify the initialdir with `$(Process)`. You can specify extra files to copy with `transfer_input_files`. Now you're really learning the basics of running something like a real scientific job!
+   * Make another scientific program (probably just modify simple.c) that takes its input from a file. Now submit 3 copies of this program where each input file is in a separate directory. Use the initialdir option [described in the manual](http://www.cs.wisc.edu/condor/manual/v8.6/condor_submit.html). This will let you specify a directory for the input to the program. You can run specify the initialdir with `$(Process)`. You can specify extra files to copy with `transfer_input_files`. Now you're really learning the basics of running something like a real scientific job!
    * Condor can send you email when a job finishes. How can you control this? 
    * You know that your job should never run for more than four hours. If it does, then the job should be killed because there is a problem. How can you tell Condor to do this for you? 
