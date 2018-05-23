@@ -22,7 +22,7 @@ $ mkdir -p ~/condor-test
 $ cd ~/condor-test
 ```
 
-Use your preferred text editor to create this C program. (Shown below with nano.)
+Use your preferred text editor to create this C program. If you don't have one, use 'nano', as shown below.
 
 ```
 $ nano simple.c
