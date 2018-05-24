@@ -37,7 +37,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/14-Containers.md)
    
 ## Wednesday Morning - Computational Infrastructures - Session 5
-   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture5-2017-DSP.pdf)
+   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-2017-DSP.pdf)
    
 ## Wednesday Morning - Computational Infrastructures - Session 6
    * ATLAS Analysis Example
