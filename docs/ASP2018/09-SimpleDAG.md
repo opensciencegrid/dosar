@@ -7,7 +7,7 @@ The objective of this exercise is to learn the very basics of running a set of j
 
 Your tutorial leader will introduce you to DAGMan and DAGs. In short, DAGMan lets you submit complex sequences of jobs as long as they can be expressed as a directed acylic graph. For example, you may wish to run a large parameter sweep but before the sweep run you need to prepare your data. After the sweep runs, you need to collate the results. 
 
-DAGMan has many abilities such as throttling jobs, recovery from failures, and more. More information about DAGMan can be found at  [in the Condor manual](http://www.cs.wisc.edu/condor/manual/v7.6/2_10DAGMan_Applications.html).
+DAGMan has many abilities such as throttling jobs, recovery from failures, and more. More information about DAGMan can be found at  [in the Condor manual](http://www.cs.wisc.edu/condor/manual/v8.6/2_10DAGMan_Applications.html).
 
 ## Submitting a simple DAG
 
