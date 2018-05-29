@@ -26,7 +26,7 @@ when_to_transfer_output = ON_EXIT
 Queue
 ```
 
-Make sure you've built the `simple` program. If you need to, go back to [the instructions for your first job](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/03-FirstManagedJob.md) to do it again.
+Make sure you've built the `simple` program. If you need to, go back to [the instructions for your first job](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/03-FirstManagedJob.md) to do it again.
 
 We are going to get a bit more sophisticated in submitting our jobs now. Let's have three windows open. In one window you'll submit the job. In the second you will watch the queue.  And in the third you will watch what DAGMan does.
 
