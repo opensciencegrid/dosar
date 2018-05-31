@@ -25,15 +25,13 @@ $ cd analysis_example
 
 #### Step 1: Create simulated data using the grid
 
-Now in your test directory on the submission host we will create the three files: *run-root.cmd*, *run-root.sh*, and *run-root.C* with the contents
-given below. This may require running an editor such as *emacs* on your local desktop and then copying the created files to the submission host. Or the *nano* editor can be run directly on the submission host. A
-typical copy command would be as follows. 
+Now in your test directory on the submission host we will create the three files: *run-root.cmd*, *run-root.sh*, and *run-root.C* with the contents given below. This may require running an editor such as `emacs` on your local desktop and then copying the created files to the submission host. Or the `nano` editor can be run directly on the submission host. A typical copy command would be as follows. 
 
 ```
 scp run-root.* osguser-YOUR-NUMBER@training.osgconnect.net:analysis_example/
 ```
 
-It is probably easier to create all scripts with *nano* on the submission node, though, and then you won't have to copy (*scp*) anything at all. So everything below assumes you are logged on to a terminal session on the submission node.
+It is probably easier to create all scripts with *nano* on the submission node, though, and then you won't have to copy (`scp`) anything at all. So everything below assumes you are logged on to a terminal session on the submission node.
 
 First, we will utilize a simple command script to submit the grid jobs. It is *run-root.cmd*:
 
