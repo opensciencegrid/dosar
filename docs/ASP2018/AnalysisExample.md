@@ -68,3 +68,48 @@ It has to be made executable, by use of the *chmod* Linux command (protections c
 chmod +x run-root.sh
 ```
 
+The macro  *run-root.C* consists of the following code:
+
+```
+{ 
+ 
+ // create files containing simulated data
+ 
+ TRandom g; 
+ char c[256]; 
+ for ( int j = 0 ; j < 2 ; j++ ){ 
+    sprintf(c,"t%2.2d.root\000",j); 
+    TFile f(c,"RECREATE","MyFile", 0/*no compression*/); 
+    TTree *t = new TTree("t0","t0"); 
+    Int_t Run; 
+    TBranch * b_Run = t->Branch("Run",&Run); 
+    Int_t Event; 
+    TBranch * b_Event = t->Branch("Event",&Event); 
+    Float_t Energy; 
+    TBranch * b_Energy = t->Branch("Energy",&Energy); 
+    Run = j; 
+ 
+        for( Event = 0 ; Event < 100 ; Event++ ){ 
+          Energy = g.Gaus(500.0 , 200.0);   
+          t->Fill(); 
+        }  
+    f.Write(); 
+    f.Close(); 
+ } 
+} 
+.q 
+```
+
+The grid job can be submitted using:
+
+```
+condor_submit run-root.cmd
+```
+
+It can be checked with: 
+
+```
+condor_q osguser-YOUR-NUMBER
+```
+
+After it runs, you will find a log file that describes the job: *run-root.log*, and output file: *root.out*, and the files containing the simulated data: *t00.root*, *t01.root* in your test directory. 
