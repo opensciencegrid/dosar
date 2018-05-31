@@ -113,3 +113,36 @@ condor_q osguser-YOUR-NUMBER
 ```
 
 After it runs, you will find a log file that describes the job: *run-root.log*, and output file: *root.out*, and the files containing the simulated data: *t00.root*, *t01.root* in your test directory. 
+You need to copy these files into your public directory, so that you can download it to your local desktop:
+
+```
+cp t0*.root ~/public/
+```
+
+Now open a different terminal window on your local desktop, and download the root files with:
+
+```
+wget http://stash.osgconnect.net/~osguser-YOUR-NUMBER/t00.root  http://stash.osgconnect.net/~osguser-YOUR-NUMBER/t01.root
+```
+
+You can then inspect the contents of *t00.root* and *t01.root* by running Root in your current directory in the local terminal window in which you just ran the *wget* command:
+
+```
+root t00.root
+```
+
+And then the Root command:  *TBrowser b*
+
+With the *TBrowser* you can plot the simulated data in branch *Energy* as well as the other branches. Double click on the name of the root files, and then on the variables you would like to plot.
+
+Each data file contains a TTree named *t0*. You can plot the contents of all (in this example both) data file TTree's by using the TChain method as follows:
+
+In Root execute the following commands:
+
+```
+TChain tc("t0");
+tc.Add("t*.root");
+tc.Draw("Energy");
+```
+
+When you are done with this, you can quit *root* again with the command *.q <Return>*.
