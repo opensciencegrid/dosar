@@ -4,9 +4,7 @@
 
 Root may be run in batch mode on the grid to analyze large data samples. This example creates simulated data in root format using trees and performs analysis on the simulated data by means of processing on the grid. This example is based on a demo developed by OU programmer Chris Walker.
 
-## Exercises 
-
-### Prerequisite 
+## Prerequisite 
 
 * Login on submission node
 
@@ -21,9 +19,11 @@ $ mkdir -p analysis_example
 $ cd analysis_example
 ```
 
-### Simple Analysis Example
+Again the `$` sign at the beginning of the commands to execute is the *command prompt*, so it should *not* be entered as part of the command.
 
-#### Step 1: Create simulated data using the grid
+## Simple Analysis Example
+
+### Step 1: Create simulated data using the grid
 
 Now in your test directory on the submission host we will create the three files: *run-root.cmd*, *run-root.sh*, and *run-root.C* with the contents given below. This may require running an editor such as `emacs` on your local desktop and then copying the created files to the submission host. Or the `nano` editor can be run directly on the submission host. A typical copy command would be as follows. 
 
@@ -145,7 +145,7 @@ tc.Draw("Energy");
 
 When you are done with this, you can quit *root* again with the command `.q <Return>`.
 
-#### Step 2: Analyze Real Data
+### Step 2: Analyze Real Data
 
 Now we want to have a look at a real live ATLAS root file. For this, go back to the remote terminal window on osgconnect. You will need a new condor submit script called *run-z.cmd*:
 
@@ -381,7 +381,7 @@ And then using the Root command:  *TBrowser b*
 
 With the *TBrowser* you can plot the variables in the root file. Double click on histograms-z.root, and then on the variables to plot them.
 
-#### Step 3: Make TSelector
+### Step 3: Make TSelector
 
 Now let's go back to the files created in step 1, in the remote terminal window. Start *root* in your test directory with the following commands:
 
