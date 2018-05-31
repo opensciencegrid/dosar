@@ -9,12 +9,12 @@ Root may be run in batch mode on the grid to analyze large data samples. This ex
 
    * Login on submission node
 ```
-ssh -XY osguser-YOUR-NUMBER@training.osgconnect.net
+$ ssh -XY osguser-YOUR-NUMBER@training.osgconnect.net
 ```
 
 * Make a directory for this exercise
 ```
-mkdir -p analysis_example
-cd analysis_example
+$ mkdir -p analysis_example
+$ cd analysis_example
 ```
 
