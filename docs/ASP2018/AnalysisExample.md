@@ -31,7 +31,7 @@ Now in your test directory on the submission host we will create the three files
 scp run-root.* osguser-YOUR-NUMBER@training.osgconnect.net:analysis_example/
 ```
 
-It is probably easier to create all scripts with *nano* on the submission node, though, and then you won't have to copy (`scp`) anything at all. So everything below assumes you are logged on to a terminal session on the submission node.
+It is probably easier to create all scripts with `nano` on the submission node, though, and then you won't have to copy (`scp`) anything at all. So everything below assumes you are logged on to a terminal session on the submission node.
 
 First, we will utilize a simple command script to submit the grid jobs. It is *run-root.cmd*:
 
@@ -60,7 +60,7 @@ root -b < run-root.C > root.out
 ```
 
 This script runs Root in batch mode and executes input macro *run-root.C* and produces output that is routed to file *root.out*.
-It has to be made executable, by use of the *chmod* Linux command (protections can be checked with the command *ls -l*):
+It has to be made executable, by use of the `chmod` Linux command (protections can be checked with the command `ls -l`):
 
 ```
 chmod +x run-root.sh
@@ -123,7 +123,7 @@ Now open a different terminal window on your local desktop, and download the roo
 wget http://stash.osgconnect.net/~osguser-YOUR-NUMBER/t00.root  http://stash.osgconnect.net/~osguser-YOUR-NUMBER/t01.root
 ```
 
-You can then inspect the contents of *t00.root* and *t01.root* by running Root in your current directory in the local terminal window in which you just ran the *wget* command:
+You can then inspect the contents of *t00.root* and *t01.root* by running Root in your current directory in the local terminal window in which you just ran the `wget` command:
 
 ```
 root t00.root
@@ -143,4 +143,4 @@ tc.Add("t*.root");
 tc.Draw("Energy");
 ```
 
-When you are done with this, you can quit *root* again with the command *.q <Return>*.
+When you are done with this, you can quit *root* again with the command `.q <Return>`.
