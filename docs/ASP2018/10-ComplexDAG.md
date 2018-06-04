@@ -5,7 +5,7 @@ The objective of this exercise is to run a real set of jobs with DAGMan.
 
 ## Make your job submission files
 
-We'll run our `goatbrot` example. If you didn't read about it yet, [please do so now](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/08-Mandlebrot.md). We are going to make a DAG with four simultaneous jobs (`goatbrot`) and one final node to stitch them together (`montage`). This means we have five jobs. We're going to run `goatbrot` with more iterations (100,000) so it will take longer to run. 
+We'll run our `goatbrot` example. If you didn't read about it yet, [please do so now](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/08-Mandlebrot.md). We are going to make a DAG with four simultaneous jobs (`goatbrot`) and one final node to stitch them together (`montage`). This means we have five jobs. We're going to run `goatbrot` with more iterations (100,000) so it will take longer to run. 
 
 You can create your five jobs. The goatbrot jobs very similar to each other, but they have slightly different parameters (arguments) and output files. 
 
