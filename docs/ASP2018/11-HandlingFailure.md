@@ -241,4 +241,4 @@ Success! Now go ahead and clean up.
 
 If you have time, add an extra node to the DAG. Copy our original `simple` program, but make it exit with a 1 instead of a 0. DAGMan would consider this a failure, but you'll tell DAGMan that it's really a success. This is reasonable--many real world programs use a variety of return codes, and you might need to help DAGMan distinguish success from failure.
 
-Write a POST script that checks the return value. Check [the Condor manual](http://www.cs.wisc.edu/condor/manual/v8.4/2_10DAGMan_Applications.html#dagman:SCRIPT) to see how to describe your post script. 
+Write a POST script that checks the return value. Check [the Condor manual](http://www.cs.wisc.edu/condor/manual/v8.6/2_10DAGMan_Applications.html#dagman:SCRIPT) to see how to describe your post script. 
