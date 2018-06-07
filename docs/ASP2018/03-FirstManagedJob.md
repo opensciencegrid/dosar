@@ -15,14 +15,14 @@ First, because we're going to be compiling some C code, we'll need a compiler.  
 $ module load gcc
 ```
 
-Next, create a file called simple.c using your favorite editor. Put it anywhere you like in your home directory. In that file, put the following text. Copy and paste is a good choice: 
-
+Let's create a directory to perform the condor tests. Execute the following two commands in your Linux shell:
 ```
 $ mkdir -p ~/condor-test
 $ cd ~/condor-test
 ```
 
-Use your preferred text editor to create this C program. If you don't have one, use 'nano', as shown below.
+Next, create a file called simple.c using your favorite editor. Use your preferred text editor to create this C program. If you don't have one, use 'nano', as shown below.  The file will be in the condor-test directory. In that file, put the following text. Copy and paste is a good choice: 
+
 
 ```
 $ nano simple.c
