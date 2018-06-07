@@ -22,30 +22,30 @@
    
 ## Detailed Schedule
 
-### Tuesday 11-July 2017
+### Tuesday 10-July 2018
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:30 | Welcome and the Landscape of Research Computing                     | Rob Quick        |
-| 10:00 | Exercise - UNIX Refresher, Running Locally, Batch Services          | Rob Quick        |
+| 09:30 | Welcome and the Landscape of Research Computing                     | Horst Severini   |
+| 10:00 | Exercise - UNIX Refresher, Running Locally, Batch Services          | Horst Severini   |
 | 11:00 | Coffee Break                                                        |                  |
-| 11:30 | Profiling your application and finding a home for your workflow     | Rob Quick        |
-| 12:00 | Exercise - Single and batch submittion with HTCondor                | Rob Quick        |
+| 11:30 | Profiling your application and finding a home for your workflow     | Horst Severini   |
+| 12:00 | Exercise - Single and batch submittion with HTCondor                | Horst Severini   |
 | 12:30 | Lunch                                                               |                  |
-| 13:30 | Worflows and distributed environments                               | Rob Quick        |
-| 14:00 | Exercise - Accessing the Open Science Grid and DAGMan               | Rob Quick        |
+| 13:30 | Worflows and distributed environments                               | Horst Severini   |
+| 14:00 | Exercise - Accessing the Open Science Grid and DAGMan               | Horst Severini   |
 | 15:00 | Coffee Break                                                        |                  |
-| 15:30 | A Brief Introduction to Clouds and Containers                       | Rob Quick        |
-| 16:00 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Rob Quick        |
+| 15:30 | A Brief Introduction to Clouds and Containers                       | Horst Severini   |
+| 16:00 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Horst Severini   |
 
-### Wednesday 12-July 2017
+### Wednesday 11-July 2018
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:30 | Wrap of Computational Infrastructures                               | Rob Quick        |
+| 09:30 | Wrap of Computational Infrastructures                               | Pat Skubic       |
 | 11:00 | Coffee Break                                                        |                  |
-| 11:30 | ATLAS Analysis Example                                              | Rob Quick        |
-| 12:00 | Closing Thoughts                                                    | Rob Quick        |
+| 11:30 | ATLAS Analysis Example                                              | Pat Skubic       |
+| 12:00 | Closing Thoughts                                                    | Pat Skubic       |
 | 12:30 | Adjourn                                                             |                  |
 
 ## Materials
