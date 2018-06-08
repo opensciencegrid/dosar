@@ -120,7 +120,7 @@ This should be easy for you now, but if it's not, here's the answer, just in cas
 ```
 universe = vanilla
 executable = run-r.sh
-+ProjectName = "ConnectTrain"
++ProjectName = "AfricanSchool"
 arguments = demo.r
 transfer_input_files = demo.r
 log = R.log.$(Cluster).$(Process)
