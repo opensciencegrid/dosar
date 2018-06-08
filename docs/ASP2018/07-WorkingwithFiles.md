@@ -56,7 +56,7 @@ government of the people, by the people, for the people, shall not
 perish from the earth.
 ```
 
-Our submit file looks nearly identical to what we had before, except for the one bolded line that specifies the data file to transfer.  Put the following text into a file called `submit.speech`.
+Our submit file looks nearly identical to what we had before, except for the one line that specifies the data file to transfer.  Put the following text into a file called `submit.speech`.
 
 ```
 Universe        = vanilla
@@ -68,7 +68,7 @@ Arguments       = gettysburg
 +ProjectName = "AfricanSchool"
 ShouldTransferFiles = Yes
 WhenToTransferOutput = ON_EXIT
-**transfer_input_files = gettysburg**
+transfer_input_files = gettysburg
 queue 
 ```
 
