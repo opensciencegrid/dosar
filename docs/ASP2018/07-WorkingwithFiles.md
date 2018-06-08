@@ -68,7 +68,7 @@ Arguments       = gettysburg
 +ProjectName = "AfricanSchool"
 ShouldTransferFiles = Yes
 WhenToTransferOutput = ON_EXIT
-transfer_input_files = gettysburg
+**transfer_input_files = gettysburg**
 queue 
 ```
 
