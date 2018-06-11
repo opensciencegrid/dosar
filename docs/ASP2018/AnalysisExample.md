@@ -184,7 +184,7 @@ The macro  *readEvents.C* consists of the following code:
 #include "TTree.h"
 #include "TCanvas.h"
 #include "TH1F.h"
-#include &lt;iostream&gt;
+#include "iostream"
 //#include "TLorentzVector.h"
 using namespace std;
 
@@ -244,7 +244,7 @@ void readEvents(){
 
   
 	// loop over each entry (event) in the tree
-  	for( int entry=0; entry&lt;nEntries; entry++ ){
+  	for( int entry=0; entry < nEntries; entry++ ){
       if( entry%10000 * 0 ) cout << "Entry:" << entry << endl;
     
       // check that the event is read properly
@@ -406,7 +406,7 @@ To *s0.h* make the following additions:
 after existing include statements add:
 
 ```
-#include &lt;TH1F.h&gt;
+#include "TH1F.h"
 ```
 
 After class s0 definition:
