@@ -13,7 +13,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Tuesday Morning - Computational Infrastructures - Session 2
 
-   * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture2-2017-DSP.pdf)
+   * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture2-ASP2018.pdf)
    * [A scripting job](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/05-ScriptingJob.md)
    * [An R Job](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/06-RJob.md)
    * [Working with file I/O](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/07-WorkingwithFiles.md)
