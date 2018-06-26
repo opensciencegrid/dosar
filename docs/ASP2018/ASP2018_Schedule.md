@@ -24,7 +24,7 @@
 
 ### Tuesday 10-July 2018
 
-| Time  | Discription                                                         | Instructor       |
+| Time  | Description                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
 | 09:30 | Welcome and the Landscape of Research Computing                     | Horst Severini   |
 | 10:00 | Exercise - UNIX Refresher, Running Locally, Batch Services          | Horst Severini   |
@@ -40,7 +40,7 @@
 
 ### Wednesday 11-July 2018
 
-| Time  | Discription                                                         | Instructor       |
+| Time  | Description                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
 | 09:30 | Wrap of Computational Infrastructures                               | Pat Skubic       |
 | 11:00 | Coffee Break                                                        |                  |
