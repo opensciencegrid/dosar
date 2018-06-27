@@ -40,7 +40,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018.pdf)
    
 ## Wednesday Morning - Computational Infrastructures - Session 6
-   * [ATLAS Analysis Example Lecture](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Intro_Anal_Ex.pptx.pdf)
+   * [ATLAS Analysis Example Lecture](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Intro_Anal_Ex-ASP2018.pdf)
    * [ATLAS Analysis Example Exercise](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/AnalysisExample.md)
    
 ## Contact information
