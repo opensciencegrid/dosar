@@ -20,7 +20,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Tuesday Afternoon - Computational Infrastructures - Session 3
 
-   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture3-2017-DSP.pdf)
+   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture3-ASP2018.pdf)
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/08-Mandlebrot.md)
    * [Coordinating sets of jobs: A simple DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/09-SimpleDAG.md)
    * [A more complex DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/10-ComplexDAG.md)
@@ -32,12 +32,12 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Tuesday Aftenoon - Computational Infrastructures - Session 4
 
-   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture4-2017-DSP.pdf)
+   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture4-ASP2018.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/14-Containers.md)
    
 ## Wednesday Morning - Computational Infrastructures - Session 5
-   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-2017-DSP.pdf)
+   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018.pdf)
    
 ## Wednesday Morning - Computational Infrastructures - Session 6
    * [ATLAS Analysis Example Lecture](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Intro_Anal_Ex.pptx.pdf)
