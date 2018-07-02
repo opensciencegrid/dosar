@@ -82,7 +82,6 @@ Now that you have a job, you just have to tell Condor to run it. Put the followi
 Universe   = vanilla
 Executable = simple
 Arguments  = 4 10
-+ProjectName = "AfricanSchool"
 Log        = simple.log
 Output     = simple.out
 Error      = simple.error
@@ -193,7 +192,6 @@ If you only ever had to run a single job, you probably wouldn't need Condor. But
 ```
 Universe   = vanilla
 Executable = simple
-+ProjectName = "AfricanSchool"
 Arguments  = 4 10
 Log        = simple.$(Process).log
 Output     = simple.$(Process).out
