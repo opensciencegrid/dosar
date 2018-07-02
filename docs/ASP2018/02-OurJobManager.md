@@ -93,7 +93,7 @@ condor   2299290  0.0  0.5 116132 23872 ?        Ss   Jul10   6:19  \_ condor_sc
 condor   2299291  0.0  0.1  51056  7956 ?        Ss   Jul10   0:59  \_ condor_negotiator -f
 ```
 
-For this version of Condor there are four processes running: the condor_master, the condor_schedd, the condor_procd, and condor_schedd. In general, you might see many different Condor processes. Here's a list of the processes:
+For this version of Condor there are four processes running: the condor_master, the condor_schedd, the condor_procd, and condor_collector. In general, you might see many different Condor processes. Here's a list of the processes:
 
    * *condor_master*: This program runs constantly and ensures that all other parts of Condor are running. If they hang or crash, it restarts them.
    * *condor_schedd*: If this program is running, it allows jobs to be submitted from this computer--that is, your computer is a "submit machine". This will advertise jobs to the central manager so that it knows about them. It will contact a condor_startd on other execute machines for each job that needs to be started.
