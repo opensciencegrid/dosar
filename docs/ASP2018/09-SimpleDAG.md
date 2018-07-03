@@ -17,7 +17,6 @@ We're going to go back to the "simple" example that we did first. (The one with 
 Universe                = vanilla
 Executable              = simple
 Arguments               = 4 10
-+ProjectName            = "AfricanSchool"
 Log                     = simple.log
 Output                  = simple.out
 Error                   = simple.error
