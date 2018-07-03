@@ -65,7 +65,6 @@ Output          = analyze.out
 Error           = analyze.error
 Log             = analyze.log
 Arguments       = gettysburg
-+ProjectName = "AfricanSchool"
 ShouldTransferFiles = Yes
 WhenToTransferOutput = ON_EXIT
 transfer_input_files = gettysburg
