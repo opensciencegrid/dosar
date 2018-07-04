@@ -148,7 +148,7 @@ How do you use the `-constraint` or `-format` options to `condor_q`? When would 
 You can find out what computers are in your Condor pool. (A pool is similar to a cluster, but it doesn't have the connotation that all computers are dedicated full-time to computation: some may be desktop computers owned by users.) To look, use condor_status:
 
 ```
-$ condor_status
+$ condor_status -pool flock.opensciencegrid.org
 Name                             OpSys      Arch   State     Activity LoadAv Mem    ActvtyTime
 
 slot1@amundsen.grid.uchicago.edu LINUX      X86_64 Owner     Idle      0.000 32768  1+02:46:31
