@@ -20,7 +20,7 @@ How do you know what version of Condor you are using? Try <code>condor_version</
 
 ```
 $ condor_version
-$CondorVersion: 8.6.10 Jun 22 2017 $
+$CondorVersion: 8.6.11 May 14 2018 $
 $CondorPlatform: X86_64-CentOS_6.9 $
 ```
 
