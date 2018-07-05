@@ -48,14 +48,14 @@ There are some interesting parts you can check out.
 How many times has this job run? (It might be more than one if there were recoverable errors.)
 
 ```
-$ condor_q -l 24.0 | grep JobRunCount
+$ condor_q -l 23.0 | grep JobRunCount
 JobRunCount = 1
 ```
 
 Where is the user log for this job? This is helpful when you assist someone else in debugging and they're not sure.
 
 ```
-$ condor_q -l 24.0 | grep UserLog
+$ condor_q -l 23.0 | grep UserLog
 UserLog = "/home/kagross/condor-test/simple.47.log"
 ```
 
