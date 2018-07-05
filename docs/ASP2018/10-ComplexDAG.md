@@ -93,7 +93,7 @@ Because we are using OASIS, we will need to create a wrapper script to load the 
 ```
 source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
 module load imagemagick
-montage tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
+montage $*
 ```
 
 ## Make your DAG
