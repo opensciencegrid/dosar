@@ -11,12 +11,12 @@ $ condor_q -run -nobatch
 
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER           SUBMITTED     RUN_TIME HOST(S)
-  28.44  kagross         8/18 14:51   0+00:00:42 slot1@node2.cci.ucad.sn
-  28.45  kagross         8/18 14:51   0+00:00:37 slot2@node2.cci.ucad.sn
-  28.46  kagross         8/18 14:51   0+00:00:32 slot3@node2.cci.ucad.sn
-  28.47  kagross         8/18 14:51   0+00:00:27 slot4@node2.cci.ucad.sn
-  28.48  kagross         8/18 14:51   0+00:00:20 slot1@frontal.cci.ucad.sn
-  28.49  kagross         8/18 14:51   0+00:00:14 slot2@frontal.cci.ucad.sn
+  23.44  kagross         8/18 14:51   0+00:00:42 slot1@node2.cci.ucad.sn
+  23.45  kagross         8/18 14:51   0+00:00:37 slot2@node2.cci.ucad.sn
+  23.46  kagross         8/18 14:51   0+00:00:32 slot3@node2.cci.ucad.sn
+  23.47  kagross         8/18 14:51   0+00:00:27 slot4@node2.cci.ucad.sn
+  23.48  kagross         8/18 14:51   0+00:00:20 slot1@frontal.cci.ucad.sn
+  23.49  kagross         8/18 14:51   0+00:00:14 slot2@frontal.cci.ucad.sn
 ```
 
 `condor_q` can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
@@ -77,7 +77,7 @@ What else can you find that's interesting in the ClassAd?
 If you submit a job that you realize has a problem, you can remove it with `condor_rm`. For example: 
 
 ```
-$ condor_q
+$ condor_q -nobatch
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -88,7 +88,7 @@ $ condor_q
 $ condor_rm 29.0
 Job 29.0 marked for removal
 
-$ condor_q
+$ condor_q -nobatch
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
@@ -107,7 +107,7 @@ A few tips:
 You can see information about jobs that completed and are no longer in the queue with the <code>condor_history</code> command. It's rare that you want to see *all* the jobs, so try looking at jobs for just you:
 
 ```
-$ condor_history USER
+$ condor_history YOUR_USER_ID
 ```
 
 For example:
