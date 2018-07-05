@@ -37,18 +37,20 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/14-Containers.md)
    
 ## Wednesday Morning - Computational Infrastructures - Session 5
-   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018.pdf)
-   
-## Wednesday Morning - Computational Infrastructures - Session 6
    * [ATLAS Analysis Example Lecture](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Intro_Anal_Ex-ASP2018.pdf)
    * [ATLAS Analysis Example Exercise](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/AnalysisExample.md)
+   
+## Wednesday Morning - Computational Infrastructures - Session 6
+   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018.pdf)
    
 ## Contact information
 
    * Rob Quick - rquick@iu.edu
    * Horst Severini - severini@ou.edu
    * Patrick Skubic - pskubic@ou.edu
+   * Jae Yu - jaehoonyu@uta.edu
    * Julia Gray - julia.ann.gray@gmail.com
+   * Dick Greenwood - greenw@phys.latech.edu
    * [http://www.osgconnect.net/](http://www.osgconnect.net/)
    * DOSAR: Distributed Organization for Scientific and Academic Research [http://www.dosar.org/](http://www.dosar.org/) You are welcome to join our bi‐weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the African School of Physics 2018.
    * If you want long‐term grid access, you can go to [http://www.osgconnect.net/](http://www.osgconnect.net/) and sign up
