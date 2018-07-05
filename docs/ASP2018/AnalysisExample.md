@@ -60,7 +60,7 @@ root -b < run-root.C > root.out
 ```
 
 This script runs Root in batch mode and executes input macro *run-root.C* and produces output that is routed to file *root.out*.
-It has to be made executable, by use of the 'chmod' Linux command (protections can be checked with the command 'ls -l'):
+It has to be made executable, by use of the `chmod` Linux command (protections can be checked with the command `ls -l`):
 
 ```
 $ chmod +x run-root.sh
