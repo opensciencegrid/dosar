@@ -135,7 +135,7 @@ Submitting job(s).
 Watch with condor_q:
 
 ```
-$ watch -n 10 condor_q USER -nobatch
+$ watch -n 10 condor_q YOUR_USER_ID -nobatch
 ```
 
 Here we see DAGMan running:
@@ -251,7 +251,7 @@ Does your final Mandlebrot image (`mandle.gif`) look correct? To view it we can 
 $ cp mandle.gif ~/stash/public/
 ```
 
-And now you can go to http://stash.osgconnect.net/~USER . You will see mandle.gif listed.  You can click on it to view it.
+And now you can go to http://stash.osgconnect.net/~YOUR_USER_ID . You will see mandle.gif listed.  You can click on it to view it.
 
 Clean up your results. Be careful about deleting the goatbrot.dag.* files, you do not want to delete the goatbrot.dag file, just goatbrot.dag.* . 
 
