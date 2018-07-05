@@ -51,8 +51,7 @@ Submitting job(s).
 -----------------------------------------------------------------------
 ```
 
-In the second window, watch the queue (press Ctrl+C when finished watching to kill this process):
-(As before, replace `YOUR_USER_ID` with your username.)
+In the second window, watch the queue. As before, replace `YOUR_USER_ID` with your username. (press Ctrl+C when finished watching to kill this process):
 
 ```
 $ watch -n 10 condor_q YOUR_USER_ID -nobatch
