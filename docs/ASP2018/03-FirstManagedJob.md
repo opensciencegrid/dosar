@@ -109,7 +109,7 @@ Submitting job(s).
 1 job(s) submitted to cluster 16.
 ```
 
-Now, watch your job run (insert your username in the command below instead of `USER`.  If you forgot your username use the `whoami` command.  Note that most of your output will be different than the example, the important column to watch is the `ST` column - the job state):
+Now, watch your job run (insert your username in the command below instead of `YOUR_USER_ID`.  If you forgot your username use the `whoami` command.  Note that most of your output will be different than the example, the important column to watch is the `ST` column - the job state):
 
 ```
 # Note the job state of 'I' means the job is idle - not yet running
