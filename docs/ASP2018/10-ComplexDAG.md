@@ -91,7 +91,7 @@ queue
 Because we are using OASIS, we will need to create a wrapper script to load the ImageMagick module so that we can use it to create the montage.  Put the following lines into `wrapper_montage.sh`:
 
 ```
-source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
+source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.6.2/init/bash
 module load imagemagick
 montage $*
 ```
