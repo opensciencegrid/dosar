@@ -9,7 +9,7 @@ Root may be run in batch mode on the grid to analyze large data samples. This ex
 * Login on submission node
 
 ```
-$ ssh -XY osguser-YOUR-NUMBER@training.osgconnect.net
+$ ssh -XY YOUR_USER_ID@user-training.osgconnect.net
 ```
 
 * Make a directory for this exercise
@@ -28,7 +28,7 @@ Again the `$` sign at the beginning of the commands to execute is the *command p
 Now in your test directory on the submission host we will create the three files: *run-root.cmd*, *run-root.sh*, and *run-root.C* with the contents given below. This may require running an editor such as `emacs` on your local desktop and then copying the created files to the submission host. Or the `nano` editor can be run directly on the submission host. A typical copy command would be as follows. 
 
 ```
-$ scp run-root.* osguser-YOUR-NUMBER@training.osgconnect.net:analysis_example/
+$ scp run-root.* YOUR_USER_ID@user-training.osgconnect.net:analysis_example/
 ```
 
 It is probably easier to create all scripts with `nano` on the submission node, though, and then you won't have to copy (`scp`) anything at all. So everything below assumes you are logged on to a terminal session on the submission node.
@@ -107,7 +107,7 @@ $ condor_submit run-root.cmd
 It can be checked with: 
 
 ```
-$ condor_q osguser-YOUR-NUMBER
+$ condor_q YOUR_USER_ID -nobatch
 ```
 
 After it runs, you will find a log file that describes the job: *run-root.log*, and output file: *root.out*, and the files containing the simulated data: *t00.root*, *t01.root* in your test directory. 
@@ -120,7 +120,7 @@ $ cp t0*.root ~/public/
 Now open a different terminal window on your local desktop, and download the root files with:
 
 ```
-$ wget http://stash.osgconnect.net/~osguser-YOUR-NUMBER/t00.root  http://stash.osgconnect.net/~osguser-YOUR-NUMBER/t01.root
+$ wget http://stash.osgconnect.net/~YOUR_USER_ID/t00.root  http://stash.osgconnect.net/~YOUR_USER_ID/t01.root
 ```
 
 You can then inspect the contents of *t00.root* and *t01.root* by running Root in your current directory in the local terminal window in which you just ran the `wget` command:
@@ -152,7 +152,7 @@ Now we want to have a look at a real live ATLAS root file. For this, go back to 
 ```
 universe=vanilla
 executable=run-z.sh
-transfer_input_files = readEvents.C,/home/zeno/public/muons.root
+transfer_input_files = readEvents.C,/home/pskubic/public/muons.root
 transfer_executable=True
 when_to_transfer_output = ON_EXIT
 log=run-z.log
@@ -354,7 +354,7 @@ $ condor_submit run-z.cmd
 It can again be checked with: 
 
 ```
-$ condor_q osguser-YOUR-NUMBER
+$ condor_q YOUR_USER_ID -nobatch
 ```
 
 After it runs, you will find a log file that describes the job: *run-z.log*, and output file: *root-z.out*, and the files containing the simulated data: *histograms-z.root* in your test directory. 
@@ -368,7 +368,7 @@ $ cp histograms-z.root ~/public/
 Go back to the local terminal window on your local desktop, and download the root files with:
 
 ```
-$ wget http://stash.osgconnect.net/~osguser-YOUR-NUMBER/histograms-z.root
+$ wget http://stash.osgconnect.net/~YOUR_USER_ID/histograms-z.root
 ```
 
 You can inspect the contents of *histograms-z.root* by running Root (i.e., `root histograms-z.root`) in your current directory in your local terminal window:
@@ -527,7 +527,7 @@ cp histograms.root ~/public/
 Go back to the local terminal window on your local desktop, and download the root files with:
 
 ```
-wget http://stash.osgconnect.net/~osguser-YOUR-NUMBER/histograms.root
+wget http://stash.osgconnect.net/~YOUR_USER_ID/histograms.root
 ```
 
 You can look at the output histogram file: *histograms.root*
