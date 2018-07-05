@@ -52,9 +52,10 @@ Submitting job(s).
 ```
 
 In the second window, watch the queue (press Ctrl+C when finished watching to kill this process):
+(As before, replace `YOUR_USER_ID` with your username.)
 
 ```
-$ watch -n 10 condor_q USER -nobatch
+$ watch -n 10 condor_q YOUR_USER_ID -nobatch
 
 -- Submitter: osg-ss-submit.chtc.wisc.edu : <128.104.100.55:9618?sock=28867_10e4_2> : osg-ss-submit.chtc.wisc.edu
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
