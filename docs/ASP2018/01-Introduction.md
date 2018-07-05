@@ -8,7 +8,7 @@ You will receive login credentials at the beginning of this session.
    * You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
 
 ## Which Condor?
-We will be using Condor 8.6.10, which is a recent production version of Condor.
+We will be using Condor 8.6.11, which is a recent production version of Condor.
 
 Condor has two coexisting types of releases at any given time: stable and development. Condor 8.2.X and 7.8.x are considered stable releases, and you can know they are stable because the second digits (a 2 or a 8 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 7.8.0 and 7.8.1 have the same set of features) and differ only in bug fixes.
 
