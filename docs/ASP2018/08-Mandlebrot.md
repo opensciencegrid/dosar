@@ -29,10 +29,10 @@ $ module load imagemagick
 $ convert tile_000000_000000.ppm ~/mandle.gif
 ```
 
-4. Open a new terminal window and move the file to local machine for viewing (substitute your username in place of `USER`):
+4. Open a new terminal window and move the file to local machine for viewing (substitute your username in place of `YOUR_USER_ID`):
 
 ```
-$ scp USER@user-training.osgconnect.net:/home/USER/mandle.gif ./
+$ scp YOUR_USER_ID@user-training.osgconnect.net:/home/USER/mandle.gif ./
 ```
 
 5. Point Browser at the file URL:
@@ -79,5 +79,5 @@ The same way we did above.
    1. This time, rather than copying your file to your local system, point your browser at the stash web server:
 
 ```
-http://stash.osgconnect.net/~USER
+http://stash.osgconnect.net/~YOUR_USER_ID
 ```
