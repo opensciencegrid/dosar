@@ -51,7 +51,7 @@ The `goatbroat` program takes several parameters. Let's break them down:
 
 ## Dividing goatbrot up
 
-The Mandlebrot set can take a while to create, particularly if you make the iterations large or the image size large. What if we broke the creation of the image into multiple invocations then stitched them together? Once we do that, we can run each goatbroat in parallel in our cluster. Here's an example you can run by hand. 
+The Mandlebrot set can take a while to create, particularly if you make the iterations large or the image size large. What if we broke the creation of the image into multiple invocations then stitched them together? Once we do that, we can run each goatbroat in parallel in our cluster. Here's an example you can run by hand. (This is back in your first terminal, where you are logged into the *user-training* machine.)
 
    1. *Run goatbroat 4 times*: 
 
