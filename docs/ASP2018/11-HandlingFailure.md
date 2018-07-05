@@ -10,7 +10,8 @@ Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's
 ```
 universe                = vanilla
 executable              = wrapper_montage.sh
-arguments               = -h tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
++ProjectName = "osg.ConnectTrain"
+arguments               = *-h* tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
