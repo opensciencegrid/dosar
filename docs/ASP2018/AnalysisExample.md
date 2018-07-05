@@ -171,7 +171,7 @@ module load libXpm
 root -b -q readEvents.C+ > root-z.out
 ```
 This script runs Root in batch mode and executes input macro *readEvents.C* and produces output that is routed to file *root-z.out*.
-It has to be made executable, by use of the =chmod= Linux command (protections can be checked with the command =ls -l=):
+It has to be made executable, by use of the `chmod` Linux command (protections can be checked with the command `ls -l`):
 
 ```
 $ chmod +x run-z.sh
