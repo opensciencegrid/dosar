@@ -106,7 +106,7 @@ Next, tell Condor to run your job:
 ```
 $ condor_submit submit
 Submitting job(s).
-1 job(s) submitted to cluster 16.
+1 job(s) submitted to cluster 2056.
 ```
 
 Now, watch your job run (insert your username in the command below instead of `YOUR_USER_ID`.  If you forgot your username use the `whoami` command.  Note that most of your output will be different than the example, the important column to watch is the `ST` column - the job state):
@@ -150,15 +150,15 @@ When my job was done, it was no longer listed. Because I told Condor to log info
 
 ```
 $ cat simple.log
-000 (032.000.000) 08/18 15:18:13 Job submitted from host: <10.0.0.252:9645>
+000 (2056.000.000) 08/18 15:18:13 Job submitted from host: <10.0.0.252:9645>
 ...
-001 (032.000.000) 08/18 15:18:32 Job executing on host: <172.16.200.1:9250>
+001 (2056.000.000) 08/18 15:18:32 Job executing on host: <172.16.200.1:9250>
 ...
-006 (032.000.000) 08/18 15:18:32 Image size of job updated: 7
+006 (2056.000.000) 08/18 15:18:32 Image size of job updated: 7
 	0  -  MemoryUsage of job (MB)
 	0  -  ResidentSetSize of job (KB)
 ...
-005 (032.000.000) 08/18 15:18:33 Job terminated.
+005 (2056.000.000) 08/18 15:18:33 Job terminated.
 	(1) Normal termination (return value 0)
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
 		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
@@ -212,7 +212,7 @@ There are two important differences to notice here. First, the Log, Output and E
 ```
 $ condor_submit submit
 Submitting job(s)...
-3 job(s) submitted to cluster 18.
+3 job(s) submitted to cluster 34.
 
 $ condor_q YOUR_USER_ID -nobatch
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
