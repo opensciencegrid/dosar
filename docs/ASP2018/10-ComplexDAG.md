@@ -74,6 +74,7 @@ You should notice a few things about the montage submission file:
 ```
 universe                = vanilla
 executable              = wrapper_montage.sh
++ProjectName = "osg.ConnectTrain"
 arguments               = tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.gif
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
