@@ -214,7 +214,7 @@ $ condor_submit submit
 Submitting job(s)...
 3 job(s) submitted to cluster 18.
 
-$ condor_q YOU_USER_ID -nobatch
+$ condor_q YOUR_USER_ID -nobatch
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
             
@@ -224,7 +224,7 @@ $ condor_q YOU_USER_ID -nobatch
 
 3 jobs; 0 completed, 0 removed, 4 idle, 0 running, 0 held, 0 suspended
 
-$ condor_q YOU_USER_ID -nobatch
+$ condor_q YOUR_USER_ID -nobatch
 -- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD               
             
