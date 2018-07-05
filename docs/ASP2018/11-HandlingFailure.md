@@ -5,13 +5,13 @@ The objective of this exercise is to help you learn how DAGMan deals with job fa
 
 DAGMan can handle a situation where some of the nodes in a DAG fails. DAGMan will run as many nodes as possible, then create a "rescue DAG".  A rescue DAG allows you to fix the problem and then resume your job where it left off.
 
-Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this (the change is bolded):
+Recall that DAGMan decides that a jobs fails if its exit code is non-zero. Let's modify our montage job so that it fails. Work in the same directory where you did the last DAG. Edit montage.sub to add a `-h` to the arguments. It will look like this:
 
 ```
 universe                = vanilla
 executable              = wrapper_montage.sh
 +ProjectName = "osg.ConnectTrain"
-arguments               = *-h* tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
+arguments               = -h tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 transfer_input_files    = tile_0_0.ppm,tile_0_1.ppm,tile_1_0.ppm,tile_1_1.ppm
@@ -116,6 +116,7 @@ From the comment near the top, we know that the montage node failed. Let's fix i
 ```
 universe                = vanilla
 executable              = wrapper_montage.sh
++ProjectName = "osg.ConnectTrain"
 arguments               = tile_0_0.ppm tile_0_1.ppm tile_1_0.ppm tile_1_1.ppm -mode Concatenate -tile 2x2 mandle.jpg
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
