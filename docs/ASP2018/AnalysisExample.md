@@ -406,7 +406,7 @@ To `s0.h` make the following additions:
 after existing include statements add:
 
 ```
-#include "TH1F.h"
+#include <TH1F.h>
 ```
 
 After class s0 definition:
@@ -487,7 +487,7 @@ chmod +x run-root-2.sh
 ```
 
 
-Create *`run-root-2.C`
+Create `run-root-2.C`
 ```
 .L s0.C++ 
 { 
