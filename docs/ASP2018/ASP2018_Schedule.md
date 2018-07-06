@@ -35,7 +35,7 @@
 | 13:40 | Profiling your application and finding a home for your workflow     | Julia Gray       |
 | 14:25 | Exercise - Running scripting and R jobs with Condor                 | All              |
 | 15:10 | Coffee Break                                                        |                  |
-| 15:30 | Worflows and distributed environments                               | Horst Severini   |
+| 15:30 | Workflows and distributed environments                               | Horst Severini   |
 | 16:15 | Exercise - Accessing the Open Science Grid and DAGMan               | All              |
 
 ### Wednesday 11-July 2018
