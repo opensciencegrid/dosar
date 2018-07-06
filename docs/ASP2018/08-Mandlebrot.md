@@ -51,7 +51,7 @@ The `goatbroat` program takes several parameters. Let's break them down:
 
 ## Dividing goatbrot up
 
-The Mandlebrot set can take a while to create, particularly if you make the iterations large or the image size large. What if we broke the creation of the image into multiple invocations then stitched them together? Once we do that, we can run each goatbroat in parallel in our cluster. Here's an example you can run by hand. (This is back in your first terminal, where you are logged into the *user-training* machine.)
+The Mandlebrot set can take a while to create, particularly if you make the iterations large or the image size large. What if we broke the creation of the image into multiple invocations then stitched them together? Once we do that, we can run each goatbroat in parallel in our cluster. Here's an example you can run by hand. (This is back in your first terminal, where you are logged into the `user-training` machine.)
 
    1. *Run goatbroat 4 times*: 
 
@@ -75,7 +75,7 @@ This will produce the same image as above. We broke the image space into a 2 by 
 Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it. 
 
 The same way we did above.  
-   1. Move file to local machine for viewing `cp mandle.gif ~/public`
+   1. Copy file to your public area: `cp mandle.gif ~/public`
    1. This time, rather than copying your file to your local system, point your browser at the stash web server:
 
 ```
