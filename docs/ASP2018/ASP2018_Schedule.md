@@ -26,27 +26,26 @@
 
 | Time  | Description                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:30 | Welcome and the Landscape of Research Computing                     | Horst Severini   |
-| 10:00 | Exercise - UNIX Refresher, Running Locally, Batch Services          | Horst Severini   |
-| 11:00 | Coffee Break                                                        |                  |
-| 11:30 | Profiling your application and finding a home for your workflow     | Horst Severini   |
-| 12:00 | Exercise - Single and batch submittion with HTCondor                | Horst Severini   |
-| 12:30 | Lunch                                                               |                  |
-| 13:30 | Worflows and distributed environments                               | Horst Severini   |
-| 14:00 | Exercise - Accessing the Open Science Grid and DAGMan               | Horst Severini   |
-| 15:00 | Coffee Break                                                        |                  |
-| 15:30 | A Brief Introduction to Clouds and Containers                       | Horst Severini   |
-| 16:00 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | Horst Severini   |
+| 10:50 | Welcome and the Landscape of Research Computing                     | Pat Skubic       |
+| 11:35 | Exercise - UNIX Refresher, Running Locally, Batch Services          | All              |
+| 12:20 | Lunch                                                               |                  |
+| 13:40 | Profiling your application and finding a home for your workflow     | Julia Gray       |
+| 14:25 | Exercise - Single and batch submittion with HTCondor                | All              |
+| 15:10 | Coffee Break                                                        |                  |
+| 15:30 | Worflows and distributed environments                               | Horst Severini   |
+| 16:15 | Exercise - Accessing the Open Science Grid and DAGMan               | All              |
 
 ### Wednesday 11-July 2018
 
 | Time  | Description                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:30 | Wrap of Computational Infrastructures                               | Pat Skubic       |
-| 11:00 | Coffee Break                                                        |                  |
-| 11:30 | ATLAS Analysis Example                                              | Pat Skubic       |
-| 12:00 | Closing Thoughts                                                    | Pat Skubic       |
-| 12:30 | Adjourn                                                             |                  |
+| 09:00 | A Brief Introduction to Clouds and Containers                       | Horst Severini   |
+| 09:45 | Exercise - Using Containers on OSG and Discpline Specfic Tutorials  | All              |
+| 10:30 | Coffee Break                                                        |                  |
+| 10:50 | ATLAS Analysis Example                                              | Pat Skubic       |
+| 11:35 | Exercises                                                           | All              |
+| 12:20 | Lunch                                                               |                  |
+| 13:40 | Closing Thoughts                                                    | Pat Skubic       |
 
 ## Materials
 
