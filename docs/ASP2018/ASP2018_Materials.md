@@ -11,7 +11,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Your First Managed Job](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/03-FirstManagedJob.md)
    * [A few tips and tricks](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/04-TipsandTricks.md)
    
-## Tuesday Morning - Computational Infrastructures - Session 2
+## Tuesday Afternoon - Computational Infrastructures - Session 2
 
    * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture2-ASP2018.pdf)
    * [A scripting job](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/05-ScriptingJob.md)
@@ -30,17 +30,19 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Handling jobs that fail](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/11-HandlingFailure.md)
    * [Variable Substitution](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/12-VariableSubstitution.md)
    
-## Tuesday Aftenoon - Computational Infrastructures - Session 4
+## Wednesday Morning - Computational Infrastructures - Session 4
 
    * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture4-ASP2018.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/14-Containers.md)
    
 ## Wednesday Morning - Computational Infrastructures - Session 5
+
    * [ATLAS Analysis Example Lecture](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Intro_Anal_Ex-ASP2018.pdf)
    * [ATLAS Analysis Example Exercise](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/AnalysisExample.md)
    
-## Wednesday Morning - Computational Infrastructures - Session 6
+## Wednesday Afternoon - Computational Infrastructures - Session 6
+
    * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018.pdf)
    
 ## Contact information
