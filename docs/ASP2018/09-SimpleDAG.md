@@ -11,7 +11,7 @@ DAGMan has many abilities such as throttling jobs, recovery from failures, and m
 
 ## Submitting a simple DAG
 
-We're going to go back to the "simple" example that we did first. (The one with the job that slept and multiplied a number by 2.) Make sure that you have a submit file has only one queue command in it, as when we first wrote it. And we will just run vanilla universe jobs for now, though we could equally well run standard universe jobs. 
+We're going to go back to the "simple" example that we did first. (The one with the job that slept and multiplied a number by 2.) Make sure that you have a submit file (called `submit`) that has only one queue command in it, as when we first wrote it. And we will just run vanilla universe jobs for now, though we could equally well run standard universe jobs. 
 
 ```
 Universe                = vanilla
