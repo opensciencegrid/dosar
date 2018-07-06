@@ -32,7 +32,7 @@ We are going to get a bit more sophisticated in submitting our jobs now. Let's h
 First we will create the most minimal DAG that can be created: a DAG with just one node. Put the text below into a file named `simple.dag`.
 
 ```
-job simple submit
+JOB simple submit
 ```
 
 In your first window, submit the DAG: 
