@@ -206,7 +206,7 @@ void readEvents(){
 	Float_t LooseMuonsPhi2;
 	Float_t LooseMuonsPt2;
 	
-	// set the tree's braches to the local variables
+	// set the tree's branches to the local variables
 	tree->SetBranchAddress("NLooseMuon", &NLooseMuons);
 	tree->SetBranchAddress("LooseMuonEta1", &LooseMuonsEta1);
 	tree->SetBranchAddress("LooseMuonPhi1", &LooseMuonsPhi1);
