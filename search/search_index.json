@@ -22,7 +22,7 @@
         }, 
         {
             "location": "/ASP2018/ASP2018_Schedule/", 
-            "text": "ASP 2018\n\n\nHigh-Level Curriculum Overview\n\n\nTuesday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nTuesday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nBrief Introduction to clouds and containers\n\n\n\n\nWednesday AM Session\n\n\n\n\nClose out and resources for further collaboration\n\n\nATLAS Analysis Example\n\n\n\n\nDetailed Schedule\n\n\nTuesday 10-July 2018\n\n\n\n\n\n\n\n\nTime\n\n\nDescription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n10:50\n\n\nWelcome and the Landscape of Research Computing\n\n\nPat Skubic\n\n\n\n\n\n\n11:35\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nAll\n\n\n\n\n\n\n12:20\n\n\nLunch\n\n\n\n\n\n\n\n\n13:40\n\n\nProfiling your application and finding a home for your workflow\n\n\nJulia Gray\n\n\n\n\n\n\n14:25\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nAll\n\n\n\n\n\n\n15:10\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:30\n\n\nWorflows and distributed environments\n\n\nHorst Severini\n\n\n\n\n\n\n16:15\n\n\nExercise - Accessing the Open Science Grid and DAGMan\n\n\nAll\n\n\n\n\n\n\n\n\nWednesday 11-July 2018\n\n\n\n\n\n\n\n\nTime\n\n\nDescription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nA Brief Introduction to Clouds and Containers\n\n\nHorst Severini\n\n\n\n\n\n\n09:45\n\n\nExercise - Using Containers on OSG and Discpline Specfic Tutorials\n\n\nAll\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n10:50\n\n\nATLAS Analysis Example\n\n\nPat Skubic\n\n\n\n\n\n\n11:35\n\n\nExercises\n\n\nAll\n\n\n\n\n\n\n12:20\n\n\nLunch\n\n\n\n\n\n\n\n\n13:40\n\n\nClosing Thoughts\n\n\nPat Skubic\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
+            "text": "ASP 2018\n\n\nHigh-Level Curriculum Overview\n\n\nTuesday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\n\n\nTuesday PM Session\n\n\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nWednesday AM Session\n\n\n\n\nBrief Introduction to clouds and containers\n\n\nATLAS Analysis Example\n\n\n\n\nWednesday PM Session\n\n\n\n\nClose out and resources for further collaboration\n\n\n\n\nDetailed Schedule\n\n\nTuesday 10-July 2018\n\n\n\n\n\n\n\n\nTime\n\n\nDescription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n10:50\n\n\nWelcome and the Landscape of Research Computing\n\n\nPat Skubic\n\n\n\n\n\n\n11:35\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nAll\n\n\n\n\n\n\n12:20\n\n\nLunch\n\n\n\n\n\n\n\n\n13:40\n\n\nProfiling your application and finding a home for your workflow\n\n\nJulia Gray\n\n\n\n\n\n\n14:25\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nAll\n\n\n\n\n\n\n15:10\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:30\n\n\nWorflows and distributed environments\n\n\nHorst Severini\n\n\n\n\n\n\n16:15\n\n\nExercise - Accessing the Open Science Grid and DAGMan\n\n\nAll\n\n\n\n\n\n\n\n\nWednesday 11-July 2018\n\n\n\n\n\n\n\n\nTime\n\n\nDescription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nA Brief Introduction to Clouds and Containers\n\n\nHorst Severini\n\n\n\n\n\n\n09:45\n\n\nExercise - Using Containers on OSG and Discpline Specfic Tutorials\n\n\nAll\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n10:50\n\n\nATLAS Analysis Example\n\n\nPat Skubic\n\n\n\n\n\n\n11:35\n\n\nExercises\n\n\nAll\n\n\n\n\n\n\n12:20\n\n\nLunch\n\n\n\n\n\n\n\n\n13:40\n\n\nClosing Thoughts\n\n\nPat Skubic\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
             "title": "ASP 2018 Schedule"
         }, 
         {
@@ -37,18 +37,23 @@
         }, 
         {
             "location": "/ASP2018/ASP2018_Schedule/#tuesday-am-session", 
-            "text": "Welcome and Background  The Landscape of Research Computing  Profiling your application and choosing appropriate computing resources  Introduction to High Throughput Computing (HTC)", 
+            "text": "Welcome and Background  The Landscape of Research Computing", 
             "title": "Tuesday AM Session"
         }, 
         {
             "location": "/ASP2018/ASP2018_Schedule/#tuesday-pm-session", 
-            "text": "Workflows and distributed environments  Workflows with Directed Acyclic Graphs (DAGs)  Brief Introduction to clouds and containers", 
+            "text": "Profiling your application and choosing appropriate computing resources  Introduction to High Throughput Computing (HTC)  Workflows and distributed environments  Workflows with Directed Acyclic Graphs (DAGs)", 
             "title": "Tuesday PM Session"
         }, 
         {
             "location": "/ASP2018/ASP2018_Schedule/#wednesday-am-session", 
-            "text": "Close out and resources for further collaboration  ATLAS Analysis Example", 
+            "text": "Brief Introduction to clouds and containers  ATLAS Analysis Example", 
             "title": "Wednesday AM Session"
+        }, 
+        {
+            "location": "/ASP2018/ASP2018_Schedule/#wednesday-pm-session", 
+            "text": "Close out and resources for further collaboration", 
+            "title": "Wednesday PM Session"
         }, 
         {
             "location": "/ASP2018/ASP2018_Schedule/#detailed-schedule", 
