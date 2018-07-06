@@ -19,7 +19,7 @@ $ mkdir -p analysis_example
 $ cd analysis_example
 ```
 
-Again the `$` sign at the beginning of the commands to execute is the *command prompt*, so it should *not* be entered as part of the command.
+Again the `$` sign at the beginning of the commands to execute is the `command prompt`, so it should `not` be entered as part of the command.
 
 ## Simple Analysis Example
 
