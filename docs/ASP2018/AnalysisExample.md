@@ -25,7 +25,7 @@ Again the `$` sign at the beginning of the commands to execute is the *command p
 
 ### Step 1: Create simulated data using the grid
 
-Now in your test directory on the submission host we will create the three files: *run-root.cmd*, *run-root.sh*, and *run-root.C* with the contents given below. This may require running an editor such as `emacs` on your local desktop and then copying the created files to the submission host. Or the `nano` editor can be run directly on the submission host. A typical copy command would be as follows. 
+Now in your test directory on the submission host we will create the three files: `run-root.cmd`, `run-root.sh`, and `run-root.C` with the contents given below. This may require running an editor such as `emacs` on your local desktop and then copying the created files to the submission host. Or the `nano` editor can be run directly on the submission host. A typical copy command would be as follows. 
 
 ```
 $ scp run-root.* YOUR_USER_ID@user-training.osgconnect.net:analysis_example/
@@ -33,7 +33,7 @@ $ scp run-root.* YOUR_USER_ID@user-training.osgconnect.net:analysis_example/
 
 It is probably easier to create all scripts with `nano` on the submission node, though, and then you won't have to copy (`scp`) anything at all. So everything below assumes you are logged on to a terminal session on the submission node.
 
-First, we will utilize a simple command script to submit the grid jobs. It is *run-root.cmd*:
+First, we will utilize a simple command script to submit the grid jobs. It is `run-root.cmd`:
 
 ```
 universe=vanilla
@@ -49,7 +49,7 @@ notification=Never
 queue 
 ```
 
-Note that the executable script is:  *run-root.sh* which is as follows:
+Note that the executable script is:  `run-root.sh` which is as follows:
 
 ```
 #!/bin/bash 
@@ -59,14 +59,14 @@ module load libXpm
 root -b < run-root.C > root.out
 ```
 
-This script runs Root in batch mode and executes input macro *run-root.C* and produces output that is routed to file *root.out*.
+This script runs Root in batch mode and executes input macro `run-root.C` and produces output that is routed to file `root.out`.
 It has to be made executable, by use of the `chmod` Linux command (protections can be checked with the command `ls -l`):
 
 ```
 $ chmod +x run-root.sh
 ```
 
-The macro  *run-root.C* consists of the following code:
+The macro  `run-root.C` consists of the following code:
 
 ```
 { 
@@ -110,7 +110,7 @@ It can be checked with:
 $ condor_q YOUR_USER_ID -nobatch
 ```
 
-After it runs, you will find a log file that describes the job: *run-root.log*, and output file: *root.out*, and the files containing the simulated data: *t00.root*, *t01.root* in your test directory. 
+After it runs, you will find a log file that describes the job: `run-root.log`, and output file: `root.out`, and the files containing the simulated data: `t00.root`, `t01.root` in your test directory. 
 You need to copy these files into your public directory, so that you can download it to your local desktop:
 
 ```
@@ -123,17 +123,17 @@ Now open a different terminal window on your local desktop, and download the roo
 $ wget http://stash.osgconnect.net/~YOUR_USER_ID/t00.root  http://stash.osgconnect.net/~YOUR_USER_ID/t01.root
 ```
 
-You can then inspect the contents of *t00.root* and *t01.root* by running Root in your current directory in the local terminal window in which you just ran the `wget` command:
+You can then inspect the contents of `t00.root` and `t01.root` by running Root in your current directory in the local terminal window in which you just ran the `wget` command:
 
 ```
 $ root t00.root
 ```
 
-And then the Root command:  *TBrowser b*
+And then the Root command:  `TBrowser b`
 
-With the *TBrowser* you can plot the simulated data in branch *Energy* as well as the other branches. Double click on the name of the root files, and then on the variables you would like to plot.
+With the `TBrowser` you can plot the simulated data in branch `Energy` as well as the other branches. Double click on the name of the root files, and then on the variables you would like to plot.
 
-Each data file contains a TTree named *t0*. You can plot the contents of all (in this example both) data file TTree's by using the TChain method as follows:
+Each data file contains a TTree named `t0`. You can plot the contents of all (in this example both) data file TTree's by using the TChain method as follows:
 
 In Root execute the following commands:
 
@@ -143,11 +143,11 @@ tc.Add("t*.root");
 tc.Draw("Energy");
 ```
 
-When you are done with this, you can quit *root* again with the command `.q <Return>`.
+When you are done with this, you can quit `root` again with the command `.q <Return>`.
 
 ### Step 2: Analyze Real Data
 
-Now we want to have a look at a real live ATLAS root file. For this, go back to the remote terminal window on osgconnect. You will need a new condor submit script called *run-z.cmd*:
+Now we want to have a look at a real live ATLAS root file. For this, go back to the remote terminal window on osgconnect. You will need a new condor submit script called `run-z.cmd`:
 
 ```
 universe=vanilla
@@ -162,7 +162,7 @@ error=run-z.err.$(Cluster).$(Process)
 notification=Never
 queue 
 ```
-The new executable script you need for this job is:  *run-z.sh* which is as follows:
+The new executable script you need for this job is:  `run-z.sh` which is as follows:
 ```
 #!/bin/bash 
 source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
@@ -170,14 +170,14 @@ module load root
 module load libXpm
 root -b -q readEvents.C+ > root-z.out
 ```
-This script runs Root in batch mode and executes input macro *readEvents.C* and produces output that is routed to file *root-z.out*.
+This script runs Root in batch mode and executes input macro `readEvents.C` and produces output that is routed to file `root-z.out`.
 It has to be made executable, by use of the `chmod` Linux command (protections can be checked with the command `ls -l`):
 
 ```
 $ chmod +x run-z.sh
 ```
 
-The macro  *readEvents.C* consists of the following code:
+The macro  `readEvents.C` consists of the following code:
 
 ```
 #include "TFile.h"
@@ -357,7 +357,7 @@ It can again be checked with:
 $ condor_q YOUR_USER_ID -nobatch
 ```
 
-After it runs, you will find a log file that describes the job: *run-z.log*, and output file: *root-z.out*, and the files containing the simulated data: *histograms-z.root* in your test directory. 
+After it runs, you will find a log file that describes the job: `run-z.log`, and output file: `root-z.out`, and the files containing the simulated data: `histograms-z.root` in your test directory. 
 
 You again need to copy that file into your public directory, so that you can download it to your local desktop:
 
@@ -371,19 +371,19 @@ Go back to the local terminal window on your local desktop, and download the roo
 $ wget http://stash.osgconnect.net/~YOUR_USER_ID/histograms-z.root
 ```
 
-You can inspect the contents of *histograms-z.root* by running Root (i.e., `root histograms-z.root`) in your current directory in your local terminal window:
+You can inspect the contents of `histograms-z.root` by running Root (i.e., `root histograms-z.root`) in your current directory in your local terminal window:
 
 ```
 $ root histograms-z.root
 ```
 
-And then using the Root command:  *TBrowser b*
+And then using the Root command:  `TBrowser b`
 
-With the *TBrowser* you can plot the variables in the root file. Double click on histograms-z.root, and then on the variables to plot them.
+With the `TBrowser` you can plot the variables in the root file. Double click on `histograms-z.root`, and then on the variables to plot them.
 
 ### Step 3: Make TSelector
 
-Now let's go back to the files created in step 1, in the remote terminal window. Start *root* in your test directory with the following commands:
+Now let's go back to the files created in step 1, in the remote terminal window. Start `root` in your test directory with the following commands:
 
 ```
 $ module load root
@@ -398,11 +398,11 @@ f.Close();
 .q
 ```
 
-This will create files *s0.C* and *s0.h* in your test directory that contain code corresponding to the definition of the TTree "t0". This code can be used to process files containing data is these TTree's.
+This will create files `s0.C` and `s0.h` in your test directory that contain code corresponding to the definition of the TTree `t0`. This code can be used to process files containing data is these TTree's.
 
-Now we will add a histogram to the TSelector code. Several code lines have to be added to the TSelector code files *s0.C* and *s0.h*.
+Now we will add a histogram to the TSelector code. Several code lines have to be added to the TSelector code files `s0.C` and `s0.h`.
 
-To *s0.h* make the following additions:
+To `s0.h` make the following additions:
 after existing include statements add:
 
 ```
@@ -419,7 +419,7 @@ add
 TH1F *e;
 ```
 
-To *s0.C* make the following additions:
+To `s0.C` make the following additions:
 
 After entry:
 ```
@@ -456,8 +456,7 @@ f.Close();
 
 Now create the new script files for Step 2:
 
-create:
-*run-root-2.cmd*
+create `run-root-2.cmd`:
 ```
 universe=vanilla
 executable=run-root-2.sh 
@@ -472,7 +471,7 @@ notification=Never
 queue 
 ```
 
-Create *run-root-2.sh*
+Create `run-root-2.sh`:
 ```
 #!/bin/bash 
 source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/current/init/bash
@@ -488,7 +487,7 @@ chmod +x run-root-2.sh
 ```
 
 
-Create *run-root-2.C*
+Create *`run-root-2.C`
 ```
 .L s0.C++ 
 { 
@@ -509,8 +508,8 @@ We can test the Root job on the osgconnect training machine by issuing command:
 root -b < run-root-2.C
 ```
 
-If this works, we can process the data files *t00.root* and *t01.root* on the
-Grid with our new command script *run-root-2.cmd*.
+If this works, we can process the data files `t00.root` and `t01.root` on the
+Grid with our new command script `run-root-2.cmd`.
 
 This can be done with command:
 
@@ -530,5 +529,5 @@ Go back to the local terminal window on your local desktop, and download the roo
 wget http://stash.osgconnect.net/~YOUR_USER_ID/histograms.root
 ```
 
-You can look at the output histogram file: *histograms.root*
-with *TBrowser b* as before, in your local terminal window.
+You can look at the output histogram file: `histograms.root`
+with `TBrowser b` as before, in your local terminal window.
