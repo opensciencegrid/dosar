@@ -30,10 +30,10 @@
 | Time  | Description                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
 | 10:50 | Welcome and the Landscape of Research Computing                     | Pat Skubic       |
-| 11:35 | Exercise - UNIX Refresher, Running Locally, Batch Services          | All              |
+| 11:35 | Exercise - UNIX Refresher, Running simple Condor jobs               | All              |
 | 12:20 | Lunch                                                               |                  |
 | 13:40 | Profiling your application and finding a home for your workflow     | Julia Gray       |
-| 14:25 | Exercise - Single and batch submittion with HTCondor                | All              |
+| 14:25 | Exercise - Running scripting and R jobs with Condor                 | All              |
 | 15:10 | Coffee Break                                                        |                  |
 | 15:30 | Worflows and distributed environments                               | Horst Severini   |
 | 16:15 | Exercise - Accessing the Open Science Grid and DAGMan               | All              |
