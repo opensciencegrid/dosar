@@ -77,7 +77,7 @@
         }, 
         {
             "location": "/ASP2018/ASP2018_Materials/", 
-            "text": "ASP 2018 Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nTuesday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nTuesday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nTuesday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nTuesday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 - \nSlides\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nWednesday Morning - Computational Infrastructures - Session 5\n\n\n\n\nATLAS Analysis Example Lecture\n\n\nATLAS Analysis Example Exercise\n\n\n\n\nWednesday Morning - Computational Infrastructures - Session 6\n\n\n\n\nComputational Infrastructures Wrap Up - \nSlides\n\n\n\n\nContact information\n\n\n\n\nRob Quick - rquick@iu.edu\n\n\nHorst Severini - severini@ou.edu\n\n\nPatrick Skubic - pskubic@ou.edu\n\n\nJae Yu - jaehoonyu@uta.edu\n\n\nJulia Gray - julia.ann.gray@gmail.com\n\n\nDick Greenwood - greenw@phys.latech.edu\n\n\nhttp://www.osgconnect.net/\n\n\nDOSAR: Distributed Organization for Scientific and Academic Research \nhttp://www.dosar.org/\n You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the African School of Physics 2018.\n\n\nIf you want long\u2010term grid access, you can go to \nhttp://www.osgconnect.net/\n and sign up", 
+            "text": "ASP 2018 Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nTuesday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nTuesday Afternoon - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nTuesday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nWednesday Morning - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 - \nSlides\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nWednesday Morning - Computational Infrastructures - Session 5\n\n\n\n\nATLAS Analysis Example Lecture\n\n\nATLAS Analysis Example Exercise\n\n\n\n\nWednesday Afternoon - Computational Infrastructures - Session 6\n\n\n\n\nComputational Infrastructures Wrap Up - \nSlides\n\n\n\n\nContact information\n\n\n\n\nRob Quick - rquick@iu.edu\n\n\nHorst Severini - severini@ou.edu\n\n\nPatrick Skubic - pskubic@ou.edu\n\n\nJae Yu - jaehoonyu@uta.edu\n\n\nJulia Gray - julia.ann.gray@gmail.com\n\n\nDick Greenwood - greenw@phys.latech.edu\n\n\nhttp://www.osgconnect.net/\n\n\nDOSAR: Distributed Organization for Scientific and Academic Research \nhttp://www.dosar.org/\n You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the African School of Physics 2018.\n\n\nIf you want long\u2010term grid access, you can go to \nhttp://www.osgconnect.net/\n and sign up", 
             "title": "ASP 2018 Material"
         }, 
         {
@@ -91,9 +91,9 @@
             "title": "Tuesday Morning - Computational Infrastructures - Session 1"
         }, 
         {
-            "location": "/ASP2018/ASP2018_Materials/#tuesday-morning-computational-infrastructures-session-2", 
+            "location": "/ASP2018/ASP2018_Materials/#tuesday-afternoon-computational-infrastructures-session-2", 
             "text": "Lecture 2 -  Slides  A scripting job  An R Job  Working with file I/O", 
-            "title": "Tuesday Morning - Computational Infrastructures - Session 2"
+            "title": "Tuesday Afternoon - Computational Infrastructures - Session 2"
         }, 
         {
             "location": "/ASP2018/ASP2018_Materials/#tuesday-afternoon-computational-infrastructures-session-3", 
@@ -106,9 +106,9 @@
             "title": "Challenge Exercises on DAGs"
         }, 
         {
-            "location": "/ASP2018/ASP2018_Materials/#tuesday-aftenoon-computational-infrastructures-session-4", 
+            "location": "/ASP2018/ASP2018_Materials/#wednesday-morning-computational-infrastructures-session-4", 
             "text": "Lecture 4 -  Slides  Discipline specific tutorials  Containers with Singularity", 
-            "title": "Tuesday Aftenoon - Computational Infrastructures - Session 4"
+            "title": "Wednesday Morning - Computational Infrastructures - Session 4"
         }, 
         {
             "location": "/ASP2018/ASP2018_Materials/#wednesday-morning-computational-infrastructures-session-5", 
@@ -116,9 +116,9 @@
             "title": "Wednesday Morning - Computational Infrastructures - Session 5"
         }, 
         {
-            "location": "/ASP2018/ASP2018_Materials/#wednesday-morning-computational-infrastructures-session-6", 
+            "location": "/ASP2018/ASP2018_Materials/#wednesday-afternoon-computational-infrastructures-session-6", 
             "text": "Computational Infrastructures Wrap Up -  Slides", 
-            "title": "Wednesday Morning - Computational Infrastructures - Session 6"
+            "title": "Wednesday Afternoon - Computational Infrastructures - Session 6"
         }, 
         {
             "location": "/ASP2018/ASP2018_Materials/#contact-information", 
