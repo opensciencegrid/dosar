@@ -56,7 +56,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.6.10-1.osg34.el6.x86_64
+condor-8.6.11-1.osg34.el6.x86_64
 ```
 
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
@@ -113,7 +113,7 @@ Other daemons include:
 You can find out what jobs have been submitted on your computer with the condor_q command: 
 
 ```
-$ condor_q
+$ condor_q -nobatch
 -- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:26:20
  ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
 
