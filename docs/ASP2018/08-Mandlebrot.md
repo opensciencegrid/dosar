@@ -4,7 +4,7 @@ Before we dive into a more complicated DAG, let's get a more interesting job. I'
 
 We have a small program that draws pictures of the Mandlebrot set. You can [read about the Mandlebrot set on Wikipedia](https://secure.wikimedia.org/wikipedia/en/wiki/Mandelbrot_set), or you can simply appreciate the pretty pictures. It's a fractal. 
 
-We have a simple program that can draw the Mandlebrot set. It's called `goatbrot`,
+We have a simple program that can draw the Mandlebrot set. It's called `goatbrot`.
 
 ## A simple invocation of goatbrot
 
