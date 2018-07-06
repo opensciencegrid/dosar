@@ -7,12 +7,8 @@ If you look at the DAG we made, you might find it a bit tedious because each goa
 
 Yes, we can!
 
-First source the OASIS modules: 
-
-`source /cvmfs/oasis.opensciencegrid.org/osg/modules/lmod/5.6.2/init/bash`
-
 ## Declare your variables
-Next declare your variables in your submit file. Make one submit file for all of your goatbrot jobs. Here's what it looks like. Call it `goatbrot.sub`:
+First declare your variables in your submit file. Make one submit file for all of your goatbrot jobs. Here's what it looks like. Call it `goatbrot.sub`:
 
 ```
 executable              = /stash/user/rquick/public/goatbrot-master/goatbrot
