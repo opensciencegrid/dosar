@@ -43,7 +43,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Wednesday Afternoon - Computational Infrastructures - Session 6
 
-   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018.pdf)
+   * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture5-ASP2018_final.pdf)
    
 ## Contact information
 
