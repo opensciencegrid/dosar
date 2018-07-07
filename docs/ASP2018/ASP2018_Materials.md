@@ -32,7 +32,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Wednesday Morning - Computational Infrastructures - Session 4
 
-   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture4-ASP2018.pdf)
+   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/Lecture4-ASP2018_final.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/ASP2018/14-Containers.md)
    
