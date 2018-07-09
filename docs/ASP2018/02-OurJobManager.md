@@ -12,7 +12,7 @@ $ hostname
 user-training.osgconnect.net
 ```
 
-You should have been given your name and password when you arrived this afternoon. If you don't know them, talk to Rob.
+You should have been given your name and password previously. If you don't know them, talk to us.
 
 ## Looking at our Condor installation
 
