@@ -6,12 +6,12 @@ theme: readthedocs
 pages:
 - Home: 'index.md'
 - Current or Upcoming Events:
-  - 'ASP 2018 Schedule': 'ASP2018/ASP2018_Schedule.md'
-  - 'ASP 2018 Material': 'ASP2018/ASP2018_Materials.md'
   - 'Data Trieste 2018': 'DataTrieste2018/index.md'
   - 'Data Kigali 2018': 'DataKigali2018/index.md'
   - 'Data Sao Paulo 2018': 'DataSaoPaulo2018/index.md'
 - Past Events:
+  - 'ASP 2018 Schedule': 'ASP2018/ASP2018_Schedule.md'
+  - 'ASP 2018 Material': 'ASP2018/ASP2018_Materials.md'
   - 'Data Sao Paulo Schedule': 'Materials/DSP_DT2017.md'
   - 'Data Sao Paulo Materials': 'Materials/DSP_Materials.md' 
   - 'Polar Hackathon Schedule': 'Materials/PH_DT2017.md'
