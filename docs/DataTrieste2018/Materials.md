@@ -37,6 +37,9 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/14-Containers.md)
    
 ## Friday Morning - Computational Infrastructures - Session 5
+   * EGI Presenters - EGI Federated Cloud and the EGI Notebook
+
+## Friday Morning - Computational Infrastructures - Session 6
    * Computational Infrastructures Wrap Up - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/Materials/Lecture5-2017-DSP.pdf)
    
 ## Contact information
