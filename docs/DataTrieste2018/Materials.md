@@ -1,4 +1,4 @@
-# Data Sao Paulo School Materials
+# Data Trieste School Materials
 
 We will be using OSG Connect for this set of sessions. Please visit [http://www.osgconnect.net](http://www.osgconnect.net) for more information.
 
