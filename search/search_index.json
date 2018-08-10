@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "DOSAR Outreach Projects\n\n\nThe Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' cyberinfrastructure organization that focuses on community and campus based cyberinfrastructure and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.\n\n\nUpcoming Events\n\n\n\n\nCODATA-RDA School of Research Data Science - August 6-17, 2018 - Trieste, Italy\n\n\nCODATA-RDA School of Research Data Science - October 22 - November 2 - Kigali, Rwanda\n\n\nCODATA-RDA School of Research Data Science - December 3-14, 2018 - Sao Paulo, Brazil\n\n\nCODATA-RDA School of Research Data Science - August 5-16, 2019 - Trieste, Italy\n\n\n\n\nPast Events\n\n\n\n\nThe African School of Physics (ASP) - June 24-July 14, 2018 - UNAM, Windhoek, Namibia\n\n\nCODATA-RDA School of Research Data Science - July 10-21, 2017 - Trieste, Italy\n\n\nPolar Hackathon - August 1-4, 2017 - Stony Brook, NY\n\n\nCODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil", 
+            "text": "DOSAR Outreach Projects\n\n\nThe Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' cyberinfrastructure organization that focuses on community and campus based cyberinfrastructure and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.\n\n\nUpcoming Events\n\n\n\n\nCODATA-RDA School of Research Data Science - August 6-17, 2018 - Trieste, Italy\n\n\nCODATA-RDA School of Research Data Science - October 22 - November 2, 2018 - Kigali, Rwanda\n\n\nCODATA-RDA School of Research Data Science - December 3-14, 2018 - Sao Paulo, Brazil\n\n\nCODATA-RDA School of Research Data Science - August 5-16, 2019 - Trieste, Italy\n\n\n\n\nPast Events\n\n\n\n\nThe African School of Physics (ASP) - June 24-July 14, 2018 - UNAM, Windhoek, Namibia\n\n\nCODATA-RDA School of Research Data Science - July 10-21, 2017 - Trieste, Italy\n\n\nPolar Hackathon - August 1-4, 2017 - Stony Brook, NY\n\n\nCODATA-RDA School of Research Data Science - December 4-15, 2017 - Sao Paulo, Brazil", 
             "title": "Home"
         }, 
         {
@@ -12,7 +12,7 @@
         }, 
         {
             "location": "/#upcoming-events", 
-            "text": "CODATA-RDA School of Research Data Science - August 6-17, 2018 - Trieste, Italy  CODATA-RDA School of Research Data Science - October 22 - November 2 - Kigali, Rwanda  CODATA-RDA School of Research Data Science - December 3-14, 2018 - Sao Paulo, Brazil  CODATA-RDA School of Research Data Science - August 5-16, 2019 - Trieste, Italy", 
+            "text": "CODATA-RDA School of Research Data Science - August 6-17, 2018 - Trieste, Italy  CODATA-RDA School of Research Data Science - October 22 - November 2, 2018 - Kigali, Rwanda  CODATA-RDA School of Research Data Science - December 3-14, 2018 - Sao Paulo, Brazil  CODATA-RDA School of Research Data Science - August 5-16, 2019 - Trieste, Italy", 
             "title": "Upcoming Events"
         }, 
         {
@@ -21,9 +21,104 @@
             "title": "Past Events"
         }, 
         {
-            "location": "/DataTrieste2018/", 
-            "text": "Placeholder.", 
-            "title": "Data Trieste 2018"
+            "location": "/DataTrieste2018/School/", 
+            "text": "Data Trieste 2017\n\n\nHigh-Level Cirriculum Overview\n\n\nThursday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nThursday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nIntroduction to cloud environemts\n\n\nClose out and resources for further collaboration\n\n\nDisclipline spefic tutorials\n\n\n\n\nDetailed Schedule\n\n\nThursday 16-August-2018\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nWelcome and the Landscape of Research Computing\n\n\nRob Quick\n\n\n\n\n\n\n09:30\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nRob Quick\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nProfiling your application and finding a home for your workflow\n\n\nRob Quick\n\n\n\n\n\n\n11:45\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nRob Quick\n\n\n\n\n\n\n13:00\n\n\nLunch\n\n\n\n\n\n\n\n\n14:00\n\n\nWorflows and distributed environments\n\n\nRob Quick\n\n\n\n\n\n\n14:30\n\n\nExercise - Accessing Distributed Resources on the Open Science Grid\n\n\nRob Quick\n\n\n\n\n\n\n15:15\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n15:45\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nRob Quick\n\n\n\n\n\n\n16:15\n\n\nExercise - DAGMAN\n\n\nRob Quick\n\n\n\n\n\n\n\n\nFriday 21-July 2017\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:00\n\n\nIntroduction to cloud environments\n\n\nGergely Sipos\n\n\n\n\n\n\n09:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n10:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:00\n\n\nCloud Compting Resources\n\n\nGergely Sipos\n\n\n\n\n\n\n11:45\n\n\nExercise - Using the EGI Fed Cloud\n\n\nGergely Sipos\n\n\n\n\n\n\n13:00\n\n\nClosing Thoughts\n\n\nRob Quick\n\n\n\n\n\n\n13:30\n\n\nLunch\n\n\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
+            "title": "Data Trieste 2018 Schedule"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#data-trieste-2017", 
+            "text": "", 
+            "title": "Data Trieste 2017"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#high-level-cirriculum-overview", 
+            "text": "", 
+            "title": "High-Level Cirriculum Overview"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#thursday-am-session", 
+            "text": "Welcome and Background  The Landscape of Research Computing  Profiling your application and choosing appropriate computing resources  Introduction to High Throughput Computing (HTC)", 
+            "title": "Thursday AM Session"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#thursday-pm-session", 
+            "text": "Workflows and distributed environments  Workflows with Directed Acyclic Graphs (DAGs)", 
+            "title": "Thursday PM Session"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#friday-am-session", 
+            "text": "Introduction to cloud environemts  Close out and resources for further collaboration  Disclipline spefic tutorials", 
+            "title": "Friday AM Session"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#detailed-schedule", 
+            "text": "", 
+            "title": "Detailed Schedule"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#thursday-16-august-2018", 
+            "text": "Time  Discription  Instructor      09:00  Welcome and the Landscape of Research Computing  Rob Quick    09:30  Exercise - UNIX Refresher, Running Locally, Batch Services  Rob Quick    10:30  Coffee Break     11:00  Profiling your application and finding a home for your workflow  Rob Quick    11:45  Exercise - Single and batch submittion with HTCondor  Rob Quick    13:00  Lunch     14:00  Worflows and distributed environments  Rob Quick    14:30  Exercise - Accessing Distributed Resources on the Open Science Grid  Rob Quick    15:15  Coffee Break     15:45  Workflows with Directed Acyclic Graphs (DAGs)  Rob Quick    16:15  Exercise - DAGMAN  Rob Quick", 
+            "title": "Thursday 16-August-2018"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#friday-21-july-2017", 
+            "text": "Time  Discription  Instructor      09:00  Introduction to cloud environments  Gergely Sipos    09:45  Exercise - Using the EGI Fed Cloud  Gergely Sipos    10:30  Coffee Break     11:00  Cloud Compting Resources  Gergely Sipos    11:45  Exercise - Using the EGI Fed Cloud  Gergely Sipos    13:00  Closing Thoughts  Rob Quick    13:30  Lunch", 
+            "title": "Friday 21-July 2017"
+        }, 
+        {
+            "location": "/DataTrieste2018/School/#materials", 
+            "text": "Materials Page", 
+            "title": "Materials"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/", 
+            "text": "Data Trieste School Materials\n\n\nWe will be using OSG Connect for this set of sessions. Please visit \nhttp://www.osgconnect.net\n for more information.\n\n\nThursday Morning - Computational Infrastructures - Session 1\n\n\n\n\nWelcome and Introduction - The Landscape of Academic Research Computing\n\n\nLecture 1 - \nSlides\n\n\nIntroduction\n \n\n\nOur Job Manager (HTCondor)\n\n\nYour First Managed Job\n\n\nA few tips and tricks\n\n\n\n\nThursday Morning - Computational Infrastructures - Session 2\n\n\n\n\nLecture 2 - \nSlides\n\n\nA scripting job\n\n\nAn R Job\n\n\nWorking with file I/O\n\n\n\n\nThursday Afternoon - Computational Infrastructures - Session 3\n\n\n\n\nLecture 3 - \nSlides\n\n\nA brief detour through the Mandlebrot set\n\n\nCoordinating sets of jobs: A simple DAG\n\n\nA more complex DAG\n\n\n\n\nChallenge Exercises on DAGs\n\n\n\n\nHandling jobs that fail\n\n\nVariable Substitution\n\n\n\n\nThursday Aftenoon - Computational Infrastructures - Session 4\n\n\n\n\nLecture 4 - \nSlides\n\n\nDiscipline specific tutorials\n\n\nContainers with Singularity\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 5\n\n\n\n\nEGI Presenters - EGI Federated Cloud and the EGI Notebook\n\n\n\n\nFriday Morning - Computational Infrastructures - Session 6\n\n\n\n\nComputational Infrastructures Wrap Up - \nSlides\n\n\n\n\nContact information\n\n\n\n\nRob Quick - rquick@iu.edu\n\n\nhttp://www.osgconnect.net/\n\n\nDOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon\n\n\nIf you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
+            "title": "Data Trieste 2018 Materials"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#data-trieste-school-materials", 
+            "text": "We will be using OSG Connect for this set of sessions. Please visit  http://www.osgconnect.net  for more information.", 
+            "title": "Data Trieste School Materials"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#thursday-morning-computational-infrastructures-session-1", 
+            "text": "Welcome and Introduction - The Landscape of Academic Research Computing  Lecture 1 -  Slides  Introduction    Our Job Manager (HTCondor)  Your First Managed Job  A few tips and tricks", 
+            "title": "Thursday Morning - Computational Infrastructures - Session 1"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#thursday-morning-computational-infrastructures-session-2", 
+            "text": "Lecture 2 -  Slides  A scripting job  An R Job  Working with file I/O", 
+            "title": "Thursday Morning - Computational Infrastructures - Session 2"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#thursday-afternoon-computational-infrastructures-session-3", 
+            "text": "Lecture 3 -  Slides  A brief detour through the Mandlebrot set  Coordinating sets of jobs: A simple DAG  A more complex DAG", 
+            "title": "Thursday Afternoon - Computational Infrastructures - Session 3"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#challenge-exercises-on-dags", 
+            "text": "Handling jobs that fail  Variable Substitution", 
+            "title": "Challenge Exercises on DAGs"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#thursday-aftenoon-computational-infrastructures-session-4", 
+            "text": "Lecture 4 -  Slides  Discipline specific tutorials  Containers with Singularity", 
+            "title": "Thursday Aftenoon - Computational Infrastructures - Session 4"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#friday-morning-computational-infrastructures-session-5", 
+            "text": "EGI Presenters - EGI Federated Cloud and the EGI Notebook", 
+            "title": "Friday Morning - Computational Infrastructures - Session 5"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#friday-morning-computational-infrastructures-session-6", 
+            "text": "Computational Infrastructures Wrap Up -  Slides", 
+            "title": "Friday Morning - Computational Infrastructures - Session 6"
+        }, 
+        {
+            "location": "/DataTrieste2018/Materials/#contact-information", 
+            "text": "Rob Quick - rquick@iu.edu  http://www.osgconnect.net/  DOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon  If you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
+            "title": "Contact information"
         }, 
         {
             "location": "/DataKigali2018/", 

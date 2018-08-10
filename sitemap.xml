@@ -6,7 +6,12 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://opensciencegrid.github.io/dosar/DataTrieste2018/</loc>
+     <loc>https://opensciencegrid.github.io/dosar/DataTrieste2018/School/</loc>
+     <lastmod>2018-08-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://opensciencegrid.github.io/dosar/DataTrieste2018/Materials/</loc>
      <lastmod>2018-08-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
