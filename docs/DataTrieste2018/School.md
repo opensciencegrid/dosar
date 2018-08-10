@@ -18,10 +18,11 @@
 
    * Introduction to cloud environemts
    * Close out and resources for further collaboration
+   * Disclipline spefic tutorials
    
 ## Detailed Schedule
 
-### Thursday 20-July 2017
+### Thursday 16-August-2018
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
@@ -51,4 +52,4 @@
 
 ## Materials
 
-[Materials Page](https://opensciencegrid.github.io/dosar/docs/Materials/TriesteMaterials/)
+[Materials Page](https://opensciencegrid.github.io/dosar/docs/DataTrieste2018/Materials.md)
