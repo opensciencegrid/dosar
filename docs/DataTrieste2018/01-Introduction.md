@@ -4,11 +4,11 @@
 
 You will receive login credentials at the beginning of this session. 
 
-   * You might want to refer to the [online Condor 8.6.8 manual](http://research.cs.wisc.edu/htcondor/manual/v8.6/).<br>
+   * You might want to refer to the [online Condor 8.6.12 manual](http://research.cs.wisc.edu/htcondor/manual/v8.6/).<br>
    * You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
 
 ## Which Condor?
-We will be using Condor 8.2.10, which is a recent production version of Condor.
+We will be using Condor 8.6.11, which is a recent production version of Condor.
 
 Condor has two coexisting types of releases at any given time: stable and development. Condor 8.2.X and 7.8.x are considered stable releases, and you can know they are stable because the second digits (a 2 or a 8 in these cases) are  even numbers. In a given stable series, all versions have the same features (for example 7.8.0 and 7.8.1 have the same set of features) and differ only in bug fixes.
 
@@ -18,9 +18,9 @@ Today you will log into user-training.osgconnect.net for all of your exercises:
 
 Login on submission node using:
 
-<pre><code>
-$ <b>ssh -XY YOUR_USER_ID@user-training.osgconnect.net</b>
-</code></pre>
+```
+$ ssh -XY YOUR_USER_ID@user-training.osgconnect.net
+```
 
 You may get a message asking you to establish the authenticity of this connection. Answer "yes". 
 
@@ -28,9 +28,9 @@ When you login to the machine you will be in your "home directory".  We recommen
 
 You can always return to your home directory by running the command
 
-<pre><code>
-$ <b>cd ~</b>
-</code></pre>
+```
+$ cd ~
+```
 
 ## The Exercises
 
