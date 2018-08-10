@@ -20,7 +20,7 @@ How do you know what version of Condor you are using? Try <code>condor_version</
 
 ```
 $ condor_version
-$CondorVersion: 8.6.4 Jun 22 2017 $
+$CondorVersion: 8.6.11 May 14 2018 $
 $CondorPlatform: X86_64-CentOS_6.9 $
 ```
 
@@ -32,7 +32,7 @@ Do you know how to find the OS version? You can usually look in /etc/issue to fi
 
 ```
 $ cat /etc/issue
-Scientific Linux release 6.9 (Carbon)
+Scientific Linux release 6.10 (Carbon)
 Kernel \r on an \m
 ```
 
@@ -42,8 +42,8 @@ Or you can run:
 $ lsb_release -a
 LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch
 Distributor ID:	Scientific
-Description:	Scientific Linux release 6.9 (Carbon)
-Release:	6.9
+Description:	Scientific Linux release 6.10 (Carbon)
+Release:	6.10
 Codename:	Carbon
 ```
 
@@ -56,7 +56,7 @@ $ which condor_q
 
 # Show which RPM installed Condor
 $ rpm -q condor
-condor-8.6.4-1.osg34.el6.x86_64
+condor-8.6.11-1.osg34.el6.x86_64
 ```
 
 Condor has some configuration files that it needs to find. They are in the standard location, `/etc/condor`
@@ -76,7 +76,7 @@ LOCAL_DIR = /var
  # raw: LOCAL_DIR = /var
 
 $ ls -CF /var/lib/condor
-dead.letter  execute/  spool/
+execute/  spool/ spool.q1/ spool.q2/ spool.q3/ spool.q4/ spool.q5/
 ```
 
 The spool directory is where Condor keeps the jobs you submit, while the execute directory is where Condor keeps running jobs. Since this is a submission-only computer, it should be empty.
