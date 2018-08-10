@@ -42,11 +42,11 @@
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:00 | Introduction to cloud environments                                  | Gergely Sipos    |
-| 09:45 | Exercise - Using the EGI Fed Cloud                                  | Gergely Sipos    |
+| 09:00 | Introduction to cloud environments                                  | Gergely Sipos, Guiseppe La Rocca    |
+| 09:45 | Exercise - Using the EGI Fed Cloud                                  | Gergely Sipos, Guiseppe La Rocca     |
 | 10:30 | Coffee Break                                                        |                  |
-| 11:00 | Cloud Compting Resources                                            | Gergely Sipos    |
-| 11:45 | Exercise - Using the EGI Fed Cloud                                  | Gergely Sipos    |
+| 11:00 | Cloud Compting Resources                                            | Gergely Sipos, Guiseppe La Rocca     |
+| 11:45 | Exercise - Using the EGI Fed Cloud                                  | Gergely Sipos, Guiseppe La Rocca     |
 | 13:00 | Closing Thoughts                                                    | Rob Quick        |
 | 13:30 | Lunch                                                               |                  |
 
