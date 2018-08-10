@@ -1,4 +1,4 @@
-# Data Trieste 2017
+# Data Trieste 2018
 
 ## High-Level Cirriculum Overview
 
@@ -38,7 +38,7 @@
 | 15:45 | Workflows with Directed Acyclic Graphs (DAGs)                       | Rob Quick        |
 | 16:15 | Exercise - DAGMAN                                                   | Rob Quick        |
 
-### Friday 21-July 2017
+### Friday 17-August-2018
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
