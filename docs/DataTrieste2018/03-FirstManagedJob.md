@@ -82,7 +82,7 @@ Now that you have a job, you just have to tell Condor to run it. Put the followi
 Universe   = vanilla
 Executable = simple
 Arguments  = 4 10
-+ProjectName = "DataSaoPaulo"
++ProjectName = ConnectTrain"
 Log        = simple.log
 Output     = simple.out
 Error      = simple.error
@@ -195,7 +195,7 @@ If you only ever had to run a single job, you probably wouldn't need Condor. But
 ```
 Universe   = vanilla
 Executable = simple
-+ProjectName = "DataSaoPaulo"
++ProjectName = "ConnectTrain"
 Arguments  = 4 10
 Log        = simple.$(Process).log
 Output     = simple.$(Process).out
@@ -262,7 +262,7 @@ We calculated: 24
 
 Notice that we had three jobs with the same cluster number, but different process numbers. They have the same cluster number because they were all submitted from the same submit file. When the jobs ran, they created three different output files, each with the desired output.
 
-You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at [the documentation for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.4/condor_submit.html).
+You are now ready to submit lots of jobs! Although this example was simple, Condor has many, many options so you can get a wide variety of behaviors. You can find many of these if you look at [the documentation for condor_submit](http://www.cs.wisc.edu/condor/manual/v8.6/condor_submit.html).
 
 ## On your own
 
