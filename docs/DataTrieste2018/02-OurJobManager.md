@@ -114,10 +114,10 @@ You can find out what jobs have been submitted on your computer with the condor_
 
 ```
 $ condor_q
--- Schedd: user-training.osgconnect.net : <192.170.227.119:9618?... @ 07/19/17 03:26:20
- ID      OWNER            SUBMITTED     RUN_TIME ST PRI SIZE CMD
+-- Schedd: user-training.osgconnect.net : <128.135.158.195:9618?... @ 08/12/18 16:10:58
+OWNER BATCH_NAME      SUBMITTED   DONE   RUN    IDLE   HOLD  TOTAL JOB_IDS
 
-0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended 
+0 jobs; 0 completed, 0 removed, 0 idle, 0 running, 0 held, 0 suspended
 ```
 
 The output that you see will be different depending on what jobs are running. Notice what we can see from this:
@@ -148,7 +148,7 @@ How do you use the `-constraint` or `-format` options to `condor_q`? When would 
 You can find out what computers are in your Condor pool. (A pool is similar to a cluster, but it doesn't have the connotation that all computers are dedicated full-time to computation: some may be desktop computers owned by users.) To look, use condor_status:
 
 ```
-$ condor_status
+$ condor_status -pool flock.opensciencegrid.org
 Name                             OpSys      Arch   State     Activity LoadAv Mem    ActvtyTime
 
 slot1@amundsen.grid.uchicago.edu LINUX      X86_64 Owner     Idle      0.000 32768  1+02:46:31
