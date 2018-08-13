@@ -134,7 +134,7 @@ Submitting job(s).
 Watch with condor_q:
 
 ```
-$ watch -n 10 condor_q USER -nobatch
+$ watch condor_q USER -nobatch
 ```
 
 Here we see DAGMan running:
