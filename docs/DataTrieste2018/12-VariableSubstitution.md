@@ -32,4 +32,4 @@ VARS g1 TILEX="0"
 VARS g1 TILEY="0"
 ```
 
-Edit your DAG similarly for all of your goatbrot jobs. If you need help, check the Condor manual for [for a description of how to use VARS](http://www.cs.wisc.edu/condor/manual/v7.6/2_10DAGMan_Applications.html#4635). What happens?
+Edit your DAG similarly for all of your goatbrot jobs. If you need help, check the Condor manual for [for a description of how to use VARS](http://www.cs.wisc.edu/condor/manual/v8.6/2_10DAGMan_Applications.html#4635). What happens?
