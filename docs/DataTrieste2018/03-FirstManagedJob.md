@@ -82,7 +82,7 @@ Now that you have a job, you just have to tell Condor to run it. Put the followi
 Universe   = vanilla
 Executable = simple
 Arguments  = 4 10
-+ProjectName = ConnectTrain"
++ProjectName = "ConnectTrain"
 Log        = simple.log
 Output     = simple.out
 Error      = simple.error
