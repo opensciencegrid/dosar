@@ -68,6 +68,12 @@ $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000001_0000
 $ montage tile_000000_000000.ppm tile_000000_000001.ppm tile_000001_000000.ppm tile_000001_000001.ppm -mode Concatenate -tile 2x2 ~/mandle.gif
 ```
 
+You will see what looks like an error, but does not affect the image stitching. You can ignore this. 
+
+```
+montage: unable to read font `(null)' @ error/annotate.c/RenderFreetype/1339.
+```
+
 This will produce the same image as above. We broke the image space into a 2 by 2 grid and ran `goatbrot` on each section of the grid. The `montage` program simply stitches the files together. 
 
 ## Try it!
