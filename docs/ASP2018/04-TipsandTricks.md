@@ -19,7 +19,7 @@ $ condor_q -run -nobatch
   23.49  kagross         8/18 14:51   0+00:00:14 slot2@frontal.cci.ucad.sn
 ```
 
-`condor_q` can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
+`condor_q` can show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
 
 ```
 $ condor_q -l 23.0
