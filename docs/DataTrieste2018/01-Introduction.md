@@ -4,7 +4,7 @@
 
 You will receive login credentials at the beginning of this session. 
 
-   * You might want to refer to the [online Condor 8.6.12 manual](http://research.cs.wisc.edu/htcondor/manual/v8.6/).<br>
+   * You might want to refer to the online [Condor 8.6.12 manual](http://research.cs.wisc.edu/htcondor/manual/v8.6/).<br>
    * You may enjoy browsing the [Condor web page](http://www.cs.wisc.edu/condor/).<br>
 
 ## Which Condor?
