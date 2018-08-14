@@ -190,7 +190,7 @@ We calculated: 20
 Excellent! We ran our sophisticated scientific job on a Condor pool! We've only run one job though. Can we run more?
 
 ## Doing a parameter sweep
-If you only ever had to run a single job, you probably wouldn't need Condor. But we would like to have our program calculate a whole set of values for different inputs. How can we do that? Let's change our submit file to look like this: 
+If you only ever had to run a single job, you probably wouldn't need Condor. But we would like to have our program calculate a whole set of values for different inputs. How can we do that? Let's change our `submit` file to look like this: 
 
 ```
 Universe   = vanilla
