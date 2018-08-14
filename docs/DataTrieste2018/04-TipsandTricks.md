@@ -22,7 +22,7 @@ $ condor_q -run -nobatch
 `condor_q` can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
 
 ```
-$ condor_q -l 23.0
+$ condor_q -l YOUR_JOB_CLUSTER_NUMBER
 
 MaxHosts = 1
 User = "kagross@frontal.cci.ucad.sn"
@@ -48,21 +48,21 @@ There are some interesting parts you can check out.
 How many times has this job run? (It might be more than one if there were recoverable errors.)
 
 ```
-$ condor_q -l 24.0 | grep JobRunCount
+$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep JobRunCount
 JobRunCount = 1
 ```
 
 Where is the user log for this job? This is helpful when you assist someone else in debugging and they're not sure.
 
 ```
-$ condor_q -l 24.0 | grep UserLog
+$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep UserLog
 UserLog = "/home/kagross/condor-test/simple.47.log"
 ```
 
 What are the job's requirements? Condor automatically fills some in for you to make sure your job runs on a reasonable computer in our cluster, but you can override any of these. I've broken the output into multiple lines to explain it to you.
 
 ```
-$ condor_q -l 23.0 | grep Requirements
+$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep Requirements
 Requirements =( TARGET.Arch == "X86_64" ) <em># Run on a 64-bit computer</em>
     && ( TARGET.OpSys == "LINUX" )  <em># Make sure you run on Linux</em>
     && ( TARGET.Disk >= RequestDisk ) <em># Make sure the default disk Condor is on has enough disk space.</em>
@@ -85,7 +85,7 @@ $ condor_q
 
 1 jobs; 0 completed, 0 removed, 2 idle, 0 running, 0 held, 0 suspended
 
-$ condor_rm 29.0
+$ condor_rm YOUR_JOB_CLUSTER_NUMBER
 Job 29.0 marked for removal
 
 $ condor_q
