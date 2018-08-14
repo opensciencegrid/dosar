@@ -45,11 +45,11 @@ UserLog = "/home/kagross/condor-test/s
 
 There are some interesting parts you can check out. 
 
-How many times has this job run? (It might be more than one if there were recoverable errors.)
+How many CPUs is the job requesting. (This can be more than one, but for the exercises we will do today it will be 1)
 
 ```
-$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep JobRunCount
-JobRunCount = 1
+$ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep RequestCpus
+RequestCpus = 1
 ```
 
 Where is the user log for this job? This is helpful when you assist someone else in debugging and they're not sure.
@@ -63,11 +63,11 @@ What are the job's requirements? Condor automatically fills some in for you to m
 
 ```
 $ condor_q -l YOUR_JOB_CLUSTER_NUMBER | grep Requirements
-Requirements =( TARGET.Arch == "X86_64" ) <em># Run on a 64-bit computer</em>
-    && ( TARGET.OpSys == "LINUX" )  <em># Make sure you run on Linux</em>
-    && ( TARGET.Disk >= RequestDisk ) <em># Make sure the default disk Condor is on has enough disk space.</em>
-    && ( TARGET.Memory >= RequestMemory )  <em># Make sure the computer has enough memory</em>
-    && ( TARGET.HasFileTransfer )  <em># Only run on a computer that can accept your files.</em>
+Requirements =( TARGET.Arch == "X86_64" ) <em># Run on a 64-bit computer
+    && ( TARGET.OpSys == "LINUX" )  <em># Make sure you run on Linux
+    && ( TARGET.Disk >= RequestDisk ) <em># Make sure the default disk Condor is on has enough disk space.
+    && ( TARGET.Memory >= RequestMemory )  <em># Make sure the computer has enough memory
+    && ( TARGET.HasFileTransfer )  <em># Only run on a computer that can accept your files.
 ```
 
 What else can you find that's interesting in the ClassAd?
