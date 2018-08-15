@@ -35,7 +35,7 @@ use *HAS_SINGULARITY == True* in the job requirements. For example:
 
     universe = vanilla
     executable = job.sh
-    Requirements = HAS_SINGULARITY == TRUE
+    requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX") && HAS_SINGULARITY == TRUE
 
     should_transfer_files = IF_NEEDED
     when_to_transfer_output = ON_EXIT
@@ -51,7 +51,7 @@ your job submit file. For example, to run your job under EL7:
 
     universe = vanilla
     executable = job.sh
-    Requirements = HAS_SINGULARITY == TRUE
+    requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX") && HAS_SINGULARITY == TRUE
 
     +SingularityImage = "/cvmfs/singularity.opensciencegrid.org/opensciencegrid/osgvo-el7"
     +SingularityBindCVMFS = True
