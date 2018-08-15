@@ -18,6 +18,7 @@ transfer_executable     = true
 output                  = montage.out
 error                   = montage.err
 log                     = goat.log
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 queue
 ```
 
@@ -123,6 +124,7 @@ transfer_executable     = true
 output                  = montage.out
 error                   = montage.err
 log                     = goat.log
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 queue
 ```
 
