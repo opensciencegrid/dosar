@@ -21,6 +21,7 @@ Arguments               = 4 10
 Log                     = simple.log
 Output                  = simple.out
 Error                   = simple.error
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 should_transfer_files   = YES
 when_to_transfer_output = ON_EXIT
 Queue
