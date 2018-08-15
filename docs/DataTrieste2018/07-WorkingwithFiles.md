@@ -66,6 +66,7 @@ Error           = analyze.error
 Log             = analyze.log
 Arguments       = gettysburg
 +ProjectName = "ConnectTrain"
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 ShouldTransferFiles = Yes
 WhenToTransferOutput = ON_EXIT
 transfer_input_files = gettysburg
