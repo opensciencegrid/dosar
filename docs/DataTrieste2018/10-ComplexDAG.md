@@ -20,6 +20,7 @@ arguments               = -i 100000 -c -0.75,0.75 -w 1.5 -s 500,500 -o tile_0_0.
 log                     = goatbrot.log
 output                  = goatbrot.out.0.0
 error                   = goatbrot.err.0.0
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
@@ -33,6 +34,7 @@ arguments               = -i 100000 -c 0.75,0.75 -w 1.5 -s 500,500 -o tile_0_1.p
 log                     = goatbrot.log
 output                  = goatbrot.out.0.1
 error                   = goatbrot.err.0.1
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
@@ -46,6 +48,7 @@ arguments               = -i 100000 -c -0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_0
 log                     = goatbrot.log
 output                  = goatbrot.out.1.0
 error                   = goatbrot.err.1.0
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
@@ -59,6 +62,7 @@ arguments               = -i 100000 -c 0.75,-0.75 -w 1.5 -s 500,500 -o tile_1_1.
 log                     = goatbrot.log
 output                  = goatbrot.out.1.1
 error                   = goatbrot.err.1.1
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
 queue
@@ -82,6 +86,7 @@ transfer_executable     = true
 output                  = montage.out
 error                   = montage.err
 log                     = montage.log
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 queue
 ```
 
