@@ -19,6 +19,7 @@ output                  = goatbrot.out.$(TILEY).$(TILEX)
 error                   = goatbrot.err.$(TILEY).$(TILEX)
 should_transfer_files   = YES
 when_to_transfer_output = ONEXIT
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 queue
 ```
 
