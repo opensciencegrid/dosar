@@ -126,6 +126,6 @@ transfer_input_files = demo.r
 log = R.log.$(Cluster).$(Process)
 error = R.err.$(Cluster).$(Process)
 output = R.out.$(Cluster).$(Process)
-requirements = (HAS_CVMFS_oasis_opensciencegrid_org =?= TRUE)
+requirements = (HAS_MODULES =?= true) && (OSGVO_OS_STRING == "RHEL 6") && (OpSys == "LINUX")
 queue  
 ```
