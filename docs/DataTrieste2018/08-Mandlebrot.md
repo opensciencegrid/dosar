@@ -29,7 +29,7 @@ $ module load imagemagick
 $ convert tile_000000_000000.ppm ~/mandle.gif
 ```
 
-4. Open a new terminal window and move the file to local machine for viewing (substitute your username in place of `USER`):
+4. **_Open a new terminal window_** and move the file to local machine for viewing (substitute your username in place of `USER`):
 
 ```
 $ scp USER@user-training.osgconnect.net:/home/USER/mandle.gif ./
