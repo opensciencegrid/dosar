@@ -32,7 +32,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
 
-   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/RDA-Lecture1-Trieste-2018.pdf)
+   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/RDA-Lecture4-Trieste-2018.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/14-Containers.md)
    
