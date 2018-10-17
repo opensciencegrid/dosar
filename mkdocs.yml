@@ -17,6 +17,8 @@ pages:
   - 'Data Sao Paulo Materials': 'Materials/DSP_Materials.md' 
   - 'Polar Hackathon Schedule': 'Materials/PH_DT2017.md'
   - 'Polar Hackathon Materials': 'Materials/PH_Materials.md'
+- DOSAR Phone Meetings:
+  - 'October 25': 'Meetings/15October2018.md'
 
 
 markdown_extensions:
