@@ -1,6 +1,7 @@
 # DOSAR Group Meeting
 
 Thursday, October 25 12:00 ET, 11:00 CT
+
 Meeting Coordinates: https://iu.zoom.us/my/rquick
 
    * Attendees: 
