@@ -2,7 +2,7 @@
 
 Wednesday, October 24 12:00 ET, 11:00 CT
 
-Meeting Coordinates: https://iu.zoom.us/my/rquick
+Meeting Coordinates: [https://iu.zoom.us/my/rquick](https://iu.zoom.us/my/rquick)
 
    * Attendees: 
    * Apologies:
