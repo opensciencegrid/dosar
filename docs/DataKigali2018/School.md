@@ -16,7 +16,7 @@
    
 ### Friday AM Session
 
-   * Introduction to cloud environemts
+   * A few words on clouds and containers
    * Close out and resources for further collaboration
    * Disclipline spefic tutorials
    
@@ -42,14 +42,12 @@
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:00 | Introduction to cloud environments                                  | Gergely Sipos, Guiseppe La Rocca    |
-| 09:45 | Exercise - Using the EGI Fed Cloud                                  | Gergely Sipos, Guiseppe La Rocca     |
-| 10:30 | Coffee Break                                                        |                  |
-| 11:00 | Cloud Compting Resources                                            | Gergely Sipos, Guiseppe La Rocca     |
-| 11:45 | Exercise - Using the EGI Fed Cloud                                  | Gergely Sipos, Guiseppe La Rocca     |
-| 13:00 | Closing Thoughts                                                    | Rob Quick        |
+| 09:30 | Clouds, Containers and Parting Words                                | Rob Quick        |
+| 10:00 | Exercise - Complete Earlier Lessons                                 | Rob Quick        |
+| 11:00 | Coffee Break                                                        |                  |
+| 11:30 | Becoming Involved and Closing Thoughts                              | Rob Quick        |
 | 13:30 | Lunch                                                               |                  |
 
 ## Materials
 
-[Materials Page](https://opensciencegrid.github.io/dosar/docs/DataTrieste2018/Materials.md)
+[Materials Page](https://opensciencegrid.github.io/dosar/docs/DataKigali2018/Materials.md)
