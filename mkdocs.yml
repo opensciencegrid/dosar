@@ -6,11 +6,12 @@ theme: readthedocs
 pages:
 - Home: 'index.md'
 - Current or Upcoming Events:
-  - 'Data Trieste 2018 Schedule': 'DataTrieste2018/School.md'
-  - 'Data Trieste 2018 Materials': 'DataTrieste2018/Materials.md'
-  - 'Data Kigali 2018': 'DataKigali2018/index.md'
+  - 'Data Kigali 2018 Schedule': 'DataKigali2018/School.md'
+  - 'Data Kigali 2018 Materials': 'DataKigali2018/Materials.md'
   - 'Data Sao Paulo 2018': 'DataSaoPaulo2018/index.md'
 - Past Events:
+  - 'Data Trieste 2018 Schedule': 'DataTrieste2018/School.md'
+  - 'Data Trieste 2018 Materials': 'DataTrieste2018/Materials.md'
   - 'ASP 2018 Schedule': 'ASP2018/ASP2018_Schedule.md'
   - 'ASP 2018 Material': 'ASP2018/ASP2018_Materials.md'
   - 'Data Sao Paulo Schedule': 'Materials/DSP_DT2017.md'
