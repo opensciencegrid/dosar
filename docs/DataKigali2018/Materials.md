@@ -1,4 +1,4 @@
-# Data Trieste School Materials
+# Data Kigali School Materials
 
 We will be using OSG Connect for this set of sessions. Please visit [http://www.osgconnect.net](http://www.osgconnect.net) for more information.
 
@@ -37,22 +37,10 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2018/14-Containers.md)
    
 ## Friday Morning - Computational Infrastructures - Session 5
-   * Introduction and cloud computing (presentation) (30’)
-   * Introduction to EGI and the EGI cloud infrastructure (30’)
-   * Demo & exercise: Explore EGI services, Explore AppDB (30’)
-   * The cloud-based EGI Notebooks service (presentation) (30’)
-   
-   Training materials are available at: https://documents.egi.eu/document/3349 
+
 
 ## Friday Morning - Computational Infrastructures - Session 6
-   * Intro to hands-on exercise 1 (10’)
-   * Hands-on exercise 1 – Download and plot temperature data
-   * Intro to hands-on exercise 2 (10’)
-   * Hands-on exercise 2 – Add rainfall data
-   * The future of compute infrastructures in Europe: EOSC (30’)
-   * Next steps to become a user (15’)
 
-   Training materials are available at: https://documents.egi.eu/document/3349
    
 ## Contact information
 
