@@ -1,4 +1,4 @@
-# Data Trieste 2018
+# Data Kigali 2018
 
 ## High-Level Cirriculum Overview
 
