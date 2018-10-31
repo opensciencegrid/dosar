@@ -37,9 +37,11 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/14-Containers.md)
    
 ## Friday Morning - Computational Infrastructures - Session 5
-
-
+   * Lecture 5 - Persistent Identifiers, Digital Objects, an Architecture for a Data Centeric Internet
+   
+   
 ## Friday Morning - Computational Infrastructures - Session 6
+   * Getting Involved with CODATA, RDA, and the Foundational Schools of Research Data Science
 
    
 ## Contact information
