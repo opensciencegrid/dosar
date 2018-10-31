@@ -80,9 +80,10 @@ This will produce the same image as above. We broke the image space into a 2 by 
 
 Run the commands above, make sure you can create the Mandlebrot image. When you create the image, you might wonder how you can view it. 
 
-The same way we did above.  
-   1. Move file to local machine for viewing `cp mandle.gif ~/public`
-   1. This time, rather than copying your file to your local system, point your browser at the stash web server:
+The same way we did above, or more simply by moving the file to a web accessible location. 
+
+   1. `cp mandle.gif ~/public`
+   1. point your browser at the stash web server:
 
 ```
 http://stash.osgconnect.net/~USER
