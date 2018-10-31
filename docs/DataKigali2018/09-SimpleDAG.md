@@ -303,7 +303,3 @@ $ rm simple.dag.*
 
    * Why does DAGman run as a Condor job? 
    * Look at the submit file for DAGMan: what does on_exit_remove do? Why is this here?
-
-## Challenge
-
-   * What is the scheduler universe? Why does DAGMan use it?
