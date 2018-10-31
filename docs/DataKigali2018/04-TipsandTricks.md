@@ -5,21 +5,7 @@ This exercise will teach you a few nifty commands to help you use Condor more ea
 
 ## Tips for condor_q
 
-Curious where your jobs are running? Use the `-run` option to see where jobs are running. (Idle jobs are not shown.) 
-```
-$ condor_q -run -nobatch
-
--- Submitter: frontal.cci.ucad.sn : <10.0.0.252:9645> : frontal.cci.ucad.sn
- ID      OWNER           SUBMITTED     RUN_TIME HOST(S)
-  28.44  kagross         8/18 14:51   0+00:00:42 slot1@node2.cci.ucad.sn
-  28.45  kagross         8/18 14:51   0+00:00:37 slot2@node2.cci.ucad.sn
-  28.46  kagross         8/18 14:51   0+00:00:32 slot3@node2.cci.ucad.sn
-  28.47  kagross         8/18 14:51   0+00:00:27 slot4@node2.cci.ucad.sn
-  28.48  kagross         8/18 14:51   0+00:00:20 slot1@frontal.cci.ucad.sn
-  28.49  kagross         8/18 14:51   0+00:00:14 slot2@frontal.cci.ucad.sn
-```
-
-`condor_q` can also show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
+`condor_q` can show you your job ClassAd. Recall back to the lecture and the discussion of ClassAds. For instance, you can look at the ClassAd for a single job:
 
 ```
 $ condor_q -l YOUR_JOB_CLUSTER_NUMBER
