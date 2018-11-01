@@ -5,7 +5,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
 ## Thursday Morning - Computational Infrastructures - Session 1
 
    * Welcome and Introduction - The Landscape of Academic Research Computing
-   * Lecture 1 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture1-Trieste-2018.pdf)
+   * Lecture 1 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture1-Kigali-2018.pdf)
    * [Introduction](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/01-Introduction.md) 
    * [Our Job Manager (HTCondor)](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/02-OurJobManager.md)
    * [Your First Managed Job](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/03-FirstManagedJob.md)
@@ -13,14 +13,14 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Thursday Morning - Computational Infrastructures - Session 2
 
-   * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture2-Trieste-2018.pdf)
+   * Lecture 2 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture2-Kigali-2018.pdf)
    * [A scripting job](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/05-ScriptingJob.md)
    * [An R Job](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/06-RJob.md)
    * [Working with file I/O](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/07-WorkingwithFiles.md)
    
 ## Thursday Afternoon - Computational Infrastructures - Session 3
 
-   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture3-Trieste-2018.pdf)
+   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture3-Kigali-2018.pdf)
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/08-Mandlebrot.md)
    * [Coordinating sets of jobs: A simple DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/09-SimpleDAG.md)
    * [A more complex DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/10-ComplexDAG.md)
@@ -32,7 +32,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Thursday Aftenoon - Computational Infrastructures - Session 4
 
-   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture4-Trieste-2018.pdf)
+   * Lecture 4 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/RDA-Lecture4-Kigali-2018.pdf)
    * [Discipline specific tutorials](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/13-DisciplineTutorials.md)
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/DataKigali2018/14-Containers.md)
    
