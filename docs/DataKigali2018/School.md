@@ -26,17 +26,17 @@
 
 | Time  | Discription                                                         | Instructor       |
 |-------|---------------------------------------------------------------------|------------------|
-| 09:00 | Welcome and the Landscape of Research Computing                     | Rob Quick        |
-| 09:30 | Exercise - UNIX Refresher, Running Locally, Batch Services          | Rob Quick        |
-| 10:30 | Coffee Break                                                        |                  |
-| 11:00 | Profiling your application and finding a home for your workflow     | Rob Quick        |
-| 11:45 | Exercise - Single and batch submittion with HTCondor                | Rob Quick        |
-| 13:00 | Lunch                                                               |                  |
-| 14:00 | Worflows and distributed environments                               | Rob Quick        |
+| 09:30 | Welcome and the Landscape of Research Computing                     | Rob Quick        |
+| 10:00 | Exercise - UNIX Refresher, Running Locally, Batch Services          | Rob Quick        |
+| 11:00 | Coffee Break                                                        |                  |
+| 11:30 | Profiling your application and finding a home for your workflow     | Rob Quick        |
+| 12:00 | Exercise - Single and batch submittion with HTCondor                | Rob Quick        |
+| 12:30 | Lunch                                                               |                  |
+| 13:30 | Worflows and distributed environments                               | Rob Quick        |
 | 14:30 | Exercise - Accessing Distributed Resources on the Open Science Grid | Rob Quick        |
-| 15:15 | Coffee Break                                                        |                  |
-| 15:45 | Workflows with Directed Acyclic Graphs (DAGs)                       | Rob Quick        |
-| 16:15 | Exercise - DAGMAN                                                   | Rob Quick        |
+| 15:30 | Coffee Break                                                        |                  |
+| 16:00 | Workflows with Directed Acyclic Graphs (DAGs)                       | Rob Quick        |
+| 17:15 | Exercise - DAGMAN                                                   | Rob Quick        |
 
 ### Friday 17-August-2018
 
