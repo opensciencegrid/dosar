@@ -21,6 +21,11 @@
             "title": "Past Events"
         }, 
         {
+            "location": "/DataSaoPaulo2018/", 
+            "text": "Placeholder.", 
+            "title": "Data Sao Paulo 2018"
+        }, 
+        {
             "location": "/DataKigali2018/School/", 
             "text": "Data Kigali 2018\n\n\nHigh-Level Cirriculum Overview\n\n\nThursday AM Session\n\n\n\n\nWelcome and Background\n\n\nThe Landscape of Research Computing\n\n\nProfiling your application and choosing appropriate computing resources\n\n\nIntroduction to High Throughput Computing (HTC)\n\n\n\n\nThursday PM Session\n\n\n\n\nWorkflows and distributed environments\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\n\n\nFriday AM Session\n\n\n\n\nA few words on clouds and containers\n\n\nClose out and resources for further collaboration\n\n\nDisclipline spefic tutorials\n\n\n\n\nDetailed Schedule\n\n\nThursday 16-August-2018\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:30\n\n\nWelcome and the Landscape of Research Computing\n\n\nRob Quick\n\n\n\n\n\n\n10:00\n\n\nExercise - UNIX Refresher, Running Locally, Batch Services\n\n\nRob Quick\n\n\n\n\n\n\n11:00\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:30\n\n\nProfiling your application and finding a home for your workflow\n\n\nRob Quick\n\n\n\n\n\n\n12:00\n\n\nExercise - Single and batch submittion with HTCondor\n\n\nRob Quick\n\n\n\n\n\n\n12:30\n\n\nLunch\n\n\n\n\n\n\n\n\n13:30\n\n\nWorflows and distributed environments\n\n\nRob Quick\n\n\n\n\n\n\n14:30\n\n\nExercise - Accessing Distributed Resources on the Open Science Grid\n\n\nRob Quick\n\n\n\n\n\n\n15:30\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n16:00\n\n\nWorkflows with Directed Acyclic Graphs (DAGs)\n\n\nRob Quick\n\n\n\n\n\n\n17:15\n\n\nExercise - DAGMAN\n\n\nRob Quick\n\n\n\n\n\n\n\n\nFriday 17-August-2018\n\n\n\n\n\n\n\n\nTime\n\n\nDiscription\n\n\nInstructor\n\n\n\n\n\n\n\n\n\n\n09:30\n\n\nClouds, Containers and Parting Words\n\n\nRob Quick\n\n\n\n\n\n\n10:00\n\n\nExercise - Complete Earlier Lessons\n\n\nRob Quick\n\n\n\n\n\n\n11:00\n\n\nCoffee Break\n\n\n\n\n\n\n\n\n11:30\n\n\nBecoming Involved and Closing Thoughts\n\n\nRob Quick\n\n\n\n\n\n\n13:30\n\n\nLunch\n\n\n\n\n\n\n\n\n\n\nMaterials\n\n\nMaterials Page", 
             "title": "Data Kigali 2018 Schedule"
@@ -119,11 +124,6 @@
             "location": "/DataKigali2018/Materials/#contact-information", 
             "text": "Rob Quick - rquick@iu.edu  http://www.osgconnect.net/  DOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi\u2010weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended the Polar Hackathon  If you want long\u2010term grid access, you can go to http://www.osgconnect.net and sign up", 
             "title": "Contact information"
-        }, 
-        {
-            "location": "/DataSaoPaulo2018/", 
-            "text": "Placeholder.", 
-            "title": "Data Sao Paulo 2018"
         }, 
         {
             "location": "/DataTrieste2018/School/", 

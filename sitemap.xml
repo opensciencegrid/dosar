@@ -6,17 +6,17 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://opensciencegrid.github.io/dosar/DataSaoPaulo2018/</loc>
+     <lastmod>2018-12-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://opensciencegrid.github.io/dosar/DataKigali2018/School/</loc>
      <lastmod>2018-12-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://opensciencegrid.github.io/dosar/DataKigali2018/Materials/</loc>
-     <lastmod>2018-12-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://opensciencegrid.github.io/dosar/DataSaoPaulo2018/</loc>
      <lastmod>2018-12-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
