@@ -40,7 +40,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * Lecture 5 - Persistent Identifiers, Digital Objects, an Architecture for a Data Centeric Internet
    
 ## Friday Morning - Computational Infrastructures - Session 6
-   * Getting Involved with CODATA, RDA, and the Foundational Schools of Research Data Science
+   * Close Out - What to do next? 
 
    
 ## Contact information
