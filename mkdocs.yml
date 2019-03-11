@@ -5,7 +5,7 @@ theme: readthedocs
 
 pages:
 - Home: 'index.md'
-- Current or Upcoming Events:
+#- Current or Upcoming Events:
 - Past Events:
   - 'Data Sao Paulo 2018 Schedule': 'DataSaoPaulo2018/School.md'
   - 'Data Sao Paulo 2018 Materials': 'DataSaoPaulo2018/Materials.md'
