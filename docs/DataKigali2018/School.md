@@ -50,4 +50,4 @@
 
 ## Materials
 
-[Materials Page](https://opensciencegrid.github.io/dosar/docs/DataKigali2018/Materials.md)
+[Materials Page](/DataKigali2018/Materials)

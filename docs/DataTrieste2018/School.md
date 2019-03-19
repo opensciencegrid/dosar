@@ -52,4 +52,4 @@
 
 ## Materials
 
-[Materials Page](https://opensciencegrid.github.io/dosar/docs/DataTrieste2018/Materials.md)
+[Materials Page](/DataTrieste2018/Materials)
