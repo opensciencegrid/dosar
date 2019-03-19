@@ -50,4 +50,4 @@
 
 ## Materials
 
-[Materials Page](https://opensciencegrid.github.io/dosar/docs/Materials/SaoPaulo17Materials/)
+[Materials Page](/Materials/DSP_Materials)
