@@ -37,7 +37,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/14-Containers.md)
    
 ## Friday Morning - Computational Infrastructures - Session 5
-   * Lecture 5 - Persistent Identifiers, Digital Objects, an Architecture for a Data Centeric Internet
+   * Lecture 5 - Introduction to Cloud Computing
    
 ## Friday Morning - Computational Infrastructures - Session 6
    * Close Out - What to do next? 
