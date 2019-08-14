@@ -9,7 +9,7 @@ Before you start, make sure you are logged into `user-training.osgconnect.net`
 
 ```
 $ hostname
-user-training.osgconnect.net
+training.osgconnect.net
 ```
 
 You should have been given your name and password when you arrived this afternoon. If you don't know them, talk to Rob.
@@ -20,31 +20,24 @@ How do you know what version of Condor you are using? Try <code>condor_version</
 
 ```
 $ condor_version
-$CondorVersion: 8.6.11 May 14 2018 $
-$CondorPlatform: X86_64-CentOS_6.9 $
+$CondorVersion: 8.6.13 Jan 16 2019 $
+$CondorPlatform: X86_64-CentOS_7.6 $
 ```
 
 Note that the "CondorPlatform" reports the type of computer we built it on, _not_ the computer we're running on. It was built on CentOS_6.8, but you might notice that we're running on Scientific Linux 6.8, which is a free clone of Red Hat Enterprise Linux.
 
 ### Extra Tip: The OS version
 
-Do you know how to find the OS version? You can usually look in /etc/issue to find out:
+Do you know how to find the OS version? You can usually look in /etc/os-release to find out:
 
 ```
-$ cat /etc/issue
-Scientific Linux release 6.10 (Carbon)
-Kernel \r on an \m
+$ cat /etc/os-release
 ```
 
 Or you can run:
 
 ```
-$ lsb_release -a
-LSB Version:	:base-4.0-amd64:base-4.0-noarch:core-4.0-amd64:core-4.0-noarch
-Distributor ID:	Scientific
-Description:	Scientific Linux release 6.10 (Carbon)
-Release:	6.10
-Codename:	Carbon
+$ hostnamectl
 ```
 
 Where is Condor installed? 
