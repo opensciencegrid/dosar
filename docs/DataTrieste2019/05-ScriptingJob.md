@@ -23,6 +23,12 @@ echo "We calculated $answer."
 exit 0
 ```
 
+This script will not be executable without changing the permissions.
+
+```
+$ chmod 755 setup.sh
+```
+
 Can you write a submit file to run this job? This should be easy--the script is your _Executable_, not `/bin/sh`. You may also want to change the name of your `submit.log`, `submit.out`, and `submit.err` in your `submit` file to be sure they are not written over when you run this submission. 
 
 ## Challenge
