@@ -1,4 +1,4 @@
-# Data Sao Paulo 2018
+# Data Trieste 2019
 
 ## High-Level Cirriculum Overview
 
