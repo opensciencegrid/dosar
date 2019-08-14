@@ -2,8 +2,11 @@
 
 The Distributed Organization for Scientific and Academic Research (DOSAR) is a 'grass-roots' cyberinfrastructure organization that focuses on community and campus based cyberinfrastructure and promotes a wide range of interdisciplinary and educational activities within the organization and its member institutions.
 
-## Upcoming Events
+## Ongoing Events
    * CODATA-RDA School of Research Data Science - August 5-16, 2019 - Trieste, Italy
+   
+## Upcoming Events
+   * CODATA-RDA School of Research Data Science - November 11-22, 2019 - Aboudja, Nigeria
 
 ## Past Events
    * CODATA-RDA School of Research Data Science - December 3-14, 2018 - Sao Paulo, Brazil
