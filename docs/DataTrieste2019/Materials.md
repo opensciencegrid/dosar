@@ -40,7 +40,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [DOA and RPID](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RPIDandDOA-Trieste-2019.pdf)
    
 ## Friday Morning - Computational Infrastructures - Session 5
-   * Lecture 5 - Introduction to Cloud Computing
+   * [Introduction to Cloud Computing](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/CODATA-2019_Research-Computational-Infrastructures_Cloud-Infrastructures.pdf)
    
 ## Friday Morning - Computational Infrastructures - Session 6
    * Close Out - What to do next? 
