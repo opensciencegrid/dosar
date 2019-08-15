@@ -20,7 +20,6 @@ $ /stash/user/rquick/public/goatbrot-master/goatbrot -i 1000 -o tile_000000_0000
 
 ```
 $ module load fftw
-$ module load imagemagick
 ```
 
 3. Convert it to a JPEG image and write into your home directory:
