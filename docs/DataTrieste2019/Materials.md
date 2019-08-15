@@ -37,7 +37,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    * [Containers with Singularity](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/14-Containers.md)
    
 ## Bonus Lecture - Digital Object Architectures
-   * [DOA and RPID](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RPIDandDOA-Trieste-2019.pdf)
+   * [DOA and RPID](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RPID-DOA-Trieste.pdf)
    
 ## Friday Morning - Computational Infrastructures - Session 5
    * [Introduction to Cloud Computing](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/CODATA-2019_Research-Computational-Infrastructures_Cloud-Infrastructures.pdf)
