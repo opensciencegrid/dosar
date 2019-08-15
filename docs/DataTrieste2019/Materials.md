@@ -20,7 +20,7 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
    
 ## Thursday Afternoon - Computational Infrastructures - Session 3
 
-   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RDA-Lecture3-Trieste-2018.pdf)
+   * Lecture 3 - [Slides](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/RDA-Lecture3-Trieste-2019.pdf)
    * [A brief detour through the Mandlebrot set](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/08-Mandlebrot.md)
    * [Coordinating sets of jobs: A simple DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/09-SimpleDAG.md)
    * [A more complex DAG](https://github.com/opensciencegrid/dosar/blob/master/docs/DataTrieste2019/10-ComplexDAG.md)
