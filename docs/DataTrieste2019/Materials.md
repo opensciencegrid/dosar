@@ -50,5 +50,5 @@ We will be using OSG Connect for this set of sessions. Please visit [http://www.
 
    * Rob Quick - rquick@iu.edu
    * http://www.osgconnect.net/
-   * DOSAR: Distributed Organization for Scientific and Academic Research http://www.dosar.org/ You are welcome to join our bi‐weekly video (Vidyo) meetings. Send request to be added to DOSAR email list to Prof. Greenwood: greenw@phys.latech.edu reference you attended #DataSaoPaulo.
-   * If you want long‐term grid access, you can go to http://www.osgconnect.net and sign up
+   * DOSAR: Distributed Organization for Scientific and Academic Research. 
+   * If you want long‐term grid access, you can go to http://www.osgconnect.net and sign up. Mention you attended Data Trieste 2019 and want to be added to the DOSAR Project. 
